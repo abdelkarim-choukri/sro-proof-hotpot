@@ -1,0 +1,18 @@
+{
+  "run_name": "hotpot_dev_distractor__K20__mdr__20260104",
+  "dataset_split": "",
+  "K": 20 ,
+  "mdr": {
+    "repo": "facebookresearch/multihop_dense_retrieval",
+    "commit": "62eb2427e36a648a927c6e39bb4c748796f7b366",
+    "checkpoint": "FILL_ME",
+    "corpus": "FILL_ME",
+    "command": "FILL_ME"
+  },
+  "files": {
+    "raw_output": "raw/FILL_ME.jsonl",
+    "canonical_output": "canonical/chains.jsonl",
+    "raw_sha256": "FILL_ME",
+    "canonical_sha256": "FILL_ME"
+  }
+}
