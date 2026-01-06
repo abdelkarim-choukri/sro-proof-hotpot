@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Data + large artifacts (DO NOT COMMIT)
+data/hotpotqa/raw/
+data/hotpotqa/wiki/
+data/mdr/runs/*/raw/
+data/mdr/runs/*/canonical/
+runs/
+logs/
+metrics/
+
+# External deps (use submodules or re-clone)
+external/multihop_dense_retrieval/
+external/hf_models/
+
+# Conda / env freezes (keep the *small* yml/txt if you want)
+.venv/
