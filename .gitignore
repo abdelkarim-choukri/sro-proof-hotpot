@@ -19,3 +19,9 @@ external/hf_models/
 
 # Conda / env freezes (keep the *small* yml/txt if you want)
 .venv/
+
+# --- DATASETS & ARTIFACTS (never commit) ---
+data/hotpotqa/raw/
+data/hotpotqa/wiki/
+data/mdr/runs/
+external/hf_models/
