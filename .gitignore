@@ -25,3 +25,27 @@ data/hotpotqa/raw/
 data/hotpotqa/wiki/
 data/mdr/runs/
 external/hf_models/
+# ---- Big artifacts: never commit ----
+data/
+**/data/
+**/hotpot_index/
+**/*.npy
+
+# Model weights / checkpoints
+**/*.pt
+**/*.bin
+**/*.ckpt
+**/*.safetensors
+
+# Run outputs / logs / caches
+runs/
+out/
+outputs/
+logs/
+cache/
+**/*.jsonl
+
+# Python junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
