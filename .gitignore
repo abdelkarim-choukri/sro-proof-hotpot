@@ -58,3 +58,9 @@ external/multihop_dense_retrieval/data/mdr/runs/
 **/faiss_ckpt/
 external/hf_models/
 **/__pycache__/
+
+# local ssh keys
+*.pub
+abde.1998
+abde.1998.pub
+
