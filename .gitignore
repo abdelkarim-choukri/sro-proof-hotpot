@@ -64,3 +64,9 @@ external/hf_models/
 abde.1998
 abde.1998.pub
 
+
+# local ssh keys
+*.pub
+abde.1998
+abde.1998.pub
+
