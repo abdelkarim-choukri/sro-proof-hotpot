@@ -49,3 +49,12 @@ cache/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# --- Big generated artifacts (do NOT commit) ---
+external/multihop_dense_retrieval/data/hotpot_index/wiki_index.npy*
+external/multihop_dense_retrieval/data/hotpot_index/wiki_id2doc.json*
+external/multihop_dense_retrieval/data/mdr/runs/
+**/*.faiss
+**/faiss_ckpt/
+external/hf_models/
+**/__pycache__/
