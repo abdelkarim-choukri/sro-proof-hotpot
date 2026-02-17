@@ -25,3 +25,7 @@ data/hotpotqa/raw/
 data/hotpotqa/wiki/
 data/mdr/runs/
 external/hf_models/
+
+# local artifacts
+external/*.tar.gz
+*.tar.gz
