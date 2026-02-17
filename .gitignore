@@ -29,3 +29,15 @@ external/hf_models/
 # local artifacts
 external/*.tar.gz
 *.tar.gz
+
+# big artifacts
+*.tar.gz
+external/*.tar.gz
+/data/
+**/runs/
+**/*.jsonl
+**/*.npy
+**/*.pt
+**/*.bin
+**/*.ckpt
+
