@@ -1,0 +1,21 @@
+name: sro-proof-gpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pytorch=2.1.1
+  - pytorch-cuda=11.8
+  - torchvision
+  - torchaudio
+  - numpy=1.26.*
+  - pandas
+  - pyarrow
+  - datasets
+  - jsonschema
+  - pydantic
+  - rapidfuzz
+  - regex
+  - tqdm
