@@ -1,0 +1,19 @@
+{
+  "schema_version": "sro-proof.exp1.oracle_summary.v1",
+  "split": "dev",
+  "m": 5,
+  "overall": {
+    "n": 7405,
+    "oracle_em": 0.0,
+    "oracle_f1": 0.05423282743973383
+  },
+  "subset_docrecall1": {
+    "n": 6000,
+    "oracle_em": 0.0,
+    "oracle_f1": 0.05820370959539193
+  },
+  "source": {
+    "evidence_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1/evidence/dev_K20_chains.jsonl",
+    "candidates_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1/candidates/dev_M5_candidates.jsonl"
+  }
+}

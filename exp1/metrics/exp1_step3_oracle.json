@@ -1,0 +1,18 @@
+{
+  "overall": {
+    "n": 7405,
+    "oracle_em": 0.4004,
+    "oracle_f1": 0.5369,
+    "baseline0_em": 0.3028,
+    "baseline0_f1": 0.4294,
+    "gap_em": 0.0976
+  },
+  "feasible": {
+    "n": 6000,
+    "oracle_em": 0.4622,
+    "oracle_f1": 0.6116,
+    "baseline0_em": 0.3498,
+    "baseline0_f1": 0.4916,
+    "gap_em": 0.1123
+  }
+}

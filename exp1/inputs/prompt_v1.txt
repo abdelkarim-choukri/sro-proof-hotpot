@@ -1,0 +1,11 @@
+You are answering a question using ONLY the provided evidence.
+Return ONLY a short answer string (no explanation, no punctuation beyond what is needed).
+If the evidence does not contain enough information, output: UNKNOWN
+
+QUESTION:
+{question}
+
+EVIDENCE:
+{evidence}
+
+ANSWER:

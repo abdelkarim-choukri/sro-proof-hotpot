@@ -1,72 +1,58 @@
-# Python
+# --- Python ---
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .pytest_cache/
 
-# Data + large artifacts (DO NOT COMMIT)
-data/hotpotqa/raw/
-data/hotpotqa/wiki/
-data/mdr/runs/*/raw/
-data/mdr/runs/*/canonical/
-runs/
-logs/
-metrics/
-
-# External deps (use submodules or re-clone)
-external/multihop_dense_retrieval/
-external/hf_models/
-
-# Conda / env freezes (keep the *small* yml/txt if you want)
-.venv/
-
-# --- DATASETS & ARTIFACTS (never commit) ---
-data/hotpotqa/raw/
-data/hotpotqa/wiki/
-data/mdr/runs/
-external/hf_models/
-# ---- Big artifacts: never commit ----
+# --- Big data / artifacts (NEVER commit) ---
 data/
-**/data/
-**/hotpot_index/
-**/*.npy
-
-# Model weights / checkpoints
-**/*.pt
-**/*.bin
-**/*.ckpt
-**/*.safetensors
-
-# Run outputs / logs / caches
 runs/
 out/
 outputs/
 logs/
 cache/
-**/*.jsonl
 
-# Python junk
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
+# Hotpot / MDR data
+data/hotpotqa/raw/
+data/hotpotqa/wiki/
+data/mdr/runs/
 
-# --- Big generated artifacts (do NOT commit) ---
-external/multihop_dense_retrieval/data/hotpot_index/wiki_index.npy*
-external/multihop_dense_retrieval/data/hotpot_index/wiki_id2doc.json*
-external/multihop_dense_retrieval/data/mdr/runs/
-**/*.faiss
-**/faiss_ckpt/
+# Exp1 artifacts (do NOT commit)
+exp1/evidence/
+exp1/candidates/
+exp1/preds/
+exp1/logs/
+exp1/nli_cache/
+exp1/models/
+
+# JSONL outputs (generated)
+*.jsonl
+
+# Model weights / indexes
+*.npy
+*.faiss
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.tar.gz
+
+# External deps (clone separately)
+external/multihop_dense_retrieval/
 external/hf_models/
-**/__pycache__/
 
-# local ssh keys
+# Keys / secrets
+*.pem
+*.key
 *.pub
 abde.1998
 abde.1998.pub
 
-
-# local ssh keys
-*.pub
-abde.1998
-abde.1998.pub
-
+# --- Keep small reproducibility artifacts ---
+!exp1/inputs/
+!exp1/inputs/**
+!exp1/manifest.json
+!exp1/run_step1_dev.sh
+!exp1/metrics/
+!exp1/metrics/*.json
+!exp1/metrics/*.sha256
