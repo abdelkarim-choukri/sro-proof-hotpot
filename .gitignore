@@ -1,18 +1,18 @@
-# Python
+# --- Python ---
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .pytest_cache/
 
-# Big data / artifacts
+# --- Big data / artifacts (NEVER commit) ---
 data/
 runs/
-logs/
-cache/
 out/
 outputs/
+logs/
+cache/
 
-# Hotpot / MDR
+# Hotpot / MDR data
 data/hotpotqa/raw/
 data/hotpotqa/wiki/
 data/mdr/runs/
@@ -24,6 +24,8 @@ exp1/preds/
 exp1/logs/
 exp1/nli_cache/
 exp1/models/
+
+# JSONL outputs (generated)
 *.jsonl
 
 # Model weights / indexes
@@ -33,8 +35,9 @@ exp1/models/
 *.bin
 *.ckpt
 *.safetensors
+*.tar.gz
 
-# External deps (re-clone)
+# External deps (clone separately)
 external/multihop_dense_retrieval/
 external/hf_models/
 
@@ -45,7 +48,7 @@ external/hf_models/
 abde.1998
 abde.1998.pub
 
-# Keep small reproducibility inputs + reports
+# --- Keep small reproducibility artifacts ---
 !exp1/inputs/
 !exp1/inputs/**
 !exp1/manifest.json
