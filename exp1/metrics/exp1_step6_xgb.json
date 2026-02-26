@@ -1,0 +1,27 @@
+{
+  "overall": {
+    "n": 7405,
+    "xgb_em": 0.3471,
+    "xgb_f1": 0.4703
+  },
+  "feasible": {
+    "n": 6000,
+    "xgb_em": 0.399,
+    "xgb_f1": 0.5362
+  },
+  "ece": 0.0216,
+  "feature_importances": {
+    "is_bad": 0.6127,
+    "answer_freq": 0.1463,
+    "unique_count": 0.0593,
+    "is_unknown": 0.0515,
+    "answer_len_words": 0.0361,
+    "nli_score": 0.0331,
+    "answer_len_chars": 0.0284,
+    "nli_score_gap": 0.013,
+    "is_majority": 0.0075,
+    "nli_rank": 0.0063,
+    "cand_idx": 0.0058,
+    "is_empty": 0.0
+  }
+}

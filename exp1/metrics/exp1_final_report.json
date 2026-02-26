@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "experiment": "exp1",
+    "description": "Mode-2 reranking sanity check \u2014 multi-candidate answers",
+    "generated_at": "2026-02-26T16:35:28Z",
+    "n_overall": 7405,
+    "n_feasible": 6000,
+    "model": "Qwen2.5-1.5B-Instruct",
+    "M": 5,
+    "retriever": "MDR K=20"
+  },
+  "overall": {
+    "baseline0": {
+      "em": 0.3028,
+      "f1": 0.4294
+    },
+    "majority_vote": {
+      "em": 0.307,
+      "f1": 0.4264
+    },
+    "nli": {
+      "em": 0.3041,
+      "f1": 0.4374
+    },
+    "xgb": {
+      "em": 0.3471,
+      "f1": 0.4703
+    },
+    "oracle5": {
+      "em": 0.4004,
+      "f1": 0.5369
+    }
+  },
+  "feasible": {
+    "baseline0": {
+      "em": 0.3498,
+      "f1": 0.4916
+    },
+    "majority_vote": {
+      "em": 0.3532,
+      "f1": 0.4869
+    },
+    "nli": {
+      "em": 0.3505,
+      "f1": 0.4995
+    },
+    "xgb": {
+      "em": 0.399,
+      "f1": 0.5362
+    },
+    "oracle5": {
+      "em": 0.4622,
+      "f1": 0.6116
+    }
+  },
+  "calibration": {
+    "xgb_ece_overall": 0.0216,
+    "xgb_ece_feasible": 0.0359,
+    "note": "ECE computed on max(probs) per question vs EM correctness"
+  },
+  "exp0_retrieval_reference": {
+    "doc_recall_union": 0.8684672518568535,
+    "chain_hit": 0.7954085077650236,
+    "sf_recall_lenient": 0.8615940016662038
+  }
+}

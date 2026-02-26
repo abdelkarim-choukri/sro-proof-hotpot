@@ -1,0 +1,13 @@
+Answer the QUESTION using ONLY the EVIDENCE below.
+
+Rules:
+- Read the EVIDENCE carefully before answering.
+- If the EVIDENCE explicitly contains the answer, output it.
+- If the answer is not explicitly supported by the EVIDENCE, output: UNKNOWN
+- Keep your answer short — a name, place, date, or brief phrase.
+- After your reasoning, write your final answer between <final> and </final> tags.
+
+EVIDENCE:
+{evidence}
+
+QUESTION: {question}

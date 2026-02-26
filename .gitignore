@@ -4,40 +4,52 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 
-# Data + large artifacts (DO NOT COMMIT)
-data/hotpotqa/raw/
-data/hotpotqa/wiki/
-data/mdr/runs/*/raw/
-data/mdr/runs/*/canonical/
+# Big data / artifacts
+data/
 runs/
 logs/
-metrics/
+cache/
+out/
+outputs/
 
-# External deps (use submodules or re-clone)
-external/multihop_dense_retrieval/
-external/hf_models/
-
-# Conda / env freezes (keep the *small* yml/txt if you want)
-.venv/
-
-# --- DATASETS & ARTIFACTS (never commit) ---
+# Hotpot / MDR
 data/hotpotqa/raw/
 data/hotpotqa/wiki/
 data/mdr/runs/
+
+# Exp1 artifacts (do NOT commit)
+exp1/evidence/
+exp1/candidates/
+exp1/preds/
+exp1/logs/
+exp1/nli_cache/
+exp1/models/
+*.jsonl
+
+# Model weights / indexes
+*.npy
+*.faiss
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# External deps (re-clone)
+external/multihop_dense_retrieval/
 external/hf_models/
 
-# local artifacts
-external/*.tar.gz
-*.tar.gz
+# Keys / secrets
+*.pem
+*.key
+*.pub
+abde.1998
+abde.1998.pub
 
-# big artifacts
-*.tar.gz
-external/*.tar.gz
-/data/
-**/runs/
-**/*.jsonl
-**/*.npy
-**/*.pt
-**/*.bin
-**/*.ckpt
-
+# Keep small reproducibility inputs + reports
+!exp1/inputs/
+!exp1/inputs/**
+!exp1/manifest.json
+!exp1/run_step1_dev.sh
+!exp1/metrics/
+!exp1/metrics/*.json
+!exp1/metrics/*.sha256
