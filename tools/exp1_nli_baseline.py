@@ -99,8 +99,8 @@ def main():
     ev_map   = {}
     for line in open(args.evidence):
         r = json.loads(line)
-        ev_map[r['qid']] = r['chains']
-        gold_titles = set(r['gold']['supporting_titles'])
+        ev_map[r['qid']] = r.get('chains', r.get('evidence', {}).get('chains', []))
+        gold_titles = set(r['gold'].get('gold_titles', r['gold'].get('supporting_titles', [])))
         retrieved   = set(hop['title']
                           for ch in r['chains']
                           for hop in ch['hops'])
