@@ -1,0 +1,10 @@
+{
+  "lever": "A_increase_K",
+  "generated_utc": "2026-03-01",
+  "rows": [
+    {"K": 20,  "doc_recall_union": 0.8685, "chain_hit": 0.7954, "sf_recall_lenient": 0.8616, "feasible_n": null,  "run": "hotpot_val_K20__mdr__rerun_20260217_1510"},
+    {"K": 50,  "doc_recall_union": 0.8523, "chain_hit": 0.8405, "sf_recall_lenient": 0.8687, "feasible_n": 6311, "run": "hotpot_val_K50__mdr__exp0b_20260301_0735"},
+    {"K": 100, "doc_recall_union": 0.8713, "chain_hit": 0.8563, "sf_recall_lenient": 0.8841, "feasible_n": 6452, "run": "hotpot_val_K100__mdr__exp0b_20260301_0735"}
+  ],
+  "recommendation": "K=100 for Exp1b — chain_hit +6.1pp and 141 additional feasible questions vs K=20"
+}

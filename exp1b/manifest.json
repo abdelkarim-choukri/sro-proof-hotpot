@@ -1,0 +1,63 @@
+{
+  "schema_version": "sro-proof.exp1b.v1",
+  "created_utc": "2026-03-01T09:28:50Z",
+  "exp1b_step1_evidence_pack": {
+    "split": "dev",
+    "k": 100,
+    "gold_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/data/hotpotqa/raw/hotpot_dev_distractor_v1.json",
+    "mdr_topk_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/data/mdr/runs/hotpot_val_K100__mdr__exp0b_20260301_0735/raw/mdr_topk100.json",
+    "mdr_topk_sha256": "3431f578aa2f11e2ad3cbe91b2c13b4236b3910f8b2b86eddd2bb7542e6a4cd0",
+    "out_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1b/evidence/dev_K100_chains.jsonl",
+    "out_sha256": "1b220ca6538f9ddbfcf2b26ed7e9d2bc8ac7e8b1a50570af865cf83612d63896",
+    "n_matched": 7405,
+    "doc_recall_at_k": 0.8713,
+    "chain_hit_at_k": 0.8563,
+    "sf_recall_at_k": 0.9142,
+    "git": {
+      "proj_head": "931b3cd8ec5ce84e5e97e8a829c83a5c6e19b119",
+      "mdr_head": "62eb2427e36a648a927c6e39bb4c748796f7b366"
+    }
+  },
+  "exp1_step2_candidates_qwen": {
+    "schema_version": "sro-proof.exp1.candidates.v4_qwen",
+    "model": "qwen2.5-1.5b-instruct",
+    "split": "dev",
+    "evidence_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1b/evidence/dev_K100_chains.jsonl",
+    "evidence_sha256": "1b220ca6538f9ddbfcf2b26ed7e9d2bc8ac7e8b1a50570af865cf83612d63896",
+    "prompt_version": "v2",
+    "prompt_file": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1/inputs/prompt_v2.txt",
+    "prompt_hash": "af38eba6483779a619dade5fad9192bde178194a2ef21c052ccf6ff6befa2b96",
+    "llm_base_url": "http://127.0.0.1:8000/v1",
+    "llm_model_id": "qwen2.5-1.5b-instruct",
+    "decoding": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "max_new_tokens": 128,
+      "stop": [
+        "</final>"
+      ],
+      "prefill": "<final>"
+    },
+    "seed": 12345,
+    "started_at_utc": "2026-03-01T09:41:25Z",
+    "resume": true,
+    "strategy": "try_n=5_then_fallback_seed+i",
+    "endpoint": "chat/completions"
+  },
+  "exp1_step2_candidates_qwen_done": {
+    "out_sha256": "b86c806b27b072bb7e29f0c5dbdd5d2ee55baed735db0e83e01210e062fc970b",
+    "finished_at_utc": "2026-03-01T10:07:01Z",
+    "wrote": 7405,
+    "skipped": 0,
+    "n5_ok": 4454,
+    "fallback": 2951
+  },
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 5,
+    "out_json": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1b/metrics/oracle_M5_dev.json",
+    "out_json_sha256": "55270ac46e487906e643c6a5e9df214d126ba73db5743dcd25757a0f0c548b4a",
+    "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1b/metrics/oracle_M5_dev_perqid.jsonl",
+    "finished_at_utc": "2026-03-01T11:33:44Z"
+  }
+}
