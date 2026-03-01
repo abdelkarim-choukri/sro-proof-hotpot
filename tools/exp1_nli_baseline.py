@@ -102,7 +102,7 @@ def main():
         ev_map[r['qid']] = r.get('chains', r.get('evidence', {}).get('chains', []))
         gold_titles = set(r['gold'].get('gold_titles', r['gold'].get('supporting_titles', [])))
         retrieved   = set(hop['title']
-                          for ch in r['chains']
+                          for ch in r.get('chains', r.get('evidence', {}).get('chains', []))
                           for hop in ch['hops'])
         if gold_titles.issubset(retrieved):
             feasible.add(r['qid'])
