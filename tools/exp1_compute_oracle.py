@@ -54,7 +54,12 @@ def load_docrecall_subset(evidence_jsonl: str) -> Dict[str, int]:
     m = {}
     for j in iter_jsonl(evidence_jsonl):
         qid = str(j["qid"])
-        m[qid] = int(j.get("derived", {}).get("doc_recall_union", 0))
+        # support both schema variants:
+        # v_old: derived.doc_recall_union
+        # v_new (exp1b): flags.doc_recall_at_k (True/False/None)
+        val = (j.get("derived", {}).get("doc_recall_union")
+               or j.get("flags",   {}).get("doc_recall_at_k"))
+        m[qid] = 1 if val else 0
     return m
 
 def load_gold_answers(evidence_jsonl: str) -> Dict[str, str]:
