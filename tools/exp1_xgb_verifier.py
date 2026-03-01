@@ -175,9 +175,9 @@ def main():
     feasible = set()
     for line in open(args.evidence):
         r = json.loads(line)
-        gold_titles = set(r['gold']['supporting_titles'])
+        gold_titles = set(r['gold'].get('gold_titles', r['gold'].get('supporting_titles', [])))
         retrieved   = set(hop['title']
-                          for ch in r['chains'] for hop in ch['hops'])
+                          for ch in r.get('chains', r.get('evidence', {}).get('chains', [])) for hop in ch['hops'])
         if gold_titles.issubset(retrieved):
             feasible.add(r['qid'])
     print(f"[xgb] Feasible subset: {len(feasible)}/7405")
