@@ -303,7 +303,7 @@ def main():
             continue
 
         q          = evd["question"]
-        all_chains = evd.get("chains", [])
+        all_chains = evd.get("chains", evd.get("evidence", {}).get("chains", []))
 
         fixed_chains    = all_chains[:args.chains_for_llm]
         shown_chain_ids = [int(ch.get("chain_id", i)) for i, ch in enumerate(fixed_chains)]
