@@ -1,0 +1,24 @@
+{
+  "n_questions_total": 7405,
+  "n_scored": 7405,
+  "n_nli_wrong": 5175,
+  "n_nli_correct": 2230,
+  "n_wrong_scored": 5175,
+  "n_imbalanced_above_0.3": 1902,
+  "pct_imbalanced": 36.75,
+  "hop2_dominated_count": 1244,
+  "hop1_dominated_count": 658,
+  "mean_imbalance_when_wrong": 0.3113,
+  "mean_imbalance_when_correct": 0.5229,
+  "threshold_sweep": {
+    "0.1": 45.95,
+    "0.2": 40.89,
+    "0.3": 36.75,
+    "0.4": 33.87,
+    "0.5": 31.54
+  },
+  "decision": "CONFIRMED: proceed to chain-aware verifier",
+  "skipped_no_hops": 0,
+  "skipped_no_pred": 0,
+  "elapsed_sec": 53.2
+}

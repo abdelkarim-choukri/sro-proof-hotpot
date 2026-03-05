@@ -1,0 +1,26 @@
+{
+  "n_questions": 7405,
+  "n_pairs": 37025,
+  "pearson_minhop_vs_flat": 0.1918,
+  "pearson_meanhop_vs_flat": 0.3211,
+  "spearman_minhop_vs_flat": 0.5728,
+  "spearman_meanhop_vs_flat": 0.6153,
+  "em_comparison": {
+    "flat_nli_em": 0.3013,
+    "min_hop_em": 0.3183,
+    "mean_hop_em": 0.3217,
+    "oracle_em": 0.3984
+  },
+  "correlation_threshold": 0.7,
+  "decision": "DIFFERENT SIGNAL: per-hop features carry new information \u2014 proceed to Q2-Q4",
+  "signal_stats": {
+    "nli_flat_mean": 0.1238,
+    "nli_flat_std": 0.23,
+    "min_hop_mean": 0.1074,
+    "min_hop_std": 0.2456,
+    "mean_hop_mean": 0.2668,
+    "mean_hop_std": 0.2922
+  },
+  "elapsed_sec": 156.6,
+  "hop_scores_path": "exp1b/preds/dev_hop_scores.jsonl"
+}
