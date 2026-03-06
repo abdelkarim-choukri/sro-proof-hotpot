@@ -1,0 +1,109 @@
+{
+  "baseline": {
+    "method": "surface XGBoost (exp1b)",
+    "ece": 0.0161
+  },
+  "chain_aware_verifier": {
+    "method": "chain-aware XGBoost [min pooling]",
+    "verifier_level_ece": 0.0329,
+    "classifier_level_ece": 0.2087,
+    "delta_vs_baseline": 0.0168,
+    "reliability_diagram": [
+      {
+        "bin_lo": 0.0,
+        "bin_hi": 0.1,
+        "mean_conf": 0.0188,
+        "frac_correct": 0.0314,
+        "n": 1718,
+        "weight": 0.232,
+        "gap": 0.0126
+      },
+      {
+        "bin_lo": 0.1,
+        "bin_hi": 0.2,
+        "mean_conf": 0.1513,
+        "frac_correct": 0.2234,
+        "n": 734,
+        "weight": 0.0991,
+        "gap": 0.0721
+      },
+      {
+        "bin_lo": 0.2,
+        "bin_hi": 0.3,
+        "mean_conf": 0.2497,
+        "frac_correct": 0.2952,
+        "n": 830,
+        "weight": 0.1121,
+        "gap": 0.0454
+      },
+      {
+        "bin_lo": 0.3,
+        "bin_hi": 0.4,
+        "mean_conf": 0.3506,
+        "frac_correct": 0.3636,
+        "n": 847,
+        "weight": 0.1144,
+        "gap": 0.0131
+      },
+      {
+        "bin_lo": 0.4,
+        "bin_hi": 0.5,
+        "mean_conf": 0.4521,
+        "frac_correct": 0.4438,
+        "n": 890,
+        "weight": 0.1202,
+        "gap": 0.0083
+      },
+      {
+        "bin_lo": 0.5,
+        "bin_hi": 0.6,
+        "mean_conf": 0.55,
+        "frac_correct": 0.5366,
+        "n": 902,
+        "weight": 0.1218,
+        "gap": 0.0134
+      },
+      {
+        "bin_lo": 0.6,
+        "bin_hi": 0.7,
+        "mean_conf": 0.6477,
+        "frac_correct": 0.6066,
+        "n": 816,
+        "weight": 0.1102,
+        "gap": 0.0411
+      },
+      {
+        "bin_lo": 0.7,
+        "bin_hi": 0.8,
+        "mean_conf": 0.7441,
+        "frac_correct": 0.6474,
+        "n": 468,
+        "weight": 0.0632,
+        "gap": 0.0967
+      },
+      {
+        "bin_lo": 0.8,
+        "bin_hi": 0.9,
+        "mean_conf": 0.8393,
+        "frac_correct": 0.7222,
+        "n": 162,
+        "weight": 0.0219,
+        "gap": 0.117
+      },
+      {
+        "bin_lo": 0.9,
+        "bin_hi": 1.0,
+        "mean_conf": 0.9304,
+        "frac_correct": 0.8421,
+        "n": 38,
+        "weight": 0.0051,
+        "gap": 0.0883
+      }
+    ]
+  },
+  "platt_scaling": null,
+  "q8_decision": "MODERATE DEGRADATION: ECE=0.0329 (+0.0168 vs baseline=0.0161) \u2014 acceptable without calibration",
+  "n_questions": 7405,
+  "positive_rate": 0.3507,
+  "mean_confidence": 0.3503
+}

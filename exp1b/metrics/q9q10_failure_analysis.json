@@ -1,0 +1,331 @@
+{
+  "q9_failure_taxonomy": {
+    "A_retrieval_failure": {
+      "n": 953,
+      "pct": 0.1287,
+      "qtype_dist": {
+        "bridge": 953
+      },
+      "bridge_pct": 1.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 953,
+        "mean": 0.2042,
+        "median": 0.1354,
+        "std": 0.2147
+      },
+      "gold_len_words": {
+        "n": 953,
+        "mean": 2.6747,
+        "median": 2.0,
+        "std": 1.7675
+      }
+    },
+    "B_oracle_failure": {
+      "n": 3631,
+      "pct": 0.4903,
+      "qtype_dist": {
+        "bridge": 2758,
+        "comparison": 873
+      },
+      "bridge_pct": 0.7596,
+      "comp_pct": 0.2404,
+      "confidence": {
+        "n": 3631,
+        "mean": 0.276,
+        "median": 0.2424,
+        "std": 0.2445
+      },
+      "gold_len_words": {
+        "n": 3631,
+        "mean": 2.6874,
+        "median": 2.0,
+        "std": 2.1452
+      }
+    },
+    "C1_verifier_bad": {
+      "n": 0,
+      "pct": 0.0,
+      "qtype_dist": {},
+      "bridge_pct": 0.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 0
+      },
+      "gold_len_words": {
+        "n": 0
+      }
+    },
+    "C2_verifier_plausible_wrong": {
+      "n": 333,
+      "pct": 0.045,
+      "qtype_dist": {
+        "bridge": 253,
+        "comparison": 80
+      },
+      "bridge_pct": 0.7598,
+      "comp_pct": 0.2402,
+      "confidence": {
+        "n": 333,
+        "mean": 0.3698,
+        "median": 0.3678,
+        "std": 0.1674
+      },
+      "gold_len_words": {
+        "n": 333,
+        "mean": 2.3994,
+        "median": 2.0,
+        "std": 1.544
+      },
+      "most_common_wrong_picks": [
+        {
+          "value": "asia",
+          "count": 2,
+          "pct": 0.006
+        },
+        {
+          "value": "timanfaya national park",
+          "count": 2,
+          "pct": 0.006
+        },
+        {
+          "value": "musician",
+          "count": 2,
+          "pct": 0.006
+        },
+        {
+          "value": "musicians",
+          "count": 2,
+          "pct": 0.006
+        },
+        {
+          "value": "chevrolet corvette stingray",
+          "count": 1,
+          "pct": 0.003
+        },
+        {
+          "value": "tallaght",
+          "count": 1,
+          "pct": 0.003
+        },
+        {
+          "value": "lisa raymond",
+          "count": 1,
+          "pct": 0.003
+        },
+        {
+          "value": "1981 world rowing championships held outside of munich germany",
+          "count": 1,
+          "pct": 0.003
+        }
+      ],
+      "gold_len_for_c2": {
+        "n": 333,
+        "mean": 2.3994,
+        "median": 2.0,
+        "std": 1.544
+      }
+    },
+    "D_success": {
+      "n": 2488,
+      "pct": 0.336,
+      "qtype_dist": {
+        "comparison": 534,
+        "bridge": 1954
+      },
+      "bridge_pct": 0.7854,
+      "comp_pct": 0.2146,
+      "confidence": {
+        "n": 2488,
+        "mean": 0.5121,
+        "median": 0.532,
+        "std": 0.1984
+      },
+      "gold_len_words": {
+        "n": 2488,
+        "mean": 2.0599,
+        "median": 2.0,
+        "std": 1.1604
+      }
+    },
+    "total": 7405,
+    "interpretation": {
+      "A_pct_label": "retrieval failure \u2014 unfixable by verifier",
+      "B_pct_label": "generator failure \u2014 correct answer never generated",
+      "C_pct_label": "verifier failure \u2014 correct answer existed, verifier missed it",
+      "D_pct_label": "success"
+    }
+  },
+  "q10_differential": {
+    "BOTH_CORRECT": {
+      "n": 2099,
+      "pct": 0.2835,
+      "qtype_dist": {
+        "comparison": 395,
+        "bridge": 1704
+      },
+      "bridge_pct": 0.8118,
+      "comp_pct": 0.1882,
+      "chain_conf": {
+        "n": 2099,
+        "mean": 0.5258,
+        "median": 0.5505,
+        "std": 0.1889
+      },
+      "nli_conf": {
+        "n": 2099,
+        "mean": 0.1726,
+        "median": 0.0345,
+        "std": 0.2577
+      },
+      "gold_len_words": {
+        "n": 2099,
+        "mean": 2.0953,
+        "median": 2.0,
+        "std": 1.1157
+      }
+    },
+    "CHAIN_WINS": {
+      "n": 498,
+      "pct": 0.0673,
+      "qtype_dist": {
+        "bridge": 359,
+        "comparison": 139
+      },
+      "bridge_pct": 0.7209,
+      "comp_pct": 0.2791,
+      "chain_conf": {
+        "n": 498,
+        "mean": 0.4331,
+        "median": 0.3955,
+        "std": 0.2271
+      },
+      "nli_conf": {
+        "n": 498,
+        "mean": 0.293,
+        "median": 0.1012,
+        "std": 0.34
+      },
+      "gold_len_words": {
+        "n": 498,
+        "mean": 1.9699,
+        "median": 2.0,
+        "std": 1.3447
+      },
+      "nli_bad_pick_rate": 0.0984,
+      "nli_common_wrong_picks": [
+        {
+          "value": "2008",
+          "count": 2,
+          "pct": 0.0045
+        },
+        {
+          "value": "writer",
+          "count": 2,
+          "pct": 0.0045
+        },
+        {
+          "value": "8",
+          "count": 2,
+          "pct": 0.0045
+        },
+        {
+          "value": "danny glover was born on july 22 1946",
+          "count": 1,
+          "pct": 0.0022
+        },
+        {
+          "value": "bart conner and ralf b\u00fcchner",
+          "count": 1,
+          "pct": 0.0022
+        }
+      ]
+    },
+    "FLAT_WINS": {
+      "n": 131,
+      "pct": 0.0177,
+      "qtype_dist": {
+        "bridge": 103,
+        "comparison": 28
+      },
+      "bridge_pct": 0.7863,
+      "comp_pct": 0.2137,
+      "chain_conf": {
+        "n": 131,
+        "mean": 0.3712,
+        "median": 0.3677,
+        "std": 0.1714
+      },
+      "nli_conf": {
+        "n": 131,
+        "mean": 0.2271,
+        "median": 0.0476,
+        "std": 0.2984
+      },
+      "gold_len_words": {
+        "n": 131,
+        "mean": 2.5878,
+        "median": 2.0,
+        "std": 1.6199
+      },
+      "chain_bad_pick_rate": 0.0,
+      "chain_common_wrong_picks": [
+        {
+          "value": "tallaght",
+          "count": 1,
+          "pct": 0.0076
+        },
+        {
+          "value": "1981 world rowing championships held outside of munich germany",
+          "count": 1,
+          "pct": 0.0076
+        },
+        {
+          "value": "secret of kells",
+          "count": 1,
+          "pct": 0.0076
+        },
+        {
+          "value": "joulupukki",
+          "count": 1,
+          "pct": 0.0076
+        },
+        {
+          "value": "benjamin cheever",
+          "count": 1,
+          "pct": 0.0076
+        }
+      ]
+    },
+    "BOTH_WRONG": {
+      "n": 4677,
+      "pct": 0.6316,
+      "qtype_dist": {
+        "bridge": 3752,
+        "comparison": 925
+      },
+      "bridge_pct": 0.8022,
+      "comp_pct": 0.1978,
+      "chain_conf": {
+        "n": 4677,
+        "mean": 0.2622,
+        "median": 0.2215,
+        "std": 0.238
+      },
+      "nli_conf": {
+        "n": 4677,
+        "mean": 0.1502,
+        "median": 0.0157,
+        "std": 0.2549
+      },
+      "gold_len_words": {
+        "n": 4677,
+        "mean": 2.6754,
+        "median": 2.0,
+        "std": 2.0673
+      }
+    },
+    "total": 7405,
+    "net_gain_chain_over_flat": 367
+  }
+}

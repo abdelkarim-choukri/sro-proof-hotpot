@@ -1,0 +1,313 @@
+{
+  "q6_separation": {
+    "auroc": 0.7687,
+    "auroc_bridge": 0.7608,
+    "auroc_comparison": 0.795,
+    "separation_ratio_means": 1.9121,
+    "has_correct_conf_stats": {
+      "n": 2949,
+      "mean": 0.4914,
+      "std": 0.202,
+      "p25": 0.3418,
+      "median": 0.5048,
+      "p75": 0.644,
+      "p90": 0.7435
+    },
+    "all_wrong_conf_stats": {
+      "n": 4456,
+      "mean": 0.257,
+      "std": 0.2397,
+      "p25": 0.0067,
+      "median": 0.2122,
+      "p75": 0.4447,
+      "p90": 0.6187
+    },
+    "n_has_correct": 2949,
+    "n_all_wrong": 4456,
+    "decision": "VIABLE: AUROC=0.7687 \u2265 0.70 \u2014 abstention is reliable"
+  },
+  "q7_coverage_curve": {
+    "em_at_100pct_coverage": 0.3507,
+    "em_at_70pct_coverage": 0.6892,
+    "gain_30pct_abstain": 0.3385,
+    "optimal_tau": 0.35,
+    "em_at_optimal_tau": 0.5369,
+    "coverage_at_optimal_tau": 0.5016,
+    "curve": [
+      {
+        "coverage": 0.05,
+        "n": 370,
+        "em": 0.6892
+      },
+      {
+        "coverage": 0.0999,
+        "n": 740,
+        "em": 0.6743
+      },
+      {
+        "coverage": 0.15,
+        "n": 1111,
+        "em": 0.6427
+      },
+      {
+        "coverage": 0.2,
+        "n": 1481,
+        "em": 0.6374
+      },
+      {
+        "coverage": 0.25,
+        "n": 1851,
+        "em": 0.6191
+      },
+      {
+        "coverage": 0.3001,
+        "n": 2222,
+        "em": 0.6031
+      },
+      {
+        "coverage": 0.35,
+        "n": 2592,
+        "em": 0.5907
+      },
+      {
+        "coverage": 0.4,
+        "n": 2962,
+        "em": 0.5763
+      },
+      {
+        "coverage": 0.45,
+        "n": 3332,
+        "em": 0.5558
+      },
+      {
+        "coverage": 0.4999,
+        "n": 3702,
+        "em": 0.5375
+      },
+      {
+        "coverage": 0.55,
+        "n": 4073,
+        "em": 0.5195
+      },
+      {
+        "coverage": 0.6,
+        "n": 4443,
+        "em": 0.5039
+      },
+      {
+        "coverage": 0.65,
+        "n": 4813,
+        "em": 0.4866
+      },
+      {
+        "coverage": 0.7001,
+        "n": 5184,
+        "em": 0.4701
+      },
+      {
+        "coverage": 0.75,
+        "n": 5554,
+        "em": 0.453
+      },
+      {
+        "coverage": 0.8,
+        "n": 5924,
+        "em": 0.4335
+      },
+      {
+        "coverage": 0.85,
+        "n": 6294,
+        "em": 0.4126
+      },
+      {
+        "coverage": 0.8999,
+        "n": 6664,
+        "em": 0.3897
+      },
+      {
+        "coverage": 0.95,
+        "n": 7035,
+        "em": 0.3692
+      },
+      {
+        "coverage": 1.0,
+        "n": 7405,
+        "em": 0.3507
+      }
+    ]
+  },
+  "threshold_sweep": [
+    {
+      "tau": 0.05,
+      "n_answered": 6003,
+      "n_abstained": 1402,
+      "coverage": 0.8107,
+      "abstain_rate": 0.1893,
+      "em_on_answered": 0.4293,
+      "abstain_has_correct_rate": 0.0193
+    },
+    {
+      "tau": 0.1,
+      "n_answered": 5687,
+      "n_abstained": 1718,
+      "coverage": 0.768,
+      "abstain_rate": 0.232,
+      "em_on_answered": 0.4472,
+      "abstain_has_correct_rate": 0.0419
+    },
+    {
+      "tau": 0.15,
+      "n_answered": 5341,
+      "n_abstained": 2064,
+      "coverage": 0.7213,
+      "abstain_rate": 0.2787,
+      "em_on_answered": 0.4638,
+      "abstain_has_correct_rate": 0.0751
+    },
+    {
+      "tau": 0.2,
+      "n_answered": 4953,
+      "n_abstained": 2452,
+      "coverage": 0.6689,
+      "abstain_rate": 0.3311,
+      "em_on_answered": 0.4803,
+      "abstain_has_correct_rate": 0.1158
+    },
+    {
+      "tau": 0.25,
+      "n_answered": 4540,
+      "n_abstained": 2865,
+      "coverage": 0.6131,
+      "abstain_rate": 0.3869,
+      "em_on_answered": 0.5011,
+      "abstain_has_correct_rate": 0.1455
+    },
+    {
+      "tau": 0.3,
+      "n_answered": 4123,
+      "n_abstained": 3282,
+      "coverage": 0.5568,
+      "abstain_rate": 0.4432,
+      "em_on_answered": 0.5176,
+      "abstain_has_correct_rate": 0.1785
+    },
+    {
+      "tau": 0.35,
+      "n_answered": 3714,
+      "n_abstained": 3691,
+      "coverage": 0.5016,
+      "abstain_rate": 0.4984,
+      "em_on_answered": 0.5369,
+      "abstain_has_correct_rate": 0.2067
+    },
+    {
+      "tau": 0.4,
+      "n_answered": 3276,
+      "n_abstained": 4129,
+      "coverage": 0.4424,
+      "abstain_rate": 0.5576,
+      "em_on_answered": 0.5574,
+      "abstain_has_correct_rate": 0.2354
+    },
+    {
+      "tau": 0.45,
+      "n_answered": 2860,
+      "n_abstained": 4545,
+      "coverage": 0.3862,
+      "abstain_rate": 0.6138,
+      "em_on_answered": 0.5787,
+      "abstain_has_correct_rate": 0.2603
+    },
+    {
+      "tau": 0.5,
+      "n_answered": 2386,
+      "n_abstained": 5019,
+      "coverage": 0.3222,
+      "abstain_rate": 0.6778,
+      "em_on_answered": 0.5997,
+      "abstain_has_correct_rate": 0.2877
+    },
+    {
+      "tau": 0.55,
+      "n_answered": 1940,
+      "n_abstained": 5465,
+      "coverage": 0.262,
+      "abstain_rate": 0.738,
+      "em_on_answered": 0.6186,
+      "abstain_has_correct_rate": 0.3103
+    },
+    {
+      "tau": 0.6,
+      "n_answered": 1484,
+      "n_abstained": 5921,
+      "coverage": 0.2004,
+      "abstain_rate": 0.7996,
+      "em_on_answered": 0.6381,
+      "abstain_has_correct_rate": 0.3327
+    },
+    {
+      "tau": 0.65,
+      "n_answered": 1050,
+      "n_abstained": 6355,
+      "coverage": 0.1418,
+      "abstain_rate": 0.8582,
+      "em_on_answered": 0.6467,
+      "abstain_has_correct_rate": 0.3533
+    },
+    {
+      "tau": 0.7,
+      "n_answered": 668,
+      "n_abstained": 6737,
+      "coverage": 0.0902,
+      "abstain_rate": 0.9098,
+      "em_on_answered": 0.6766,
+      "abstain_has_correct_rate": 0.3686
+    },
+    {
+      "tau": 0.75,
+      "n_answered": 384,
+      "n_abstained": 7021,
+      "coverage": 0.0519,
+      "abstain_rate": 0.9481,
+      "em_on_answered": 0.6953,
+      "abstain_has_correct_rate": 0.3813
+    },
+    {
+      "tau": 0.8,
+      "n_answered": 200,
+      "n_abstained": 7205,
+      "coverage": 0.027,
+      "abstain_rate": 0.973,
+      "em_on_answered": 0.745,
+      "abstain_has_correct_rate": 0.3883
+    },
+    {
+      "tau": 0.85,
+      "n_answered": 98,
+      "n_abstained": 7307,
+      "coverage": 0.0132,
+      "abstain_rate": 0.9868,
+      "em_on_answered": 0.8163,
+      "abstain_has_correct_rate": 0.3926
+    },
+    {
+      "tau": 0.9,
+      "n_answered": 38,
+      "n_abstained": 7367,
+      "coverage": 0.0051,
+      "abstain_rate": 0.9949,
+      "em_on_answered": 0.8421,
+      "abstain_has_correct_rate": 0.396
+    },
+    {
+      "tau": 0.95,
+      "n_answered": 9,
+      "n_abstained": 7396,
+      "coverage": 0.0012,
+      "abstain_rate": 0.9988,
+      "em_on_answered": 1.0,
+      "abstain_has_correct_rate": 0.3975
+    }
+  ],
+  "verifier_preds_source": "exp1b/preds/dev_chain_verifier_min_preds.jsonl"
+}
