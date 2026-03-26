@@ -1,0 +1,331 @@
+{
+  "q9_failure_taxonomy": {
+    "A_retrieval_failure": {
+      "n": 953,
+      "pct": 0.1287,
+      "qtype_dist": {
+        "bridge": 953
+      },
+      "bridge_pct": 1.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 953,
+        "mean": 0.2046,
+        "median": 0.0002,
+        "std": 0.2727
+      },
+      "gold_len_words": {
+        "n": 953,
+        "mean": 2.6747,
+        "median": 2.0,
+        "std": 1.7675
+      }
+    },
+    "B_oracle_failure": {
+      "n": 2968,
+      "pct": 0.4008,
+      "qtype_dist": {
+        "bridge": 2264,
+        "comparison": 704
+      },
+      "bridge_pct": 0.7628,
+      "comp_pct": 0.2372,
+      "confidence": {
+        "n": 2968,
+        "mean": 0.3954,
+        "median": 0.4722,
+        "std": 0.2858
+      },
+      "gold_len_words": {
+        "n": 2968,
+        "mean": 2.8396,
+        "median": 2.0,
+        "std": 2.2439
+      }
+    },
+    "C1_verifier_bad": {
+      "n": 0,
+      "pct": 0.0,
+      "qtype_dist": {},
+      "bridge_pct": 0.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 0
+      },
+      "gold_len_words": {
+        "n": 0
+      }
+    },
+    "C2_verifier_plausible_wrong": {
+      "n": 188,
+      "pct": 0.0254,
+      "qtype_dist": {
+        "comparison": 44,
+        "bridge": 144
+      },
+      "bridge_pct": 0.766,
+      "comp_pct": 0.234,
+      "confidence": {
+        "n": 188,
+        "mean": 0.38,
+        "median": 0.371,
+        "std": 0.1577
+      },
+      "gold_len_words": {
+        "n": 188,
+        "mean": 2.5798,
+        "median": 2.0,
+        "std": 1.9917
+      },
+      "most_common_wrong_picks": [
+        {
+          "value": "40 million albums",
+          "count": 2,
+          "pct": 0.0106
+        },
+        {
+          "value": "peoples republic of china",
+          "count": 2,
+          "pct": 0.0106
+        },
+        {
+          "value": "yes",
+          "count": 2,
+          "pct": 0.0106
+        },
+        {
+          "value": "battle of guam 1941",
+          "count": 1,
+          "pct": 0.0053
+        },
+        {
+          "value": "augusta",
+          "count": 1,
+          "pct": 0.0053
+        },
+        {
+          "value": "december 10 2006",
+          "count": 1,
+          "pct": 0.0053
+        },
+        {
+          "value": "musschenbroek",
+          "count": 1,
+          "pct": 0.0053
+        },
+        {
+          "value": "brotherly leader",
+          "count": 1,
+          "pct": 0.0053
+        }
+      ],
+      "gold_len_for_c2": {
+        "n": 188,
+        "mean": 2.5798,
+        "median": 2.0,
+        "std": 1.9917
+      }
+    },
+    "D_success": {
+      "n": 3296,
+      "pct": 0.4451,
+      "qtype_dist": {
+        "comparison": 739,
+        "bridge": 2557
+      },
+      "bridge_pct": 0.7758,
+      "comp_pct": 0.2242,
+      "confidence": {
+        "n": 3296,
+        "mean": 0.6057,
+        "median": 0.6197,
+        "std": 0.165
+      },
+      "gold_len_words": {
+        "n": 3296,
+        "mean": 2.0537,
+        "median": 2.0,
+        "std": 1.2039
+      }
+    },
+    "total": 7405,
+    "interpretation": {
+      "A_pct_label": "retrieval failure \u2014 unfixable by verifier",
+      "B_pct_label": "generator failure \u2014 correct answer never generated",
+      "C_pct_label": "verifier failure \u2014 correct answer existed, verifier missed it",
+      "D_pct_label": "success"
+    }
+  },
+  "q10_differential": {
+    "BOTH_CORRECT": {
+      "n": 3292,
+      "pct": 0.4446,
+      "qtype_dist": {
+        "comparison": 704,
+        "bridge": 2588
+      },
+      "bridge_pct": 0.7861,
+      "comp_pct": 0.2139,
+      "chain_conf": {
+        "n": 3292,
+        "mean": 0.6104,
+        "median": 0.6228,
+        "std": 0.1616
+      },
+      "nli_conf": {
+        "n": 3292,
+        "mean": 0.1708,
+        "median": 0.0377,
+        "std": 0.25
+      },
+      "gold_len_words": {
+        "n": 3292,
+        "mean": 2.0498,
+        "median": 2.0,
+        "std": 1.1946
+      }
+    },
+    "CHAIN_WINS": {
+      "n": 121,
+      "pct": 0.0163,
+      "qtype_dist": {
+        "comparison": 35,
+        "bridge": 86
+      },
+      "bridge_pct": 0.7107,
+      "comp_pct": 0.2893,
+      "chain_conf": {
+        "n": 121,
+        "mean": 0.4252,
+        "median": 0.4117,
+        "std": 0.1836
+      },
+      "nli_conf": {
+        "n": 121,
+        "mean": 0.209,
+        "median": 0.0526,
+        "std": 0.2857
+      },
+      "gold_len_words": {
+        "n": 121,
+        "mean": 2.1736,
+        "median": 2.0,
+        "std": 1.2771
+      },
+      "nli_bad_pick_rate": 0.0496,
+      "nli_common_wrong_picks": [
+        {
+          "value": "essence",
+          "count": 1,
+          "pct": 0.0087
+        },
+        {
+          "value": "2001",
+          "count": 1,
+          "pct": 0.0087
+        },
+        {
+          "value": "shape magazine",
+          "count": 1,
+          "pct": 0.0087
+        },
+        {
+          "value": "william keith bostic",
+          "count": 1,
+          "pct": 0.0087
+        },
+        {
+          "value": "boeing",
+          "count": 1,
+          "pct": 0.0087
+        }
+      ]
+    },
+    "FLAT_WINS": {
+      "n": 67,
+      "pct": 0.009,
+      "qtype_dist": {
+        "comparison": 14,
+        "bridge": 53
+      },
+      "bridge_pct": 0.791,
+      "comp_pct": 0.209,
+      "chain_conf": {
+        "n": 67,
+        "mean": 0.3806,
+        "median": 0.3719,
+        "std": 0.1538
+      },
+      "nli_conf": {
+        "n": 67,
+        "mean": 0.1527,
+        "median": 0.0361,
+        "std": 0.2301
+      },
+      "gold_len_words": {
+        "n": 67,
+        "mean": 2.8657,
+        "median": 2.0,
+        "std": 1.6562
+      },
+      "chain_bad_pick_rate": 0.0,
+      "chain_common_wrong_picks": [
+        {
+          "value": "battle of guam 1941",
+          "count": 1,
+          "pct": 0.0149
+        },
+        {
+          "value": "augusta",
+          "count": 1,
+          "pct": 0.0149
+        },
+        {
+          "value": "astrosat is indias first dedicated multiwavelength space observatory",
+          "count": 1,
+          "pct": 0.0149
+        },
+        {
+          "value": "stabyhoun",
+          "count": 1,
+          "pct": 0.0149
+        },
+        {
+          "value": "mike fratello",
+          "count": 1,
+          "pct": 0.0149
+        }
+      ]
+    },
+    "BOTH_WRONG": {
+      "n": 3925,
+      "pct": 0.53,
+      "qtype_dist": {
+        "bridge": 3191,
+        "comparison": 734
+      },
+      "bridge_pct": 0.813,
+      "comp_pct": 0.187,
+      "chain_conf": {
+        "n": 3925,
+        "mean": 0.344,
+        "median": 0.3926,
+        "std": 0.2917
+      },
+      "nli_conf": {
+        "n": 3925,
+        "mean": 0.1135,
+        "median": 0.007,
+        "std": 0.2216
+      },
+      "gold_len_words": {
+        "n": 3925,
+        "mean": 2.8097,
+        "median": 2.0,
+        "std": 2.161
+      }
+    },
+    "total": 7405,
+    "net_gain_chain_over_flat": 54
+  }
+}

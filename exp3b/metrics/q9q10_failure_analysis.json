@@ -1,0 +1,331 @@
+{
+  "q9_failure_taxonomy": {
+    "A_retrieval_failure": {
+      "n": 953,
+      "pct": 0.1287,
+      "qtype_dist": {
+        "bridge": 953
+      },
+      "bridge_pct": 1.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 953,
+        "mean": 0.2208,
+        "median": 0.1604,
+        "std": 0.2244
+      },
+      "gold_len_words": {
+        "n": 953,
+        "mean": 2.6747,
+        "median": 2.0,
+        "std": 1.7675
+      }
+    },
+    "B_oracle_failure": {
+      "n": 3364,
+      "pct": 0.4543,
+      "qtype_dist": {
+        "bridge": 2546,
+        "comparison": 818
+      },
+      "bridge_pct": 0.7568,
+      "comp_pct": 0.2432,
+      "confidence": {
+        "n": 3364,
+        "mean": 0.2935,
+        "median": 0.2746,
+        "std": 0.2485
+      },
+      "gold_len_words": {
+        "n": 3364,
+        "mean": 2.7117,
+        "median": 2.0,
+        "std": 2.1923
+      }
+    },
+    "C1_verifier_bad": {
+      "n": 0,
+      "pct": 0.0,
+      "qtype_dist": {},
+      "bridge_pct": 0.0,
+      "comp_pct": 0.0,
+      "confidence": {
+        "n": 0
+      },
+      "gold_len_words": {
+        "n": 0
+      }
+    },
+    "C2_verifier_plausible_wrong": {
+      "n": 504,
+      "pct": 0.0681,
+      "qtype_dist": {
+        "bridge": 390,
+        "comparison": 114
+      },
+      "bridge_pct": 0.7738,
+      "comp_pct": 0.2262,
+      "confidence": {
+        "n": 504,
+        "mean": 0.3766,
+        "median": 0.3718,
+        "std": 0.1707
+      },
+      "gold_len_words": {
+        "n": 504,
+        "mean": 2.4782,
+        "median": 2.0,
+        "std": 1.6413
+      },
+      "most_common_wrong_picks": [
+        {
+          "value": "musician",
+          "count": 4,
+          "pct": 0.0079
+        },
+        {
+          "value": "timanfaya national park",
+          "count": 2,
+          "pct": 0.004
+        },
+        {
+          "value": "tokyo japan",
+          "count": 2,
+          "pct": 0.004
+        },
+        {
+          "value": "film directing",
+          "count": 2,
+          "pct": 0.004
+        },
+        {
+          "value": "chevrolet corvette stingray",
+          "count": 1,
+          "pct": 0.002
+        },
+        {
+          "value": "essence",
+          "count": 1,
+          "pct": 0.002
+        },
+        {
+          "value": "masherbrum",
+          "count": 1,
+          "pct": 0.002
+        },
+        {
+          "value": "tallaght",
+          "count": 1,
+          "pct": 0.002
+        }
+      ],
+      "gold_len_for_c2": {
+        "n": 504,
+        "mean": 2.4782,
+        "median": 2.0,
+        "std": 1.6413
+      }
+    },
+    "D_success": {
+      "n": 2584,
+      "pct": 0.349,
+      "qtype_dist": {
+        "comparison": 555,
+        "bridge": 2029
+      },
+      "bridge_pct": 0.7852,
+      "comp_pct": 0.2148,
+      "confidence": {
+        "n": 2584,
+        "mean": 0.5261,
+        "median": 0.5488,
+        "std": 0.1952
+      },
+      "gold_len_words": {
+        "n": 2584,
+        "mean": 2.0553,
+        "median": 2.0,
+        "std": 1.1265
+      }
+    },
+    "total": 7405,
+    "interpretation": {
+      "A_pct_label": "retrieval failure \u2014 unfixable by verifier",
+      "B_pct_label": "generator failure \u2014 correct answer never generated",
+      "C_pct_label": "verifier failure \u2014 correct answer existed, verifier missed it",
+      "D_pct_label": "success"
+    }
+  },
+  "q10_differential": {
+    "BOTH_CORRECT": {
+      "n": 1972,
+      "pct": 0.2663,
+      "qtype_dist": {
+        "comparison": 386,
+        "bridge": 1586
+      },
+      "bridge_pct": 0.8043,
+      "comp_pct": 0.1957,
+      "chain_conf": {
+        "n": 1972,
+        "mean": 0.5526,
+        "median": 0.5816,
+        "std": 0.1809
+      },
+      "nli_conf": {
+        "n": 1972,
+        "mean": 0.1765,
+        "median": 0.036,
+        "std": 0.2591
+      },
+      "gold_len_words": {
+        "n": 1972,
+        "mean": 2.0963,
+        "median": 2.0,
+        "std": 1.06
+      }
+    },
+    "CHAIN_WINS": {
+      "n": 710,
+      "pct": 0.0959,
+      "qtype_dist": {
+        "comparison": 169,
+        "bridge": 541
+      },
+      "bridge_pct": 0.762,
+      "comp_pct": 0.238,
+      "chain_conf": {
+        "n": 710,
+        "mean": 0.4416,
+        "median": 0.4168,
+        "std": 0.214
+      },
+      "nli_conf": {
+        "n": 710,
+        "mean": 0.2833,
+        "median": 0.0924,
+        "std": 0.3289
+      },
+      "gold_len_words": {
+        "n": 710,
+        "mean": 1.9662,
+        "median": 2.0,
+        "std": 1.2833
+      },
+      "nli_bad_pick_rate": 0.1099,
+      "nli_common_wrong_picks": [
+        {
+          "value": "writer",
+          "count": 2,
+          "pct": 0.0032
+        },
+        {
+          "value": "test icicles",
+          "count": 2,
+          "pct": 0.0032
+        },
+        {
+          "value": "battle of manila occurred first",
+          "count": 1,
+          "pct": 0.0016
+        },
+        {
+          "value": "bart conner and ralf b\u00fcchner",
+          "count": 1,
+          "pct": 0.0016
+        },
+        {
+          "value": "nusretiye mosque is unique for retaining baroque style of architecture",
+          "count": 1,
+          "pct": 0.0016
+        }
+      ]
+    },
+    "FLAT_WINS": {
+      "n": 194,
+      "pct": 0.0262,
+      "qtype_dist": {
+        "bridge": 153,
+        "comparison": 41
+      },
+      "bridge_pct": 0.7887,
+      "comp_pct": 0.2113,
+      "chain_conf": {
+        "n": 194,
+        "mean": 0.4032,
+        "median": 0.4003,
+        "std": 0.1677
+      },
+      "nli_conf": {
+        "n": 194,
+        "mean": 0.2563,
+        "median": 0.0869,
+        "std": 0.3058
+      },
+      "gold_len_words": {
+        "n": 194,
+        "mean": 2.4948,
+        "median": 2.0,
+        "std": 1.6062
+      },
+      "chain_bad_pick_rate": 0.0,
+      "chain_common_wrong_picks": [
+        {
+          "value": "tokyo japan",
+          "count": 2,
+          "pct": 0.0103
+        },
+        {
+          "value": "tallaght",
+          "count": 1,
+          "pct": 0.0052
+        },
+        {
+          "value": "secret of kells",
+          "count": 1,
+          "pct": 0.0052
+        },
+        {
+          "value": "joulupukki",
+          "count": 1,
+          "pct": 0.0052
+        },
+        {
+          "value": "benjamin cheever",
+          "count": 1,
+          "pct": 0.0052
+        }
+      ]
+    },
+    "BOTH_WRONG": {
+      "n": 4529,
+      "pct": 0.6116,
+      "qtype_dist": {
+        "bridge": 3638,
+        "comparison": 891
+      },
+      "bridge_pct": 0.8033,
+      "comp_pct": 0.1967,
+      "chain_conf": {
+        "n": 4529,
+        "mean": 0.2794,
+        "median": 0.2526,
+        "std": 0.2411
+      },
+      "nli_conf": {
+        "n": 4529,
+        "mean": 0.1695,
+        "median": 0.0192,
+        "std": 0.273
+      },
+      "gold_len_words": {
+        "n": 4529,
+        "mean": 2.6975,
+        "median": 2.0,
+        "std": 2.0955
+      }
+    },
+    "total": 7405,
+    "net_gain_chain_over_flat": 516
+  }
+}

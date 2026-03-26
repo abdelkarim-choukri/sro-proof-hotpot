@@ -1,0 +1,117 @@
+{
+  "n_pilot": 300,
+  "n_c2": 188,
+  "n_d": 112,
+  "xgb_baseline_em": 112,
+  "best_threshold": 0.55,
+  "best_result": {
+    "tau": 0.55,
+    "n_sent_llm": 197,
+    "c2_recovered": 58,
+    "d_lost": 13,
+    "net": 45,
+    "total_em": 157,
+    "em_rate": 0.5233
+  },
+  "all_results": [
+    {
+      "tau": 0.2,
+      "n_sent_llm": 20,
+      "c2_recovered": 5,
+      "d_lost": 0,
+      "net": 5,
+      "total_em": 117,
+      "em_rate": 0.39
+    },
+    {
+      "tau": 0.25,
+      "n_sent_llm": 37,
+      "c2_recovered": 12,
+      "d_lost": 0,
+      "net": 12,
+      "total_em": 124,
+      "em_rate": 0.4133
+    },
+    {
+      "tau": 0.3,
+      "n_sent_llm": 62,
+      "c2_recovered": 21,
+      "d_lost": 0,
+      "net": 21,
+      "total_em": 133,
+      "em_rate": 0.4433
+    },
+    {
+      "tau": 0.35,
+      "n_sent_llm": 88,
+      "c2_recovered": 32,
+      "d_lost": 3,
+      "net": 29,
+      "total_em": 141,
+      "em_rate": 0.47
+    },
+    {
+      "tau": 0.4,
+      "n_sent_llm": 118,
+      "c2_recovered": 39,
+      "d_lost": 6,
+      "net": 33,
+      "total_em": 145,
+      "em_rate": 0.4833
+    },
+    {
+      "tau": 0.45,
+      "n_sent_llm": 143,
+      "c2_recovered": 47,
+      "d_lost": 7,
+      "net": 40,
+      "total_em": 152,
+      "em_rate": 0.5067
+    },
+    {
+      "tau": 0.5,
+      "n_sent_llm": 178,
+      "c2_recovered": 55,
+      "d_lost": 12,
+      "net": 43,
+      "total_em": 155,
+      "em_rate": 0.5167
+    },
+    {
+      "tau": 0.55,
+      "n_sent_llm": 197,
+      "c2_recovered": 58,
+      "d_lost": 13,
+      "net": 45,
+      "total_em": 157,
+      "em_rate": 0.5233
+    },
+    {
+      "tau": 0.6,
+      "n_sent_llm": 221,
+      "c2_recovered": 61,
+      "d_lost": 18,
+      "net": 43,
+      "total_em": 155,
+      "em_rate": 0.5167
+    },
+    {
+      "tau": 0.65,
+      "n_sent_llm": 237,
+      "c2_recovered": 64,
+      "d_lost": 20,
+      "net": 44,
+      "total_em": 156,
+      "em_rate": 0.52
+    },
+    {
+      "tau": 0.7,
+      "n_sent_llm": 254,
+      "c2_recovered": 66,
+      "d_lost": 25,
+      "net": 41,
+      "total_em": 153,
+      "em_rate": 0.51
+    }
+  ]
+}

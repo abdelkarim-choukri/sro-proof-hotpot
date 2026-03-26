@@ -1,0 +1,109 @@
+{
+  "exp1b_baselines": {
+    "flat_nli_em": 0.3011,
+    "xgb_surface_em": 0.3409
+  },
+  "min_pooling": {
+    "tag": "min",
+    "overall": {
+      "n": 7405,
+      "em": 0.4652,
+      "f1": 0.5855
+    },
+    "feasible": {
+      "n": 6452,
+      "em": 0.5158,
+      "f1": 0.647
+    },
+    "bridge": {
+      "n": 5918,
+      "em": 0.4523,
+      "f1": 0.582
+    },
+    "comparison": {
+      "n": 1487,
+      "em": 0.5165,
+      "f1": 0.5995
+    },
+    "ece": 0.0427,
+    "feature_importances": {
+      "is_bad": 0.677,
+      "is_unknown": 0.137,
+      "answer_freq": 0.042,
+      "nli_hop2": 0.0203,
+      "unique_count": 0.02,
+      "answer_len_chars": 0.0139,
+      "nli_hop1": 0.0114,
+      "coverage": 0.0113,
+      "hop_balance": 0.0113,
+      "answer_len_words": 0.0097,
+      "nli_score": 0.0095,
+      "coverage_gap": 0.0084,
+      "is_majority": 0.0082,
+      "nli_score_gap": 0.0082,
+      "coverage_rank": 0.0052,
+      "cand_idx": 0.0041,
+      "nli_rank": 0.0026,
+      "is_empty": 0.0
+    }
+  },
+  "mean_pooling": {
+    "tag": "mean",
+    "overall": {
+      "n": 7405,
+      "em": 0.4658,
+      "f1": 0.5853
+    },
+    "feasible": {
+      "n": 6452,
+      "em": 0.5164,
+      "f1": 0.6471
+    },
+    "bridge": {
+      "n": 5918,
+      "em": 0.4537,
+      "f1": 0.5828
+    },
+    "comparison": {
+      "n": 1487,
+      "em": 0.5138,
+      "f1": 0.595
+    },
+    "ece": 0.0443,
+    "feature_importances": {
+      "is_bad": 0.6834,
+      "is_unknown": 0.1413,
+      "answer_freq": 0.0404,
+      "nli_hop2": 0.0194,
+      "unique_count": 0.0175,
+      "answer_len_chars": 0.0133,
+      "nli_hop1": 0.0108,
+      "hop_balance": 0.0105,
+      "coverage": 0.0102,
+      "answer_len_words": 0.0096,
+      "nli_score": 0.0094,
+      "coverage_gap": 0.0091,
+      "nli_score_gap": 0.0074,
+      "coverage_rank": 0.0057,
+      "nli_rank": 0.0041,
+      "is_majority": 0.004,
+      "cand_idx": 0.0038,
+      "is_empty": 0.0
+    }
+  },
+  "q2_decision": "Pooling choice negligible on bridge (gap=-0.0014)",
+  "q3_decision": "ASYMMETRY NOT CONFIRMED: bridge \u0394=+0.1526  comparison \u0394=+0.2127 vs flat NLI baseline",
+  "q4_decision": "Top-3 features (min model): is_bad=0.677, is_unknown=0.137, answer_freq=0.042 | Chain feature ranks: nli_hop1=#7, nli_hop2=#4, hop_balance=#9, coverage=#8, coverage_rank=#15, coverage_gap=#12",
+  "xgb_params": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0
+  }
+}

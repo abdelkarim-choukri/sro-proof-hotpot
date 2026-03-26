@@ -1,0 +1,56 @@
+{
+  "threshold": 0.55,
+  "n_total": 7405,
+  "n_llm_calls": 3869,
+  "hybrid_em": 0.4184,
+  "hybrid_f1": 0.5307,
+  "xgb_only_em": 0.4609,
+  "delta_em": -0.0425,
+  "splits": {
+    "overall": {
+      "n": 7405,
+      "em": 0.4184,
+      "f1": 0.5307
+    },
+    "feasible": {
+      "n": 6452,
+      "em": 0.4647,
+      "f1": 0.5883
+    },
+    "bridge": {
+      "n": 5918,
+      "em": 0.4157,
+      "f1": 0.5375
+    },
+    "comparison": {
+      "n": 1487,
+      "em": 0.4291,
+      "f1": 0.5039
+    }
+  },
+  "buckets": {
+    "A": {
+      "n": 953,
+      "correct": 100
+    },
+    "B": {
+      "n": 2968,
+      "correct": 1
+    },
+    "C1": {
+      "n": 0,
+      "correct": 0
+    },
+    "C2": {
+      "n": 188,
+      "correct": 58
+    },
+    "D": {
+      "n": 3296,
+      "correct": 2939
+    }
+  },
+  "c2_recovered": 58,
+  "d_lost": 357,
+  "net_gain": -299
+}
