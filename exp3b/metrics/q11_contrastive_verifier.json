@@ -1,0 +1,122 @@
+{
+  "baseline_18feat": {
+    "tag": "baseline",
+    "n_features": 18,
+    "overall": {
+      "n": 7405,
+      "em": 0.3622,
+      "f1": 0.4883
+    },
+    "feasible": {
+      "n": 6452,
+      "em": 0.4005,
+      "f1": 0.5363
+    },
+    "bridge": {
+      "n": 5918,
+      "em": 0.3594,
+      "f1": 0.4965
+    },
+    "comparison": {
+      "n": 1487,
+      "em": 0.3732,
+      "f1": 0.456
+    },
+    "ece": 0.0317,
+    "feature_importances": {
+      "is_bad": 0.5042,
+      "answer_freq": 0.105,
+      "unique_count": 0.0835,
+      "hop_balance": 0.0779,
+      "answer_len_words": 0.041,
+      "nli_hop2": 0.0402,
+      "answer_len_chars": 0.0345,
+      "coverage": 0.0186,
+      "nli_score": 0.0175,
+      "nli_hop1": 0.0173,
+      "nli_score_gap": 0.0155,
+      "coverage_gap": 0.0154,
+      "is_majority": 0.0118,
+      "coverage_rank": 0.0052,
+      "nli_rank": 0.0044,
+      "cand_idx": 0.0044,
+      "is_unknown": 0.0036,
+      "is_empty": 0.0
+    }
+  },
+  "contrastive_23feat": {
+    "tag": "contrastive",
+    "n_features": 23,
+    "overall": {
+      "n": 7405,
+      "em": 0.361,
+      "f1": 0.487
+    },
+    "feasible": {
+      "n": 6452,
+      "em": 0.3996,
+      "f1": 0.5354
+    },
+    "bridge": {
+      "n": 5918,
+      "em": 0.3586,
+      "f1": 0.4951
+    },
+    "comparison": {
+      "n": 1487,
+      "em": 0.3705,
+      "f1": 0.4549
+    },
+    "ece": 0.0319,
+    "feature_importances": {
+      "is_bad": 0.4685,
+      "answer_freq": 0.1095,
+      "hop_balance": 0.0863,
+      "unique_count": 0.0668,
+      "answer_len_words": 0.047,
+      "answer_len_chars": 0.0319,
+      "nli_hop2": 0.0304,
+      "coverage": 0.0178,
+      "nli_hop1": 0.0164,
+      "nli_score": 0.0161,
+      "delta_to_best_hop2": 0.0157,
+      "delta_to_best_hop1": 0.0148,
+      "nli_score_gap": 0.0144,
+      "coverage_gap": 0.0142,
+      "is_majority": 0.0141,
+      "nli_hop2_rank": 0.007,
+      "is_unknown": 0.0065,
+      "hop_balance_rank": 0.0065,
+      "nli_hop1_rank": 0.0042,
+      "coverage_rank": 0.0041,
+      "nli_rank": 0.004,
+      "cand_idx": 0.0037,
+      "is_empty": 0.0
+    }
+  },
+  "delta": {
+    "overall_em": -0.0012,
+    "feasible_em": -0.0009,
+    "overall_f1": -0.0013
+  },
+  "per_question_changes": {
+    "wins": 63,
+    "losses": 72,
+    "ties": 7270,
+    "net": -9
+  },
+  "contrastive_features_in_top5": [],
+  "decision": "NO EFFECT: -0.0012 EM. C2 failures are NOT a ranking problem. NLI quality is the bottleneck \u2192 proceed to NLI fine-tuning.",
+  "xgb_params": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0
+  }
+}

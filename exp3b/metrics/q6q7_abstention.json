@@ -1,0 +1,313 @@
+{
+  "q6_separation": {
+    "auroc": 0.7562,
+    "auroc_bridge": 0.7484,
+    "auroc_comparison": 0.7835,
+    "separation_ratio_means": 1.8222,
+    "has_correct_conf_stats": {
+      "n": 3217,
+      "mean": 0.498,
+      "std": 0.2006,
+      "p25": 0.3489,
+      "median": 0.5156,
+      "p75": 0.6524,
+      "p90": 0.7473
+    },
+    "all_wrong_conf_stats": {
+      "n": 4188,
+      "mean": 0.2733,
+      "std": 0.245,
+      "p25": 0.0127,
+      "median": 0.2379,
+      "p75": 0.4678,
+      "p90": 0.6357
+    },
+    "n_has_correct": 3217,
+    "n_all_wrong": 4188,
+    "decision": "VIABLE: AUROC=0.7562 \u2265 0.70 \u2014 abstention is reliable"
+  },
+  "q7_coverage_curve": {
+    "em_at_100pct_coverage": 0.3622,
+    "em_at_70pct_coverage": 0.7081,
+    "gain_30pct_abstain": 0.3459,
+    "optimal_tau": 0.35,
+    "em_at_optimal_tau": 0.5398,
+    "coverage_at_optimal_tau": 0.5332,
+    "curve": [
+      {
+        "coverage": 0.05,
+        "n": 370,
+        "em": 0.7081
+      },
+      {
+        "coverage": 0.0999,
+        "n": 740,
+        "em": 0.7
+      },
+      {
+        "coverage": 0.15,
+        "n": 1111,
+        "em": 0.6643
+      },
+      {
+        "coverage": 0.2,
+        "n": 1481,
+        "em": 0.6556
+      },
+      {
+        "coverage": 0.25,
+        "n": 1851,
+        "em": 0.6343
+      },
+      {
+        "coverage": 0.3001,
+        "n": 2222,
+        "em": 0.613
+      },
+      {
+        "coverage": 0.35,
+        "n": 2592,
+        "em": 0.5968
+      },
+      {
+        "coverage": 0.4,
+        "n": 2962,
+        "em": 0.582
+      },
+      {
+        "coverage": 0.45,
+        "n": 3332,
+        "em": 0.5651
+      },
+      {
+        "coverage": 0.4999,
+        "n": 3702,
+        "em": 0.5489
+      },
+      {
+        "coverage": 0.55,
+        "n": 4073,
+        "em": 0.5328
+      },
+      {
+        "coverage": 0.6,
+        "n": 4443,
+        "em": 0.5143
+      },
+      {
+        "coverage": 0.65,
+        "n": 4813,
+        "em": 0.4953
+      },
+      {
+        "coverage": 0.7001,
+        "n": 5184,
+        "em": 0.4801
+      },
+      {
+        "coverage": 0.75,
+        "n": 5554,
+        "em": 0.4631
+      },
+      {
+        "coverage": 0.8,
+        "n": 5924,
+        "em": 0.4453
+      },
+      {
+        "coverage": 0.85,
+        "n": 6294,
+        "em": 0.4252
+      },
+      {
+        "coverage": 0.8999,
+        "n": 6664,
+        "em": 0.4025
+      },
+      {
+        "coverage": 0.95,
+        "n": 7035,
+        "em": 0.3812
+      },
+      {
+        "coverage": 1.0,
+        "n": 7405,
+        "em": 0.3622
+      }
+    ]
+  },
+  "threshold_sweep": [
+    {
+      "tau": 0.05,
+      "n_answered": 6159,
+      "n_abstained": 1246,
+      "coverage": 0.8317,
+      "abstain_rate": 0.1683,
+      "em_on_answered": 0.4325,
+      "abstain_has_correct_rate": 0.0185
+    },
+    {
+      "tau": 0.1,
+      "n_answered": 5892,
+      "n_abstained": 1513,
+      "coverage": 0.7957,
+      "abstain_rate": 0.2043,
+      "em_on_answered": 0.4469,
+      "abstain_has_correct_rate": 0.0476
+    },
+    {
+      "tau": 0.15,
+      "n_answered": 5549,
+      "n_abstained": 1856,
+      "coverage": 0.7494,
+      "abstain_rate": 0.2506,
+      "em_on_answered": 0.4631,
+      "abstain_has_correct_rate": 0.0889
+    },
+    {
+      "tau": 0.2,
+      "n_answered": 5183,
+      "n_abstained": 2222,
+      "coverage": 0.6999,
+      "abstain_rate": 0.3001,
+      "em_on_answered": 0.4802,
+      "abstain_has_correct_rate": 0.1287
+    },
+    {
+      "tau": 0.25,
+      "n_answered": 4819,
+      "n_abstained": 2586,
+      "coverage": 0.6508,
+      "abstain_rate": 0.3492,
+      "em_on_answered": 0.4953,
+      "abstain_has_correct_rate": 0.1705
+    },
+    {
+      "tau": 0.3,
+      "n_answered": 4395,
+      "n_abstained": 3010,
+      "coverage": 0.5935,
+      "abstain_rate": 0.4065,
+      "em_on_answered": 0.5172,
+      "abstain_has_correct_rate": 0.2043
+    },
+    {
+      "tau": 0.35,
+      "n_answered": 3948,
+      "n_abstained": 3457,
+      "coverage": 0.5332,
+      "abstain_rate": 0.4668,
+      "em_on_answered": 0.5398,
+      "abstain_has_correct_rate": 0.2337
+    },
+    {
+      "tau": 0.4,
+      "n_answered": 3528,
+      "n_abstained": 3877,
+      "coverage": 0.4764,
+      "abstain_rate": 0.5236,
+      "em_on_answered": 0.5556,
+      "abstain_has_correct_rate": 0.2646
+    },
+    {
+      "tau": 0.45,
+      "n_answered": 3075,
+      "n_abstained": 4330,
+      "coverage": 0.4153,
+      "abstain_rate": 0.5847,
+      "em_on_answered": 0.575,
+      "abstain_has_correct_rate": 0.2931
+    },
+    {
+      "tau": 0.5,
+      "n_answered": 2603,
+      "n_abstained": 4802,
+      "coverage": 0.3515,
+      "abstain_rate": 0.6485,
+      "em_on_answered": 0.597,
+      "abstain_has_correct_rate": 0.3188
+    },
+    {
+      "tau": 0.55,
+      "n_answered": 2159,
+      "n_abstained": 5246,
+      "coverage": 0.2916,
+      "abstain_rate": 0.7084,
+      "em_on_answered": 0.6146,
+      "abstain_has_correct_rate": 0.3433
+    },
+    {
+      "tau": 0.6,
+      "n_answered": 1666,
+      "n_abstained": 5739,
+      "coverage": 0.225,
+      "abstain_rate": 0.775,
+      "em_on_answered": 0.6465,
+      "abstain_has_correct_rate": 0.3635
+    },
+    {
+      "tau": 0.65,
+      "n_answered": 1197,
+      "n_abstained": 6208,
+      "coverage": 0.1616,
+      "abstain_rate": 0.8384,
+      "em_on_answered": 0.665,
+      "abstain_has_correct_rate": 0.385
+    },
+    {
+      "tau": 0.7,
+      "n_answered": 758,
+      "n_abstained": 6647,
+      "coverage": 0.1024,
+      "abstain_rate": 0.8976,
+      "em_on_answered": 0.6953,
+      "abstain_has_correct_rate": 0.402
+    },
+    {
+      "tau": 0.75,
+      "n_answered": 434,
+      "n_abstained": 6971,
+      "coverage": 0.0586,
+      "abstain_rate": 0.9414,
+      "em_on_answered": 0.7005,
+      "abstain_has_correct_rate": 0.4169
+    },
+    {
+      "tau": 0.8,
+      "n_answered": 226,
+      "n_abstained": 7179,
+      "coverage": 0.0305,
+      "abstain_rate": 0.9695,
+      "em_on_answered": 0.6991,
+      "abstain_has_correct_rate": 0.4257
+    },
+    {
+      "tau": 0.85,
+      "n_answered": 94,
+      "n_abstained": 7311,
+      "coverage": 0.0127,
+      "abstain_rate": 0.9873,
+      "em_on_answered": 0.6809,
+      "abstain_has_correct_rate": 0.431
+    },
+    {
+      "tau": 0.9,
+      "n_answered": 36,
+      "n_abstained": 7369,
+      "coverage": 0.0049,
+      "abstain_rate": 0.9951,
+      "em_on_answered": 0.7778,
+      "abstain_has_correct_rate": 0.4328
+    },
+    {
+      "tau": 0.95,
+      "n_answered": 6,
+      "n_abstained": 7399,
+      "coverage": 0.0008,
+      "abstain_rate": 0.9992,
+      "em_on_answered": 0.8333,
+      "abstain_has_correct_rate": 0.4341
+    }
+  ],
+  "verifier_preds_source": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp3b/preds/dev_chain_verifier_min_preds.jsonl"
+}

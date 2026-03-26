@@ -1,0 +1,19 @@
+{
+  "schema_version": "sro-proof.exp1.oracle_summary.v1",
+  "split": "dev",
+  "m": 5,
+  "overall": {
+    "n": 300,
+    "oracle_em": 0.2866666666666667,
+    "oracle_f1": 0.4717315243236298
+  },
+  "subset_docrecall1": {
+    "n": 300,
+    "oracle_em": 0.2866666666666667,
+    "oracle_f1": 0.4717315243236298
+  },
+  "source": {
+    "evidence_path": "exp3b_7b/evidence/sample_300_chains.jsonl",
+    "candidates_path": "exp3b_7b/candidates/sample_M5_7b.jsonl"
+  }
+}
