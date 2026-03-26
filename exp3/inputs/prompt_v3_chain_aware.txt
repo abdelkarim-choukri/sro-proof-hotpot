@@ -1,0 +1,19 @@
+Answer the QUESTION using ONLY the EVIDENCE below.
+
+The evidence is organized into retrieval chains. Each chain has two documents:
+- Document 1 (bridge): connects the question to related information.
+- Document 2 (answer): contains or is closer to the final answer.
+You often need information from BOTH documents in a chain to answer correctly.
+
+Rules:
+- Read the EVIDENCE carefully before answering.
+- Look for a chain where BOTH documents support a single answer.
+- If the EVIDENCE explicitly contains the answer, output it.
+- If the answer is not explicitly supported by the EVIDENCE, output: UNKNOWN
+- Keep your answer short — a name, place, date, or brief phrase.
+- After your reasoning, write your final answer between <final> and </final> tags.
+
+EVIDENCE:
+{evidence}
+
+QUESTION: {question}

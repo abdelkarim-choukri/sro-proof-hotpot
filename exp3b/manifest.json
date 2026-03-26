@@ -1,0 +1,46 @@
+{
+  "exp3_generate_candidates": {
+    "schema_version": "sro-proof.exp3.candidates.v1_chain_aware",
+    "model": "qwen2.5-1.5b-instruct",
+    "split": "dev",
+    "evidence_path": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1b/evidence/dev_K100_chains.jsonl",
+    "evidence_sha256": "1b220ca6538f9ddbfcf2b26ed7e9d2bc8ac7e8b1a50570af865cf83612d63896",
+    "evidence_format": "flat",
+    "prompt_version": "v2",
+    "prompt_file": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1/inputs/prompt_v2.txt",
+    "prompt_hash": "af38eba6483779a619dade5fad9192bde178194a2ef21c052ccf6ff6befa2b96",
+    "llm_base_url": "http://127.0.0.1:8000/v1",
+    "llm_model_id": "qwen2.5-1.5b-instruct",
+    "decoding": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "max_new_tokens": 128,
+      "stop": [
+        "</final>"
+      ],
+      "prefill": "<final>"
+    },
+    "seed": 12345,
+    "chains_for_llm": 5,
+    "started_at_utc": "2026-03-12T19:09:01Z",
+    "resume": true,
+    "strategy": "try_n=5_then_fallback_seed+i",
+    "endpoint": "chat/completions"
+  },
+  "exp3_generate_candidates_done": {
+    "out_sha256": "3e4d0ebe2cd91ee8352834aebe2bfaaba2ac32053f05455d2152636cbac5ce8d",
+    "finished_at_utc": "2026-03-12T19:40:43Z",
+    "wrote": 7405,
+    "skipped": 0,
+    "n5_ok": 4892,
+    "fallback": 2513
+  },
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 10,
+    "out_json": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp3b/metrics/oracle_M10_dev.json",
+    "out_json_sha256": "217a45bb6cc9dfaf71040dccffcd92fb07abfbd44d133c8ec21c26042bb7eb5a",
+    "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp3b/metrics/oracle_M10_dev_perqid.jsonl",
+    "finished_at_utc": "2026-03-12T19:41:04Z"
+  }
+}

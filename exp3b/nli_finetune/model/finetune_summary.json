@@ -1,0 +1,24 @@
+{
+  "base_model": "/var/tmp/u24sf51014/sro/models/nli-roberta-base",
+  "train_pairs": 747165,
+  "val_pairs": 39475,
+  "epochs": 3,
+  "batch_size": 32,
+  "lr": 2e-05,
+  "warmup_ratio": 0.1,
+  "elapsed_min": 49.2,
+  "train_loss": 0.7053,
+  "val_metrics": {
+    "eval_loss": 0.6455293893814087,
+    "eval_accuracy": 0.7325649145028499,
+    "eval_macro_f1": 0.71506092098773,
+    "eval_acc_class_0": 0.6770234409553295,
+    "eval_acc_class_1": 0.651685393258427,
+    "eval_acc_class_2": 0.8030961017728504,
+    "eval_runtime": 64.4461,
+    "eval_samples_per_second": 612.528,
+    "eval_steps_per_second": 4.795,
+    "epoch": 0.5139186295503212
+  },
+  "best_model_dir": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp3b/nli_finetune/model"
+}

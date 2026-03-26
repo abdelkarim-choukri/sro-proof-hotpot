@@ -1,0 +1,20 @@
+Answer the QUESTION using ONLY the EVIDENCE below.
+
+The evidence comes from a two-hop reasoning chain:
+HOP 1 connects the question to an intermediate fact.
+HOP 2 provides the information needed for the final answer.
+To answer correctly, use what HOP 1 tells you, then apply what HOP 2 adds.
+
+HOP 1 — {hop1_title}: {hop1_text}
+
+HOP 2 — {hop2_title}: {hop2_text}
+
+Rules:
+- Read HOP 1 first to identify the bridge entity or fact.
+- Then read HOP 2 to find the final answer.
+- If the EVIDENCE explicitly contains the answer, output it.
+- If the answer is not explicitly supported by the EVIDENCE, output: UNKNOWN
+- Keep your answer short — a name, place, date, or brief phrase.
+- After your reasoning, write your final answer between <final> and </final> tags.
+
+QUESTION: {question}

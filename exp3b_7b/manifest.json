@@ -1,0 +1,46 @@
+{
+  "exp3_generate_candidates": {
+    "schema_version": "sro-proof.exp3.candidates.v1_chain_aware",
+    "model": "/var/tmp/u24sf51014/sro/models/qwen2.5-1.5b-instruct",
+    "split": "dev",
+    "evidence_path": "exp3b_7b/evidence/sample_300_chains.jsonl",
+    "evidence_sha256": "885c678b254ba14a4b3099b0d03e47288bcba20a974d54233f2d8d8f975ed8b0",
+    "evidence_format": "flat",
+    "prompt_version": "v2",
+    "prompt_file": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp1/inputs/prompt_v2.txt",
+    "prompt_hash": "af38eba6483779a619dade5fad9192bde178194a2ef21c052ccf6ff6befa2b96",
+    "llm_base_url": "http://127.0.0.1:8000/v1",
+    "llm_model_id": "/var/tmp/u24sf51014/sro/models/qwen2.5-1.5b-instruct",
+    "decoding": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "max_new_tokens": 128,
+      "stop": [
+        "</final>"
+      ],
+      "prefill": "<final>"
+    },
+    "seed": 12345,
+    "chains_for_llm": 5,
+    "started_at_utc": "2026-03-16T15:55:07Z",
+    "resume": true,
+    "strategy": "try_n=5_then_fallback_seed+i",
+    "endpoint": "chat/completions"
+  },
+  "exp3_generate_candidates_done": {
+    "out_sha256": "8caec250d88ad614b980e020c4d64ca07f207cda78f1825cdadb58f51ff56b37",
+    "finished_at_utc": "2026-03-16T15:56:06Z",
+    "wrote": 300,
+    "skipped": 0,
+    "n5_ok": 170,
+    "fallback": 130
+  },
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 5,
+    "out_json": "exp3b_7b/metrics/oracle_1.5b.json",
+    "out_json_sha256": "5ba7e5a16f9e7ab3dc4da3bb46359b3b021ffba52c2ac7ab11df346fee25bfab",
+    "out_jsonl": "exp3b_7b/metrics/oracle_1.5b_perqid.jsonl",
+    "finished_at_utc": "2026-03-16T16:06:55Z"
+  }
+}

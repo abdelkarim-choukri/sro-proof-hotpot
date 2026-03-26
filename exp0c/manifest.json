@@ -1,0 +1,28 @@
+{
+  "exp5_generate": {
+    "schema_version": "sro-proof.exp5.candidates.v1",
+    "prompt_mode": "flat",
+    "prompt_hash": "af38eba6483779a619dade5fad9192bde178194a2ef21c052ccf6ff6befa2b96",
+    "model": "/var/tmp/u24sf51014/sro/models/qwen2.5-7b-instruct",
+    "temperature": 0.7,
+    "fallback_temperature": 1.0,
+    "m": 5,
+    "seed": 12345,
+    "started_at_utc": "2026-03-25T03:06:12Z"
+  },
+  "exp5_generate_done": {
+    "finished_at_utc": "2026-03-25T04:19:54Z",
+    "wrote": 7405,
+    "skipped": 0,
+    "n5_ok": 1495,
+    "fallback": 5910
+  },
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 5,
+    "out_json": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/metrics/oracle_M5.json",
+    "out_json_sha256": "1baa08bacbca746dd0bd266eeb6440529233fe715fd0e293800a20187737a251",
+    "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/metrics/oracle_M5_perqid.jsonl",
+    "finished_at_utc": "2026-03-25T04:20:25Z"
+  }
+}
