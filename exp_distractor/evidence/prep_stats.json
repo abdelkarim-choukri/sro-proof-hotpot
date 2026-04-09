@@ -1,0 +1,10 @@
+{
+  "n_questions": 7405,
+  "n_gold_found_2": 7405,
+  "n_gold_found_1": 0,
+  "n_gold_found_0": 0,
+  "n_bridge": 5918,
+  "n_comparison": 1487,
+  "hop_order_issues": 0,
+  "n_written": 7405
+}

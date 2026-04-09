@@ -1,0 +1,216 @@
+{
+  "system_cis": {
+    "Z1_majority": {
+      "em": 0.504794,
+      "ci_95_lower": 0.493315,
+      "ci_95_upper": 0.516273,
+      "boot_std": 0.005868
+    },
+    "Z2_surface": {
+      "em": 0.505064,
+      "ci_95_lower": 0.493987,
+      "ci_95_upper": 0.516408,
+      "boot_std": 0.005741
+    },
+    "Z3_chain": {
+      "em": 0.514382,
+      "ci_95_lower": 0.503038,
+      "ci_95_upper": 0.525996,
+      "boot_std": 0.005841
+    },
+    "Z_full": {
+      "em": 0.514652,
+      "ci_95_lower": 0.503174,
+      "ci_95_upper": 0.525996,
+      "boot_std": 0.005854
+    },
+    "Monolithic": {
+      "em": 0.466577,
+      "ci_95_lower": 0.455095,
+      "ci_95_upper": 0.47819,
+      "boot_std": 0.00587
+    },
+    "M1_greedy": {
+      "em": 0.444024,
+      "ci_95_lower": 0.432681,
+      "ci_95_upper": 0.455098,
+      "boot_std": 0.005795
+    }
+  },
+  "pairwise_tests": {
+    "Z_full_vs_Z2_surface": {
+      "observed_delta": 0.009588116137744684,
+      "observed_delta_pp": 0.96,
+      "ci_95_lower": 0.005942,
+      "ci_95_upper": 0.013234,
+      "ci_95_lower_pp": 0.59,
+      "ci_95_upper_pp": 1.32,
+      "p_value": 0.0,
+      "boot_std": 0.001872,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain marginal (Z_full - Z2)",
+      "system_a": "Z_full",
+      "system_b": "Z2_surface"
+    },
+    "Z_full_vs_Z1_majority": {
+      "observed_delta": 0.00985820391627279,
+      "observed_delta_pp": 0.99,
+      "ci_95_lower": 0.005942,
+      "ci_95_upper": 0.013774,
+      "ci_95_lower_pp": 0.59,
+      "ci_95_upper_pp": 1.38,
+      "p_value": 0.0,
+      "boot_std": 0.001992,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Verifier vs self-consistency (YOUR claim)",
+      "system_a": "Z_full",
+      "system_b": "Z1_majority"
+    },
+    "Z_full_vs_Z3_chain": {
+      "observed_delta": 0.00027008777852799426,
+      "observed_delta_pp": 0.03,
+      "ci_95_lower": -0.002296,
+      "ci_95_upper": 0.002836,
+      "ci_95_lower_pp": -0.23,
+      "ci_95_upper_pp": 0.28,
+      "p_value": 0.4367,
+      "boot_std": 0.001334,
+      "significant_at_05": false,
+      "significant_at_01": false,
+      "n_bootstrap": 10000,
+      "label": "Surface marginal (Z_full - Z3)",
+      "system_a": "Z_full",
+      "system_b": "Z3_chain"
+    },
+    "Z1_majority_vs_Z2_surface": {
+      "observed_delta": -0.0002700877785281053,
+      "observed_delta_pp": -0.03,
+      "ci_95_lower": -0.004051,
+      "ci_95_upper": 0.003511,
+      "ci_95_lower_pp": -0.41,
+      "ci_95_upper_pp": 0.35,
+      "p_value": 0.4638,
+      "boot_std": 0.001925,
+      "significant_at_05": false,
+      "significant_at_01": false,
+      "n_bootstrap": 10000,
+      "label": "Majority vote vs surface XGB",
+      "system_a": "Z1_majority",
+      "system_b": "Z2_surface"
+    },
+    "Z3_chain_vs_Monolithic": {
+      "observed_delta": 0.047805536799459813,
+      "observed_delta_pp": 4.78,
+      "ci_95_lower": 0.038352,
+      "ci_95_upper": 0.057529,
+      "ci_95_lower_pp": 3.84,
+      "ci_95_upper_pp": 5.75,
+      "p_value": 0.0,
+      "boot_std": 0.004866,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs monolithic",
+      "system_a": "Z3_chain",
+      "system_b": "Monolithic"
+    },
+    "Z_full_vs_Monolithic": {
+      "observed_delta": 0.04807562457798781,
+      "observed_delta_pp": 4.81,
+      "ci_95_lower": 0.038217,
+      "ci_95_upper": 0.057799,
+      "ci_95_lower_pp": 3.82,
+      "ci_95_upper_pp": 5.78,
+      "p_value": 0.0,
+      "boot_std": 0.004952,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Two-stage vs monolithic",
+      "system_a": "Z_full",
+      "system_b": "Monolithic"
+    },
+    "Z3_chain_vs_Z1_majority": {
+      "observed_delta": 0.009588116137744795,
+      "observed_delta_pp": 0.96,
+      "ci_95_lower": 0.005402,
+      "ci_95_upper": 0.01391,
+      "ci_95_lower_pp": 0.54,
+      "ci_95_upper_pp": 1.39,
+      "p_value": 0.0,
+      "boot_std": 0.002144,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs majority vote",
+      "system_a": "Z3_chain",
+      "system_b": "Z1_majority"
+    },
+    "Z3_chain_vs_Z2_surface": {
+      "observed_delta": 0.00931802835921669,
+      "observed_delta_pp": 0.93,
+      "ci_95_lower": 0.005402,
+      "ci_95_upper": 0.013234,
+      "ci_95_lower_pp": 0.54,
+      "ci_95_upper_pp": 1.32,
+      "p_value": 0.0,
+      "boot_std": 0.001991,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs surface-only",
+      "system_a": "Z3_chain",
+      "system_b": "Z2_surface"
+    },
+    "Z1_majority_vs_M1_greedy": {
+      "observed_delta": 0.060769750168804815,
+      "observed_delta_pp": 6.08,
+      "ci_95_lower": 0.054693,
+      "ci_95_upper": 0.066982,
+      "ci_95_lower_pp": 5.47,
+      "ci_95_upper_pp": 6.7,
+      "p_value": 0.0,
+      "boot_std": 0.003099,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Self-consistency bonus (M=5 vs M=1)",
+      "system_a": "Z1_majority",
+      "system_b": "M1_greedy"
+    },
+    "Z_full_vs_M1_greedy": {
+      "observed_delta": 0.0706279540850776,
+      "observed_delta_pp": 7.06,
+      "ci_95_lower": 0.064011,
+      "ci_95_upper": 0.077245,
+      "ci_95_lower_pp": 6.4,
+      "ci_95_upper_pp": 7.72,
+      "p_value": 0.0,
+      "boot_std": 0.0034,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Total pipeline gain (M=5+verifier vs M=1)",
+      "system_a": "Z_full",
+      "system_b": "M1_greedy"
+    }
+  },
+  "meta": {
+    "n_questions": 7405,
+    "n_bootstrap": 10000,
+    "seed": 42,
+    "distractor_mode": true,
+    "systems_loaded": [
+      "Z1_majority",
+      "Z2_surface",
+      "Z3_chain",
+      "Z_full",
+      "Monolithic",
+      "M1_greedy"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+==============================================================================
+  BOOTSTRAP SIGNIFICANCE TESTS — Phase 0 Ablations
+  B = 10000 bootstrap samples, seed = 42
+  N = 7405 questions
+==============================================================================
+
+  SYSTEM CONFIDENCE INTERVALS
+  --------------------------------------------------------------------------
+  System                          EM                 95% CI        ±
+  --------------------------------------------------------------------------
+  M1_greedy                   0.4440 [0.4327, 0.4551] ±0.0112
+  Z1_majority                 0.5048 [0.4933, 0.5163] ±0.0115
+  Z2_surface                  0.5051 [0.4940, 0.5164] ±0.0112
+  Z3_chain                    0.5144 [0.5030, 0.5260] ±0.0115
+  Z_full                      0.5147 [0.5032, 0.5260] ±0.0114
+  Monolithic                  0.4666 [0.4551, 0.4782] ±0.0115
+
+  PAIRWISE SIGNIFICANCE TESTS
+  --------------------------------------------------------------------------
+  Comparison                                   Δ (pp)             95% CI        p   Sig
+  --------------------------------------------------------------------------
+  Chain marginal (Z_full - Z2)                  +0.96 [+0.59,+1.32]   0.0000   ***
+  Verifier vs self-consistency (YOUR claim)     +0.99 [+0.59,+1.38]   0.0000   ***
+  Surface marginal (Z_full - Z3)                +0.03 [-0.23,+0.28]   0.4367    ns
+  Majority vote vs surface XGB                  -0.03 [-0.41,+0.35]   0.4638    ns
+  Chain-only vs monolithic                      +4.78 [+3.84,+5.75]   0.0000   ***
+  Two-stage vs monolithic                       +4.81 [+3.82,+5.78]   0.0000   ***
+  Chain-only vs majority vote                   +0.96 [+0.54,+1.39]   0.0000   ***
+  Chain-only vs surface-only                    +0.93 [+0.54,+1.32]   0.0000   ***
+  Self-consistency bonus (M=5 vs M=1)           +6.08 [+5.47,+6.70]   0.0000   ***
+  Total pipeline gain (M=5+verifier vs M=1)     +7.06 [+6.40,+7.72]   0.0000   ***
+
+  --------------------------------------------------------------------------
+  INTERPRETATION FOR THE PAPER
+  --------------------------------------------------------------------------
+  ✓ Chain marginal (+0.96pp) is SIGNIFICANT (p=0.0000)
+    → The chain-aware claim holds under bootstrap testing
+  ✓ Z1 vs Z2 NOT significant (p=0.4638)
+    → Confirms surface XGB does not significantly beat majority vote
+
+  PAPER-READY FORMATTING:
+  Report CIs as: 'EM = 0.XXXX (95% CI: [0.XXXX, 0.XXXX])'
+  Report deltas as: '+X.XXpp (p < 0.05, bootstrap B=10000)'
+
+  DISTRACTOR-SETTING PAPER TABLE:
+  --------------------------------------------------------------------------
+  Row 1: M=1 greedy       → comparable to extractive SOTA
+  Row 2: M=5 majority     → self-consistency gain (cite Wang et al.)
+  Row 3: M=5 + verifier   → YOUR contribution (chain-aware)
+  Only claim credit for Row 3 minus Row 2.
+
+==============================================================================

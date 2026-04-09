@@ -1,0 +1,104 @@
+[01:29:53] === Phase A2.1: Flat vs Chain-Aware Ablation Table ===
+[01:29:53] Loading gold + question types...
+[01:29:54]   7405 questions  bridge=5918  comparison=1487
+[01:29:54] Loading feasible subset...
+[01:30:24]   feasible=6543/7405
+[01:30:24] Loading NLI hop scores...
+[01:30:24]   7405 questions
+[01:30:24] Loading QA hop scores...
+[01:30:25]   7405 questions
+[01:30:25] Loading lexical features...
+[01:30:25]   7405 questions
+[01:30:25] Building feature matrices for 6 models...
+[01:30:25]   Valid qids (in all sources): 7405
+[01:30:27]   7405 questions, 37025 rows
+[01:30:27]   Feature dims: flat=13  chain-aware=14  (12 surface + 1 flat  OR  12 surface + 3 chain)
+[01:30:27]   Positive rate: 0.432
+[01:30:27] Running CV: nli_flat ...
+[01:30:28]   [nli_flat] fold 1/5 done
+[01:30:28]   [nli_flat] fold 2/5 done
+[01:30:28]   [nli_flat] fold 3/5 done
+[01:30:28]   [nli_flat] fold 4/5 done
+[01:30:29]   [nli_flat] fold 5/5 done
+[01:30:29]   nli_flat: overall_em=0.4619  balance_rank=None
+[01:30:29] Running CV: nli_chain ...
+[01:30:29]   [nli_chain] fold 1/5 done
+[01:30:30]   [nli_chain] fold 2/5 done
+[01:30:30]   [nli_chain] fold 3/5 done
+[01:30:30]   [nli_chain] fold 4/5 done
+[01:30:31]   [nli_chain] fold 5/5 done
+[01:30:31]   nli_chain: overall_em=0.4651  balance_rank=9
+[01:30:31] Running CV: qa_flat ...
+[01:30:31]   [qa_flat] fold 1/5 done
+[01:30:32]   [qa_flat] fold 2/5 done
+[01:30:32]   [qa_flat] fold 3/5 done
+[01:30:32]   [qa_flat] fold 4/5 done
+[01:30:33]   [qa_flat] fold 5/5 done
+[01:30:33]   qa_flat: overall_em=0.4670  balance_rank=None
+[01:30:33] Running CV: qa_chain ...
+[01:30:33]   [qa_chain] fold 1/5 done
+[01:30:34]   [qa_chain] fold 2/5 done
+[01:30:34]   [qa_chain] fold 3/5 done
+[01:30:34]   [qa_chain] fold 4/5 done
+[01:30:35]   [qa_chain] fold 5/5 done
+[01:30:35]   qa_chain: overall_em=0.4686  balance_rank=8
+[01:30:35] Running CV: lex_flat ...
+[01:30:35]   [lex_flat] fold 1/5 done
+[01:30:36]   [lex_flat] fold 2/5 done
+[01:30:36]   [lex_flat] fold 3/5 done
+[01:30:36]   [lex_flat] fold 4/5 done
+[01:30:36]   [lex_flat] fold 5/5 done
+[01:30:37]   lex_flat: overall_em=0.4614  balance_rank=None
+[01:30:37] Running CV: lex_chain ...
+[01:30:37]   [lex_chain] fold 1/5 done
+[01:30:37]   [lex_chain] fold 2/5 done
+[01:30:38]   [lex_chain] fold 3/5 done
+[01:30:38]   [lex_chain] fold 4/5 done
+[01:30:38]   [lex_chain] fold 5/5 done
+[01:30:39]   lex_chain: overall_em=0.4664  balance_rank=8
+[01:30:39] Results saved to /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseA/A2.1/principle_table.json
+[01:30:39] 
+[01:30:39] ========================================================================
+[01:30:39]   PHASE A2.1 — PRINCIPLE TABLE
+[01:30:39]   Chain-aware decomposition vs flat scoring
+[01:30:39] ========================================================================
+[01:30:39]   Scorer       Flat EM   Chain EM   Δ (pp)   bal_rank
+[01:30:39]   ----------------------------------------------------------------------
+[01:30:39]   nli           0.4619     0.4651 +   0.32pp         #9
+[01:30:39]   qa            0.4670     0.4686 +   0.16pp         #8
+[01:30:39]   lex           0.4614     0.4664 +   0.50pp         #8
+[01:30:39]   ----------------------------------------------------------------------
+[01:30:39]   Baseline (exp0c, locked): 0.4666
+[01:30:39] ========================================================================
+[01:30:39]   DECISION GATE: FAILED
+[01:30:39]     → hop_balance top-5 in only 0/3 scorers
+[01:30:39] ========================================================================
+[01:30:39] 
+[01:30:39]   Feature importances — chain-aware models (top-8):
+[01:30:39]   [nli]
+[01:30:39]     # 1  is_bad                     0.6753
+[01:30:39]     # 2  is_unknown                 0.1456
+[01:30:39]     # 3  answer_freq                0.0347
+[01:30:39]     # 4  is_majority                0.0336
+[01:30:39]     # 5  unique_count               0.0192
+[01:30:39]     # 6  nli_hop2                   0.0186 ◀
+[01:30:39]     # 7  answer_len_chars           0.0139
+[01:30:39]     # 8  nli_hop1                   0.0114 ◀
+[01:30:39]   [qa]
+[01:30:39]     # 1  is_unknown                 0.4894
+[01:30:39]     # 2  is_bad                     0.3875
+[01:30:39]     # 3  is_majority                0.0282
+[01:30:39]     # 4  answer_freq                0.0240
+[01:30:39]     # 5  unique_count               0.0124
+[01:30:39]     # 6  qa_hop2                    0.0097 ◀
+[01:30:39]     # 7  answer_len_chars           0.0090
+[01:30:39]     # 8  qa_hop_balance             0.0079 ◀
+[01:30:39]   [lex]
+[01:30:39]     # 1  is_unknown                 0.4847
+[01:30:39]     # 2  is_bad                     0.4064
+[01:30:39]     # 3  answer_freq                0.0235
+[01:30:39]     # 4  is_majority                0.0178
+[01:30:39]     # 5  unique_count               0.0121
+[01:30:39]     # 6  answer_len_chars           0.0096
+[01:30:39]     # 7  lex_hop1                   0.0077 ◀
+[01:30:39]     # 8  lex_hop_balance            0.0073 ◀

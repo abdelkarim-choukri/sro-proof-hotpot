@@ -1,0 +1,21 @@
+{
+  "distractor_generation": {
+    "schema_version": "sro-proof.distractor.candidates.v1",
+    "mode": "sampling_T0.7",
+    "m": 5,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_new_tokens": 128,
+    "seed": 12345,
+    "model": "/var/tmp/u24sf51014/sro/models/qwen2.5-7b-instruct",
+    "started_at": "2026-04-01T21:01:10Z"
+  },
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 5,
+    "out_json": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/metrics/oracle_M5.json",
+    "out_json_sha256": "eb989710bc440ae86e3cba98493bb4c76bc2a92e6e81f0b582ba7fe6291dd253",
+    "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/metrics/oracle_M5_perqid.jsonl",
+    "finished_at_utc": "2026-04-01T21:32:16Z"
+  }
+}

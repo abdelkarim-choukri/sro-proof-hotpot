@@ -1,0 +1,48 @@
+==============================================================================
+  BOOTSTRAP SIGNIFICANCE TESTS — Phase 0 Ablations
+  B = 10000 bootstrap samples, seed = 42
+  N = 7405 questions
+==============================================================================
+
+  SYSTEM CONFIDENCE INTERVALS
+  --------------------------------------------------------------------------
+  System                          EM                 95% CI        ±
+  --------------------------------------------------------------------------
+  Z1_majority                 0.4641 [0.4528, 0.4756] ±0.0114
+  Z2_surface                  0.4621 [0.4506, 0.4736] ±0.0115
+  Z3_chain                    0.4663 [0.4548, 0.4778] ±0.0115
+  Z_full                      0.4698 [0.4582, 0.4810] ±0.0114
+  Monolithic                  0.4666 [0.4551, 0.4782] ±0.0115
+
+  PAIRWISE SIGNIFICANCE TESTS
+  --------------------------------------------------------------------------
+  Comparison                                   Δ (pp)             95% CI        p   Sig
+  --------------------------------------------------------------------------
+  Chain marginal (Z_full - Z2)                  +0.77 [+0.39,+1.13]   0.0000   ***
+  Full model vs majority vote                   +0.57 [+0.23,+0.92]   0.0006   ***
+  Surface marginal (Z_full - Z3)                +0.35 [+0.01,+0.70]   0.0238    **
+  Majority vote vs surface XGB                  +0.20 [-0.12,+0.51]   0.1144    ns
+  Chain-only vs monolithic                      -0.03 [-0.46,+0.39]   0.4676    ns
+  Two-stage vs monolithic                       +0.32 [-0.03,+0.68]   0.0351    **
+  Chain-only vs majority vote                   +0.22 [-0.22,+0.66]   0.1742    ns
+  Chain-only vs surface-only                    +0.42 [-0.03,+0.88]   0.0358    **
+
+  --------------------------------------------------------------------------
+  INTERPRETATION FOR THE PAPER
+  --------------------------------------------------------------------------
+  ✓ Chain marginal (+0.77pp) is SIGNIFICANT (p=0.0000)
+    → The chain-aware claim holds under bootstrap testing
+  ✓ Z1 vs Z2 NOT significant (p=0.1144)
+    → Confirms surface XGB does not significantly beat majority vote
+  ✓ Z3 vs Mono NOT significant (p=0.4676)
+    → Chain-only ≈ monolithic (9 features match 19+is_bad)
+
+  PAPER-READY FORMATTING:
+  Report CIs as: 'EM = 0.XXXX (95% CI: [0.XXXX, 0.XXXX])'
+  Report deltas as: '+X.XXpp (p < 0.05, bootstrap B=10000)'
+
+  FUTURE: When you run the distractor-setting experiment,
+  re-run this script with --m1_preds and --distractor to get
+  the decomposed significance tests for the paper table.
+
+==============================================================================
