@@ -1,0 +1,207 @@
+{
+  "overall_chain_marginal_pp": 0.84,
+  "case": "A",
+  "per_type_em": {
+    "M1": {
+      "ALL": {
+        "n": 12576,
+        "n_correct": 3816,
+        "em": 0.3034
+      },
+      "bridge_comparison": {
+        "n": 2751,
+        "n_correct": 1206,
+        "em": 0.4384
+      },
+      "comparison": {
+        "n": 3040,
+        "n_correct": 1456,
+        "em": 0.4789
+      },
+      "compositional": {
+        "n": 5236,
+        "n_correct": 1017,
+        "em": 0.1942
+      },
+      "inference": {
+        "n": 1549,
+        "n_correct": 137,
+        "em": 0.0884
+      }
+    },
+    "Z1": {
+      "ALL": {
+        "n": 12576,
+        "n_correct": 4026,
+        "em": 0.3201
+      },
+      "bridge_comparison": {
+        "n": 2751,
+        "n_correct": 1230,
+        "em": 0.4471
+      },
+      "comparison": {
+        "n": 3040,
+        "n_correct": 1555,
+        "em": 0.5115
+      },
+      "compositional": {
+        "n": 5236,
+        "n_correct": 1098,
+        "em": 0.2097
+      },
+      "inference": {
+        "n": 1549,
+        "n_correct": 143,
+        "em": 0.0923
+      }
+    },
+    "Z2": {
+      "ALL": {
+        "n": 12576,
+        "n_correct": 4087,
+        "em": 0.325
+      },
+      "bridge_comparison": {
+        "n": 2751,
+        "n_correct": 1258,
+        "em": 0.4573
+      },
+      "comparison": {
+        "n": 3040,
+        "n_correct": 1562,
+        "em": 0.5138
+      },
+      "compositional": {
+        "n": 5236,
+        "n_correct": 1110,
+        "em": 0.212
+      },
+      "inference": {
+        "n": 1549,
+        "n_correct": 157,
+        "em": 0.1014
+      }
+    },
+    "Z3": {
+      "ALL": {
+        "n": 12576,
+        "n_correct": 4162,
+        "em": 0.3309
+      },
+      "bridge_comparison": {
+        "n": 2751,
+        "n_correct": 1268,
+        "em": 0.4609
+      },
+      "comparison": {
+        "n": 3040,
+        "n_correct": 1585,
+        "em": 0.5214
+      },
+      "compositional": {
+        "n": 5236,
+        "n_correct": 1135,
+        "em": 0.2168
+      },
+      "inference": {
+        "n": 1549,
+        "n_correct": 174,
+        "em": 0.1123
+      }
+    },
+    "Z_full": {
+      "ALL": {
+        "n": 12576,
+        "n_correct": 4193,
+        "em": 0.3334
+      },
+      "bridge_comparison": {
+        "n": 2751,
+        "n_correct": 1287,
+        "em": 0.4678
+      },
+      "comparison": {
+        "n": 3040,
+        "n_correct": 1586,
+        "em": 0.5217
+      },
+      "compositional": {
+        "n": 5236,
+        "n_correct": 1150,
+        "em": 0.2196
+      },
+      "inference": {
+        "n": 1549,
+        "n_correct": 170,
+        "em": 0.1097
+      }
+    }
+  },
+  "chain_gain_breakdown": {
+    "ALL": {
+      "n": 12576,
+      "n_chain_helps": 241,
+      "n_chain_hurts": 135,
+      "n_both_correct": 3952,
+      "n_both_wrong": 8248,
+      "net_chain_gain_pp": 0.843,
+      "chain_helps_rate": 1.92,
+      "chain_hurts_rate": 1.07
+    },
+    "bridge_comparison": {
+      "n": 2751,
+      "n_chain_helps": 89,
+      "n_chain_hurts": 60,
+      "n_both_correct": 1198,
+      "n_both_wrong": 1404,
+      "net_chain_gain_pp": 1.054,
+      "chain_helps_rate": 3.24,
+      "chain_hurts_rate": 2.18
+    },
+    "comparison": {
+      "n": 3040,
+      "n_chain_helps": 73,
+      "n_chain_hurts": 49,
+      "n_both_correct": 1513,
+      "n_both_wrong": 1405,
+      "net_chain_gain_pp": 0.789,
+      "chain_helps_rate": 2.4,
+      "chain_hurts_rate": 1.61
+    },
+    "compositional": {
+      "n": 5236,
+      "n_chain_helps": 61,
+      "n_chain_hurts": 21,
+      "n_both_correct": 1089,
+      "n_both_wrong": 4065,
+      "net_chain_gain_pp": 0.764,
+      "chain_helps_rate": 1.17,
+      "chain_hurts_rate": 0.4
+    },
+    "inference": {
+      "n": 1549,
+      "n_chain_helps": 18,
+      "n_chain_hurts": 5,
+      "n_both_correct": 152,
+      "n_both_wrong": 1374,
+      "net_chain_gain_pp": 0.839,
+      "chain_helps_rate": 1.16,
+      "chain_hurts_rate": 0.32
+    }
+  },
+  "systems_loaded": [
+    "M1",
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z_full"
+  ],
+  "type_counts": {
+    "compositional": 5236,
+    "comparison": 3040,
+    "inference": 1549,
+    "bridge_comparison": 2751
+  },
+  "n_total": 12576
+}

@@ -1,0 +1,10 @@
+{
+  "exp1_step3_oracle": {
+    "split": "dev",
+    "m": 1,
+    "out_json": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_wiki2/metrics/oracle_M1.json",
+    "out_json_sha256": "63b6b4897c3d4e2fe28510ec5e4c338516a6a1d0080bf1164273135f270cde28",
+    "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_wiki2/metrics/oracle_M1_perqid.jsonl",
+    "finished_at_utc": "2026-04-13T09:36:30Z"
+  }
+}

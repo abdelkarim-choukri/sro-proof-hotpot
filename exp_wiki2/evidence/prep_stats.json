@@ -1,0 +1,19 @@
+{
+  "n_questions": 12576,
+  "n_written": 12576,
+  "n_bridge": 0,
+  "n_comparison": 3040,
+  "n_inference": 1549,
+  "n_compositional": 5236,
+  "n_other_type": 2751,
+  "n_gold_found_2": 12576,
+  "n_gold_found_1": 0,
+  "n_gold_found_0": 0,
+  "n_hop_order_swapped": 887,
+  "n_hop_order_issues": 0,
+  "n_context_lt_2": 0,
+  "context_size_min": 7,
+  "context_size_max": 10,
+  "context_size_mean": 9.96,
+  "context_size_median": 10
+}

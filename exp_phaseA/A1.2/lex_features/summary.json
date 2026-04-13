@@ -1,0 +1,24 @@
+{
+  "script": "exp_a1_lex_features.py",
+  "evidence": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/evidence/dev_K200_chains.jsonl",
+  "candidates": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/candidates/dev_M5_7b_K200.jsonl",
+  "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseA/A1.2/lex_features/dev_lex_features.jsonl",
+  "n_written": 7405,
+  "n_skip_hops": 0,
+  "n_skip_cands": 0,
+  "elapsed_min": 0.16,
+  "features_output": [
+    "ans_in_hop1",
+    "ans_in_hop2",
+    "ans_in_both",
+    "ans_in_neither",
+    "lex_hop1",
+    "lex_hop2",
+    "lex_flat",
+    "lex_hop_balance",
+    "lex_min_hop",
+    "q_entity_in_hop1",
+    "q_entity_in_hop2"
+  ],
+  "timestamp": "2026-03-26T05:38:51"
+}

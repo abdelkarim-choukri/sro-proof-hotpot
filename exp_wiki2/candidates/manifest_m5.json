@@ -1,0 +1,13 @@
+{
+  "distractor_generation": {
+    "schema_version": "sro-proof.distractor.candidates.v1",
+    "mode": "sampling_T0.7",
+    "m": 5,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_new_tokens": 128,
+    "seed": 12345,
+    "model": "/var/tmp/u24sf51014/sro/models/qwen2.5-7b-instruct",
+    "started_at": "2026-04-13T05:19:49Z"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "script": "exp_b1_stage1_filter.py",
+  "hop_scores": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/preds/dev_hop_scores.jsonl",
+  "threshold": 0.5,
+  "n_questions": 7405,
+  "n_candidates_before": 37025,
+  "n_candidates_after": 28581,
+  "filter_rate": 0.2281,
+  "all_filtered_questions": 1289,
+  "false_negatives": 0,
+  "fn_rate": 0.0,
+  "oracle_em_before": 0.4991,
+  "oracle_em_after": 0.4991,
+  "oracle_delta": 0.0,
+  "lr_coefficients": {
+    "is_bad": -8.263,
+    "is_unknown": -7.2998,
+    "answer_len_words": -0.353,
+    "answer_len_chars": 1.08
+  },
+  "garbage_rate": 0.2281,
+  "training_accuracy": 1.0,
+  "timestamp": "2026-03-27T02:43:18"
+}

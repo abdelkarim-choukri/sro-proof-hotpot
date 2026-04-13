@@ -1,0 +1,20 @@
+{
+  "script": "exp_a1_qa_hop_score.py",
+  "model": "/var/tmp/u24sf51014/sro/models/deberta-v3-base-squad2",
+  "evidence": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/evidence/dev_K200_chains.jsonl",
+  "candidates": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/candidates/dev_M5_7b_K200.jsonl",
+  "out_jsonl": "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseA/A1.1/qa_scores/dev_qa_hop_scores.jsonl",
+  "n_written": 7405,
+  "n_skip_hops": 0,
+  "n_skip_cands": 0,
+  "elapsed_min": 34.23,
+  "device": 0,
+  "features_output": [
+    "qa_hop1",
+    "qa_hop2",
+    "qa_flat",
+    "qa_hop_balance",
+    "qa_min_hop"
+  ],
+  "timestamp": "2026-03-26T05:10:59"
+}

@@ -1,0 +1,62 @@
+[02:46:08] === Phase B2.1: Stage 2 Chain-Aware Verifier ===
+[02:46:08] Features: 19 total  (10 surface + 9 chain)
+[02:46:08] Note: is_bad and is_unknown excluded — handled by Stage 1
+[02:46:08] Loading gold + question types...
+[02:46:09] Loading feasible subset...
+[02:46:26]   feasible=6543
+[02:46:26] Loading Stage 1 filter decisions...
+[02:46:26]   7405 questions
+[02:46:26] Loading NLI hop scores...
+[02:46:26] Loading QA scores...
+[02:46:26] Loading lexical features...
+[02:46:26]   nli=7405  qa=7405  lex=7405
+[02:46:26] Building Stage 2 feature matrix (filtered candidates only)...
+[02:46:26]   Valid qids: 7405
+[02:46:27]   6116 questions  28581 rows  19 features
+[02:46:27]   Skipped (all filtered): 1289
+[02:46:27]   Positive rate: 0.559
+[02:46:27] Running 5-fold CV...
+[02:46:28]   [stage2] fold 1/5 done
+[02:46:28]   [stage2] fold 2/5 done
+[02:46:28]   [stage2] fold 3/5 done
+[02:46:29]   [stage2] fold 4/5 done
+[02:46:29]   [stage2] fold 5/5 done
+[02:46:29] Computing metrics...
+[02:46:29] 
+[02:46:29] ========================================================================
+[02:46:29]   PHASE B2.1 — STAGE 2 RESULTS
+[02:46:29] ========================================================================
+[02:46:29]   Monolithic baseline (exp0c):  0.4666
+[02:46:29]   Stage 2 chain-aware:          0.5700  (+10.34pp)
+[02:46:29]   Bridge EM:    0.5541
+[02:46:29]   Comparison EM:0.6337
+[02:46:29]   Feasible EM:  0.5865
+[02:46:29]   ECE:          0.0550
+[02:46:29] ========================================================================
+[02:46:29] 
+  Feature importances (top-12):
+[02:46:29]     # 1  answer_freq_filtered       0.3248
+[02:46:29]     # 2  qa_hop2                    0.0651 ◀ chain
+[02:46:29]     # 3  answer_freq                0.0549
+[02:46:29]     # 4  answer_len_chars           0.0501
+[02:46:29]     # 5  lex_hop1                   0.0425 ◀ chain
+[02:46:29]     # 6  qa_hop_balance             0.0422 ◀ chain
+[02:46:29]     # 7  lex_hop_balance            0.0414 ◀ chain
+[02:46:29]     # 8  answer_len_words           0.0399
+[02:46:29]     # 9  nli_hop_balance            0.0397 ◀ chain
+[02:46:29]     #10  lex_hop2                   0.0394 ◀ chain
+[02:46:29]     #11  nli_hop1                   0.0393 ◀ chain
+[02:46:29]     #12  nli_hop2                   0.0389 ◀ chain
+[02:46:29] 
+  Chain feature ranks:
+[02:46:29]     # 2  qa_hop2
+[02:46:29]     # 5  lex_hop1
+[02:46:29]     # 6  qa_hop_balance
+[02:46:29]     # 7  lex_hop_balance
+[02:46:29]     # 9  nli_hop_balance
+[02:46:29]     #10  lex_hop2
+[02:46:29]     #11  nli_hop1
+[02:46:29]     #12  nli_hop2
+[02:46:29]     #13  qa_hop1
+[02:46:29] 
+  Results saved: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseB/B2.1/results/stage2_verifier.json

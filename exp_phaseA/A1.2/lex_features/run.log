@@ -1,0 +1,41 @@
+[A1.2] Loading evidence...
+       7,405 questions
+[A1.2] Loading candidates...
+       7,405 questions
+       Schema OK — question='Were Scott Derrickson and Ed Wood of the same nationality?'
+       Entities extracted: ['Scott Derrickson', 'Ed Wood']
+
+[A1.2] Questions to score: 7,405  (total: 7,405)  CPU only
+
+  [  500/ 7405]  written=500  45963 q/min  eta=0.2 min
+  [ 1000/ 7405]  written=1,000  46443 q/min  eta=0.1 min
+  [ 1500/ 7405]  written=1,500  45922 q/min  eta=0.1 min
+  [ 2000/ 7405]  written=2,000  46015 q/min  eta=0.1 min
+  [ 2500/ 7405]  written=2,500  46126 q/min  eta=0.1 min
+  [ 3000/ 7405]  written=3,000  46136 q/min  eta=0.1 min
+  [ 3500/ 7405]  written=3,500  46213 q/min  eta=0.1 min
+  [ 4000/ 7405]  written=4,000  46238 q/min  eta=0.1 min
+  [ 4500/ 7405]  written=4,500  46117 q/min  eta=0.1 min
+  [ 5000/ 7405]  written=5,000  45900 q/min  eta=0.1 min
+  [ 5500/ 7405]  written=5,500  46036 q/min  eta=0.0 min
+  [ 6000/ 7405]  written=6,000  46103 q/min  eta=0.0 min
+  [ 6500/ 7405]  written=6,500  46053 q/min  eta=0.0 min
+  [ 7000/ 7405]  written=7,000  46129 q/min  eta=0.0 min
+
+[A1.2] Done.
+       Written:            7,405
+       Skipped (no hops):  0
+       Skipped (no cands): 0
+       Total time:         0.2 min
+       Summary:            /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseA/A1.2/lex_features/summary.json
+
+[A1.2] Sanity check — first 3 records:
+  qid=5a70eee85542994082a3e3f0  gold='The Yoruba'  entities=['West Africa', 'Ghana Ivory Coast Liberia', 'Sierra Leone', 'Ida']
+    ans='UNKNOWN'                  in_h1=0  in_h2=0  neither=1  lex_h1=0.000  lex_h2=0.000  q_ent_h1=0.50  q_ent_h2=0.50
+    ans='UNKNOWN'                  in_h1=0  in_h2=0  neither=1  lex_h1=0.000  lex_h2=0.000  q_ent_h1=0.50  q_ent_h2=0.50
+  qid=5a70f0a75542994082a3e403  gold='Scanian dialects'  entities=['Scania', 'Spettekaka']
+    ans='Scanian'                  in_h1=1  in_h2=1  neither=0  lex_h1=0.024  lex_h2=0.013  q_ent_h1=1.00  q_ent_h2=0.50
+    ans='Scanian dialect'          in_h1=0  in_h2=1  neither=0  lex_h1=0.024  lex_h2=0.025  q_ent_h1=1.00  q_ent_h2=0.50
+  qid=5a70f0e75542994082a3e408  gold='with other campuses located in Chicago and Doha, Qatar'  entities=['Northwestern University', 'Johns Hopkins University', 'United States']
+    ans='Northwestern University'  in_h1=0  in_h2=1  neither=0  lex_h1=0.013  lex_h2=0.071  q_ent_h1=0.67  q_ent_h2=0.33
+    ans='Northwestern University'  in_h1=0  in_h2=1  neither=0  lex_h1=0.013  lex_h2=0.071  q_ent_h1=0.67  q_ent_h2=0.33

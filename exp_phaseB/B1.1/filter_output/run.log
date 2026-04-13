@@ -1,0 +1,28 @@
+[B1.1] Loading gold answers...
+       7405 questions
+[B1.1] Loading hop scores...
+       7405 questions
+[B1.1] Building Stage 1 training data...
+       37025 candidate rows
+       Garbage rate: 22.8%  Survive rate: 77.2%
+[B1.1] Training logistic regression filter...
+       Training accuracy @ τ=0.5: 1.0000
+       Coefficients: {'is_bad': -8.263, 'is_unknown': -7.2998, 'answer_len_words': -0.353, 'answer_len_chars': 1.08}
+[B1.1] Applying filter and validating oracle preservation...
+
+[B1.1] Validation results:
+       Questions:              7,405
+       Candidates before:      37,025
+       Candidates after:       28,581
+       Filter rate:            22.8%
+       All-filtered questions: 1289
+       False negatives:        0  (correct answers removed)
+       FN rate:                0.0000%
+       Oracle EM before:       0.4991
+       Oracle EM after:        0.4991
+       Oracle delta:           +0.0000
+
+  SAFETY CHECK PASSED: 0 correct answers removed.
+
+[B1.1] Summary written: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseB/B1.1/filter_output/summary.json
+[B1.1] Filter output:   /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseB/B1.1/filter_output/dev_stage1_filtered.jsonl

@@ -1,0 +1,104 @@
+Device set to use cuda:0
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+[A1.1] Loading evidence...
+       7,405 questions
+[A1.1] Loading candidates...
+       7,405 questions
+       Schema OK — qid=5a8b57f25542995d1e6f1371  n_cands=5  first_ans='American'  gold='yes'
+[A1.1] Loading model: /var/tmp/u24sf51014/sro/models/deberta-v3-base-squad2
+       Loaded in 4.9s  device=0
+
+[A1.1] To score: 7,405  (total: 7,405  ~111,075 forward passes)
+
+  [  100/ 7405]  written=100  184.5 q/min  eta=39.6 min
+  [  200/ 7405]  written=200  199.6 q/min  eta=36.1 min
+  [  300/ 7405]  written=300  205.4 q/min  eta=34.6 min
+  [  400/ 7405]  written=400  207.9 q/min  eta=33.7 min
+  [  500/ 7405]  written=500  209.5 q/min  eta=33.0 min
+  [  600/ 7405]  written=600  210.7 q/min  eta=32.3 min
+  [  700/ 7405]  written=700  211.6 q/min  eta=31.7 min
+  [  800/ 7405]  written=800  212.4 q/min  eta=31.1 min
+  [  900/ 7405]  written=900  213.0 q/min  eta=30.5 min
+  [ 1000/ 7405]  written=1,000  213.1 q/min  eta=30.1 min
+  [ 1100/ 7405]  written=1,100  213.4 q/min  eta=29.5 min
+  [ 1200/ 7405]  written=1,200  213.5 q/min  eta=29.1 min
+  [ 1300/ 7405]  written=1,300  213.7 q/min  eta=28.6 min
+  [ 1400/ 7405]  written=1,400  213.8 q/min  eta=28.1 min
+  [ 1500/ 7405]  written=1,500  213.8 q/min  eta=27.6 min
+  [ 1600/ 7405]  written=1,600  214.0 q/min  eta=27.1 min
+  [ 1700/ 7405]  written=1,700  214.2 q/min  eta=26.6 min
+  [ 1800/ 7405]  written=1,800  214.2 q/min  eta=26.2 min
+  [ 1900/ 7405]  written=1,900  214.4 q/min  eta=25.7 min
+  [ 2000/ 7405]  written=2,000  214.5 q/min  eta=25.2 min
+  [ 2100/ 7405]  written=2,100  214.6 q/min  eta=24.7 min
+  [ 2200/ 7405]  written=2,200  214.7 q/min  eta=24.2 min
+  [ 2300/ 7405]  written=2,300  214.8 q/min  eta=23.8 min
+  [ 2400/ 7405]  written=2,400  214.8 q/min  eta=23.3 min
+  [ 2500/ 7405]  written=2,500  214.8 q/min  eta=22.8 min
+  [ 2600/ 7405]  written=2,600  214.9 q/min  eta=22.4 min
+  [ 2700/ 7405]  written=2,700  215.0 q/min  eta=21.9 min
+  [ 2800/ 7405]  written=2,800  215.0 q/min  eta=21.4 min
+  [ 2900/ 7405]  written=2,900  215.0 q/min  eta=21.0 min
+  [ 3000/ 7405]  written=3,000  215.0 q/min  eta=20.5 min
+  [ 3100/ 7405]  written=3,100  215.1 q/min  eta=20.0 min
+  [ 3200/ 7405]  written=3,200  215.2 q/min  eta=19.5 min
+  [ 3300/ 7405]  written=3,300  215.2 q/min  eta=19.1 min
+  [ 3400/ 7405]  written=3,400  215.3 q/min  eta=18.6 min
+  [ 3500/ 7405]  written=3,500  215.3 q/min  eta=18.1 min
+  [ 3600/ 7405]  written=3,600  215.3 q/min  eta=17.7 min
+  [ 3700/ 7405]  written=3,700  215.3 q/min  eta=17.2 min
+  [ 3800/ 7405]  written=3,800  215.3 q/min  eta=16.7 min
+  [ 3900/ 7405]  written=3,900  215.4 q/min  eta=16.3 min
+  [ 4000/ 7405]  written=4,000  215.5 q/min  eta=15.8 min
+  [ 4100/ 7405]  written=4,100  215.4 q/min  eta=15.3 min
+  [ 4200/ 7405]  written=4,200  215.4 q/min  eta=14.9 min
+  [ 4300/ 7405]  written=4,300  215.4 q/min  eta=14.4 min
+  [ 4400/ 7405]  written=4,400  215.5 q/min  eta=13.9 min
+  [ 4500/ 7405]  written=4,500  215.5 q/min  eta=13.5 min
+  [ 4600/ 7405]  written=4,600  215.4 q/min  eta=13.0 min
+  [ 4700/ 7405]  written=4,700  215.4 q/min  eta=12.6 min
+  [ 4800/ 7405]  written=4,800  215.4 q/min  eta=12.1 min
+  [ 4900/ 7405]  written=4,900  215.5 q/min  eta=11.6 min
+  [ 5000/ 7405]  written=5,000  215.4 q/min  eta=11.2 min
+  [ 5100/ 7405]  written=5,100  215.4 q/min  eta=10.7 min
+  [ 5200/ 7405]  written=5,200  215.5 q/min  eta=10.2 min
+  [ 5300/ 7405]  written=5,300  215.5 q/min  eta=9.8 min
+  [ 5400/ 7405]  written=5,400  215.5 q/min  eta=9.3 min
+  [ 5500/ 7405]  written=5,500  215.5 q/min  eta=8.8 min
+  [ 5600/ 7405]  written=5,600  215.5 q/min  eta=8.4 min
+  [ 5700/ 7405]  written=5,700  215.5 q/min  eta=7.9 min
+  [ 5800/ 7405]  written=5,800  215.5 q/min  eta=7.4 min
+  [ 5900/ 7405]  written=5,900  215.6 q/min  eta=7.0 min
+  [ 6000/ 7405]  written=6,000  215.7 q/min  eta=6.5 min
+  [ 6100/ 7405]  written=6,100  215.7 q/min  eta=6.0 min
+  [ 6200/ 7405]  written=6,200  215.8 q/min  eta=5.6 min
+  [ 6300/ 7405]  written=6,300  215.8 q/min  eta=5.1 min
+  [ 6400/ 7405]  written=6,400  215.9 q/min  eta=4.7 min
+  [ 6500/ 7405]  written=6,500  215.9 q/min  eta=4.2 min
+  [ 6600/ 7405]  written=6,600  216.0 q/min  eta=3.7 min
+  [ 6700/ 7405]  written=6,700  216.1 q/min  eta=3.3 min
+  [ 6800/ 7405]  written=6,800  216.1 q/min  eta=2.8 min
+  [ 6900/ 7405]  written=6,900  216.2 q/min  eta=2.3 min
+  [ 7000/ 7405]  written=7,000  216.2 q/min  eta=1.9 min
+  [ 7100/ 7405]  written=7,100  216.3 q/min  eta=1.4 min
+  [ 7200/ 7405]  written=7,200  216.3 q/min  eta=0.9 min
+  [ 7300/ 7405]  written=7,300  216.3 q/min  eta=0.5 min
+  [ 7400/ 7405]  written=7,400  216.4 q/min  eta=0.0 min
+
+[A1.1] Done.
+       Written:            7,405
+       Skipped (no hops):  0
+       Skipped (no cands): 0
+       Total time:         34.2 min
+       Summary:            /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_phaseA/A1.1/qa_scores/summary.json
+
+[A1.1] Sanity check — first 3 records:
+  qid=5a70eee85542994082a3e3f0  gold='The Yoruba'  n_cands=5
+    ans='UNKNOWN'                  hop1=0.100  hop2=0.100  flat=0.100  bal=0.000  min=0.100
+    ans='UNKNOWN'                  hop1=0.100  hop2=0.100  flat=0.100  bal=0.000  min=0.100
+  qid=5a70f0a75542994082a3e403  gold='Scanian dialects'  n_cands=5
+    ans='Scanian'                  hop1=1.000  hop2=0.100  flat=0.314  bal=0.900  min=0.100
+    ans='Scanian dialect'          hop1=0.000  hop2=0.100  flat=0.100  bal=0.100  min=0.000
+  qid=5a70f0e75542994082a3e408  gold='with other campuses located in Chicago and Doha, Qatar'  n_cands=5
+    ans='Northwestern University'  hop1=0.100  hop2=0.100  flat=0.970  bal=0.000  min=0.100
+    ans='Northwestern University'  hop1=0.100  hop2=0.100  flat=0.970  bal=0.000  min=0.100

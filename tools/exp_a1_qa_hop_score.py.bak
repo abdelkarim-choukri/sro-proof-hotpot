@@ -209,8 +209,8 @@ def main():
     ap.add_argument("--out_json",   required=True,
                     help="Output: summary JSON with run metadata")
     ap.add_argument("--batch_size", type=int, default=32)
-    ap.add_argument("--device", type=str, default="cuda",
-                    help="Device: cuda, cpu, or cuda:N")
+    ap.add_argument("--device",     type=int, default=0,
+                    help="CUDA device index (default: 0; -1 for CPU)")
     args = ap.parse_args()
 
     # ── Load evidence → question + gold + hop texts ──────────────────
