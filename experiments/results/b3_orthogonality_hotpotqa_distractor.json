@@ -1,0 +1,11 @@
+{
+  "dataset": "HotpotQA Distractor",
+  "pearson_r": 0.32588307420803425,
+  "r_squared": 0.10619977805527916,
+  "n_candidates": 37025,
+  "n_correct": 16327,
+  "flat_correct_mean": 0.34588580271942176,
+  "minhop_correct_mean": 0.14684494248790347,
+  "flat_incorrect_mean": 0.2495976810802976,
+  "minhop_incorrect_mean": 0.12372750144941541
+}

@@ -1,0 +1,97 @@
+{
+  "dataset": "HotpotQA Distractor",
+  "examples": [
+    {
+      "qid": "5a74ae6a55429916b01641c9",
+      "question": "What famous composer leveraged microtonal music and unconventional methods of musicianship to create his contemporary reknown?",
+      "type": "bridge",
+      "gold_answer": "Ben Johnston",
+      "wrong_answer": "Benjamin Burwell Johnston Jr.",
+      "right_answer": "Ben Johnston",
+      "hop1_text": "Knocking Piece II is a piece of music by Ben Johnston.  It is a continuation of Knocking Piece I.  In both pieces, Johnston calls to demonstrate unconventional methods of playing conventional instrume...",
+      "hop2_text": "Benjamin Burwell Johnston, Jr. (born March 15, 1926 in Macon, Georgia) is a composer of contemporary music in just intonation: \"one of the foremost composers of microtonal music\" .  He was called, \"on...",
+      "wrong": {
+        "nli_flat": 0.883935,
+        "nli_hop1": 0.065681,
+        "nli_hop2": 0.988717,
+        "imbalance": 0.923036
+      },
+      "right": {
+        "nli_flat": 0.864949,
+        "nli_hop1": 0.94174,
+        "nli_hop2": 0.9626,
+        "imbalance": 0.02085999999999999
+      },
+      "imbalance_gap": 0.902176
+    },
+    {
+      "qid": "5a85f4425542994775f606c4",
+      "question": "What movie genre does both \"The Trials of Life\" and \"Human\" belong to?",
+      "type": "comparison",
+      "gold_answer": "documentary",
+      "wrong_answer": "nature documentaries",
+      "right_answer": "documentary",
+      "hop1_text": "The Trials of Life: A Natural History of Behaviour is a BBC nature documentary series written and presented by David Attenborough, first transmitted in the United Kingdom from 3 October 1990.",
+      "hop2_text": "Human is a 2015 documentary by French environmentalist Yann Arthus-Bertrand.  The film is almost entirely composed of exclusive aerial footage and first-person stories told into the camera.  It was th...",
+      "wrong": {
+        "nli_flat": 0.002759,
+        "nli_hop1": 0.920057,
+        "nli_hop2": 0.002375,
+        "imbalance": 0.917682
+      },
+      "right": {
+        "nli_flat": 0.001999,
+        "nli_hop1": 0.962478,
+        "nli_hop2": 0.944014,
+        "imbalance": 0.018463999999999925
+      },
+      "imbalance_gap": 0.8992180000000001
+    },
+    {
+      "qid": "5a7f22005542993067513657",
+      "question": "The album that contains the song \"Get Together\" by Madonna was mainly recorded in whose home studio?",
+      "type": "bridge",
+      "gold_answer": "Stuart Price",
+      "wrong_answer": "Stuart Price's home studio",
+      "right_answer": "Stuart Price",
+      "hop1_text": "\"Get Together\" is a song by American singer Madonna from her tenth studio album \"Confessions on a Dance Floor\" (2005).  Produced by Madonna and Stuart Price, the song was released as the third single ...",
+      "hop2_text": "Confessions on a Dance Floor is the tenth studio album by American singer and songwriter Madonna.  It was released on November 9, 2005 by Warner Bros.  Records.  A complete departure from her previous...",
+      "wrong": {
+        "nli_flat": 0.004255,
+        "nli_hop1": 0.002408,
+        "nli_hop2": 0.861427,
+        "imbalance": 0.8590190000000001
+      },
+      "right": {
+        "nli_flat": 0.002054,
+        "nli_hop1": 0.001404,
+        "nli_hop2": 0.136769,
+        "imbalance": 0.135365
+      },
+      "imbalance_gap": 0.723654
+    },
+    {
+      "qid": "5abcfcf0554299114383a1b4",
+      "question": "Where in the traditional West Riding of Lindsey is the Trolleybus Museum Located?",
+      "type": "bridge",
+      "gold_answer": "Isle of Axholme",
+      "wrong_answer": "Sandtoft",
+      "right_answer": "The Isle of Axholme",
+      "hop1_text": "The Trolleybus Museum at Sandtoft is a transport museum which specialises in the preservation of trolleybuses.  It is located by the village of Sandtoft, near Belton on the Isle of Axholme in the Engl...",
+      "hop2_text": "The Isle of Axholme is a geographical area of North Lincolnshire, England.  It is the only part of Lincolnshire west of the River Trent.  It is between the three towns of Doncaster, Scunthorpe and Gai...",
+      "wrong": {
+        "nli_flat": 0.803435,
+        "nli_hop1": 0.872002,
+        "nli_hop2": 0.000842,
+        "imbalance": 0.87116
+      },
+      "right": {
+        "nli_flat": 0.853793,
+        "nli_hop1": 0.8126,
+        "nli_hop2": 0.960139,
+        "imbalance": 0.14753899999999998
+      },
+      "imbalance_gap": 0.7236210000000001
+    }
+  ]
+}

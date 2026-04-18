@@ -1,0 +1,97 @@
+{
+  "dataset": "2WikiMultiHopQA",
+  "examples": [
+    {
+      "qid": "1a7946ce087b11ebbd67ac1f6bf848b6",
+      "question": "Which film has the director who died later, The Good Guys And The Bad Guys or Love At Times Square?",
+      "type": "bridge",
+      "gold_answer": "Love At Times Square",
+      "wrong_answer": "The Good Guys and the Bad Guys",
+      "right_answer": "Love At Times Square",
+      "hop1_text": "The Good Guys and the Bad Guys is a 1969 American western film directed by Burt Kennedy. It stars Robert Mitchum and George Kennedy.",
+      "hop2_text": "Love at Times Square is a 2003 Bollywood film directed by and starring Dev Anand with Shoib Khan, Chaitanya Chaudhary and Heene Kaushik. The film had special appearances from Salman Khan and Rishi Kap...",
+      "wrong": {
+        "nli_flat": 0.013631,
+        "nli_hop1": 0.937876,
+        "nli_hop2": 0.00103,
+        "imbalance": 0.9368460000000001
+      },
+      "right": {
+        "nli_flat": 0.002752,
+        "nli_hop1": 0.000426,
+        "nli_hop2": 0.027785,
+        "imbalance": 0.027359
+      },
+      "imbalance_gap": 0.909487
+    },
+    {
+      "qid": "6c7906f2084f11ebbd56ac1f6bf848b6",
+      "question": "Was Charles Nelson Corey or Maria Newell born first?",
+      "type": "comparison",
+      "gold_answer": "Maria Newell",
+      "wrong_answer": "Charles Nelson Corey Jr.",
+      "right_answer": "Maria Newell",
+      "hop1_text": "Charles Nelson Corey Jr.( June 4, 1915 – August 10, 2013) was an American football coach. He served as the head football coach at Colby College in Waterville, Maine in 1951 and at Bowdoin College in B...",
+      "hop2_text": "Maria Newell Gützlaff (4 August 1794 – 16 February 1831) was an English missionary, teacher and translator. Maria was born at Stepney, Middlesex, in England, the child of Samuel Newell, tallow chandle...",
+      "wrong": {
+        "nli_flat": 0.005295,
+        "nli_hop1": 0.991165,
+        "nli_hop2": 0.002697,
+        "imbalance": 0.988468
+      },
+      "right": {
+        "nli_flat": 0.010836,
+        "nli_hop1": 0.000319,
+        "nli_hop2": 0.014949,
+        "imbalance": 0.01463
+      },
+      "imbalance_gap": 0.973838
+    },
+    {
+      "qid": "8e07f1f00bda11eba7f7acde48001122",
+      "question": "Who is the spouse of the director of film My Three Merry Widows?",
+      "type": "compositional",
+      "gold_answer": "Mapy Cortés",
+      "wrong_answer": "Amalia Aguilar",
+      "right_answer": "Mapy Cortés",
+      "hop1_text": "My Three Merry Widows (in Spanish Mis tres viudas alegres) is a Mexican comedy film directed by Fernando Cortés. It was filmed in 1953 and starring Amalia Aguilar, Lilia del Valle and Silvia Pinal.",
+      "hop2_text": "Fernando \"Papi\" Cortés (October 4, 1909 – 1979) was a Puerto Rican film actor, writer and director. He was born in San Juan, Puerto Rico, but he spent most of his adult life in Mexico City, where he d...",
+      "wrong": {
+        "nli_flat": 0.090098,
+        "nli_hop1": 0.914767,
+        "nli_hop2": 0.01077,
+        "imbalance": 0.903997
+      },
+      "right": {
+        "nli_flat": 0.178177,
+        "nli_hop1": 0.060851,
+        "nli_hop2": 0.123435,
+        "imbalance": 0.062584
+      },
+      "imbalance_gap": 0.8414130000000001
+    },
+    {
+      "qid": "683740ae0bb011ebab90acde48001122",
+      "question": "Who is William Savile, 2Nd Marquess Of Halifax's maternal grandfather?",
+      "type": "inference",
+      "gold_answer": "Henry Spencer, 1st Earl of Sunderland",
+      "wrong_answer": "Dorothy Savile, Viscountess Halifax",
+      "right_answer": "Henry Spencer, 1st Earl of Sunderland",
+      "hop1_text": "William Savile, 2nd Marquess of Halifax (1665 – 31 August 1700) was the son of George Savile, 1st Viscount Halifax and Dorothy Savile, Viscountess Halifax (née Spencer). He was educated in Geneva in 1...",
+      "hop2_text": "Dorothy Savile, Viscountess Halifax (née Spencer; 1640 – 16 December 1670) was the first wife of George Savile, 1st Viscount Halifax, and the mother of the 2nd Marquess. Dorothy was the daughter of He...",
+      "wrong": {
+        "nli_flat": 0.003497,
+        "nli_hop1": 0.005322,
+        "nli_hop2": 0.877262,
+        "imbalance": 0.8719399999999999
+      },
+      "right": {
+        "nli_flat": 0.0022,
+        "nli_hop1": 0.001015,
+        "nli_hop2": 0.157645,
+        "imbalance": 0.15663000000000002
+      },
+      "imbalance_gap": 0.7153099999999999
+    }
+  ]
+}

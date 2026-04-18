@@ -1,0 +1,97 @@
+{
+  "dataset": "HotpotQA MDR",
+  "examples": [
+    {
+      "qid": "5a7625c7554299109176e668",
+      "question": "What podcast was the cheif executive officer of Nerdist Industries a guest on?",
+      "type": "bridge",
+      "gold_answer": "Comedy Film Nerds",
+      "wrong_answer": "The Nerdist Podcast",
+      "right_answer": "Comedy Film Nerds",
+      "hop1_text": "Nerdist Industries, LLC is part of the digital division of Legendary Entertainment. Nerdist Industries was founded as a sole podcast (The Nerdist Podcast) created by Chris Hardwick but later spread to...",
+      "hop2_text": "Christopher Ryan Hardwick (born November 23, 1971) is an American stand-up comedian, actor, voice actor, television host, writer, producer, podcaster, and musician. He is the chief executive officer o...",
+      "wrong": {
+        "nli_flat": 0.307317,
+        "nli_hop1": 0.871309,
+        "nli_hop2": 0.10028,
+        "imbalance": 0.771029
+      },
+      "right": {
+        "nli_flat": 0.066172,
+        "nli_hop1": 0.042945,
+        "nli_hop2": 0.092843,
+        "imbalance": 0.049898
+      },
+      "imbalance_gap": 0.721131
+    },
+    {
+      "qid": "5a81a2055542990a1d231e2d",
+      "question": "Whose father is the name of the son of the chief counsellor to the king in Hamlet taken from?",
+      "type": "bridge",
+      "gold_answer": "Odysseus",
+      "wrong_answer": "father of Odysseus",
+      "right_answer": "Odysseus",
+      "hop1_text": "Polonius is a character in William Shakespeare's \"Hamlet\". He is chief counsellor of the king, and the father of Laertes and Ophelia. Generally regarded as wrong in every judgment he makes over the co...",
+      "hop2_text": "Laertes is a character in William Shakespeare's play \"Hamlet\". His name is taken from the father of Odysseus in Homer's Odyssey. Laertes is the son of Polonius and the brother of Ophelia. In the final...",
+      "wrong": {
+        "nli_flat": 0.159569,
+        "nli_hop1": 0.085328,
+        "nli_hop2": 0.853176,
+        "imbalance": 0.7678480000000001
+      },
+      "right": {
+        "nli_flat": 0.136661,
+        "nli_hop1": 0.00771,
+        "nli_hop2": 0.119962,
+        "imbalance": 0.112252
+      },
+      "imbalance_gap": 0.6555960000000001
+    },
+    {
+      "qid": "5a794119554299029c4b5f3c",
+      "question": "Who was born first, Nellee Hooper or Baz Luhrmann?",
+      "type": "bridge",
+      "gold_answer": "\"Baz\" Luhrmann",
+      "wrong_answer": "Nellee Hooper",
+      "right_answer": "Baz Luhrmann",
+      "hop1_text": "Nellee Hooper (born 15 March 1963) is a British producer/remixer/composer known for his work with many major recording artists beginning in the late 1980s. He also debuted as a motion picture music co...",
+      "hop2_text": "Mark Anthony \"Baz\" Luhrmann ( ; born 17 September 1962) is an Australian film director, screenwriter and producer best known for \"Red Curtain Trilogy\", comprising his romantic comedy film \"Strictly Ba...",
+      "wrong": {
+        "nli_flat": 0.247655,
+        "nli_hop1": 0.95119,
+        "nli_hop2": 0.000767,
+        "imbalance": 0.950423
+      },
+      "right": {
+        "nli_flat": 0.259679,
+        "nli_hop1": 0.164845,
+        "nli_hop2": 0.459835,
+        "imbalance": 0.29499
+      },
+      "imbalance_gap": 0.655433
+    },
+    {
+      "qid": "5ac2ffbd554299677310267b",
+      "question": "SuperMansion starred the actress who had a recurring role as whom on Workaholics?",
+      "type": "bridge",
+      "gold_answer": "Jillian Belk",
+      "wrong_answer": "Jillian Bell",
+      "right_answer": "Jillian Belk",
+      "hop1_text": "SuperMansion is an American stop-motion animated comedy television series created by Matthew Senreich and Zeb Wells. The series stars Bryan Cranston, Heidi Gardner, Tucker Gilmore, Keegan-Michael Key,...",
+      "hop2_text": "Jillian Leigh Bell (born April 25, 1984) is an American comedian, actress, and screenwriter. She is best known for her recurring roles as Jillian Belk on \"Workaholics\" and Dixie on the final season of...",
+      "wrong": {
+        "nli_flat": 0.109484,
+        "nli_hop1": 0.218358,
+        "nli_hop2": 0.920098,
+        "imbalance": 0.70174
+      },
+      "right": {
+        "nli_flat": 0.064813,
+        "nli_hop1": 0.015019,
+        "nli_hop2": 0.069311,
+        "imbalance": 0.054292
+      },
+      "imbalance_gap": 0.647448
+    }
+  ]
+}

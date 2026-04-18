@@ -1,0 +1,11 @@
+{
+  "dataset": "HotpotQA MDR",
+  "pearson_r": 0.20541361496030933,
+  "r_squared": 0.04219475321106222,
+  "n_candidates": 37025,
+  "n_correct": 15980,
+  "flat_correct_mean": 0.17725100125156446,
+  "minhop_correct_mean": 0.15139766983729663,
+  "flat_incorrect_mean": 0.10614816008553102,
+  "minhop_incorrect_mean": 0.10970579453551911
+}

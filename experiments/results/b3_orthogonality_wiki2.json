@@ -1,0 +1,11 @@
+{
+  "dataset": "2WikiMultiHopQA",
+  "pearson_r": 0.22136895577082288,
+  "r_squared": 0.04900421457906454,
+  "n_candidates": 62880,
+  "n_correct": 19064,
+  "flat_correct_mean": 0.2250579496433068,
+  "minhop_correct_mean": 0.01339062410826689,
+  "flat_incorrect_mean": 0.12179156851378492,
+  "minhop_incorrect_mean": 0.03194554610188059
+}
