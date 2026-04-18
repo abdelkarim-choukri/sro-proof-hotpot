@@ -1,0 +1,47 @@
+{
+  "label": "hotpot_distractor",
+  "n_questions": 7405,
+  "groups": {
+    "CHAIN_WINS": {
+      "name": "CHAIN_WINS",
+      "n": 42,
+      "mean": 0.6025,
+      "std": 0.3465,
+      "median": 0.768,
+      "q25": 0.2046,
+      "q75": 0.8937,
+      "max": 0.9923
+    },
+    "BOTH_RIGHT": {
+      "name": "BOTH_RIGHT",
+      "n": 2687,
+      "mean": 0.5109,
+      "std": 0.3693,
+      "median": 0.5813,
+      "q25": 0.1031,
+      "q75": 0.8844,
+      "max": 0.9903
+    },
+    "CHAIN_HURTS": {
+      "name": "CHAIN_HURTS",
+      "n": 29,
+      "mean": 0.512,
+      "std": 0.3685,
+      "median": 0.5705,
+      "q25": 0.1292,
+      "q75": 0.8681,
+      "max": 0.9657
+    },
+    "BOTH_WRONG": {
+      "name": "BOTH_WRONG",
+      "n": 3826
+    }
+  },
+  "mann_whitney_u_chain_wins_gt_both_right": {
+    "U": 63555.0,
+    "p_value": 0.07976461443736205,
+    "rank_biserial": 0.1263225051836887,
+    "alternative": "greater"
+  },
+  "skipped_no_answer_match": 821
+}

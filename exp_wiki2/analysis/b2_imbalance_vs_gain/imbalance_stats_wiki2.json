@@ -1,0 +1,47 @@
+{
+  "label": "wiki2",
+  "n_questions": 12576,
+  "groups": {
+    "CHAIN_WINS": {
+      "name": "CHAIN_WINS",
+      "n": 241,
+      "mean": 0.5665,
+      "std": 0.3907,
+      "median": 0.7972,
+      "q25": 0.0825,
+      "q75": 0.9139,
+      "max": 0.9885
+    },
+    "BOTH_RIGHT": {
+      "name": "BOTH_RIGHT",
+      "n": 3952,
+      "mean": 0.5755,
+      "std": 0.3873,
+      "median": 0.7907,
+      "q25": 0.1001,
+      "q75": 0.9227,
+      "max": 0.9904
+    },
+    "CHAIN_HURTS": {
+      "name": "CHAIN_HURTS",
+      "n": 135,
+      "mean": 0.6412,
+      "std": 0.3645,
+      "median": 0.8463,
+      "q25": 0.2603,
+      "q75": 0.9371,
+      "max": 0.9878
+    },
+    "BOTH_WRONG": {
+      "name": "BOTH_WRONG",
+      "n": 8248
+    }
+  },
+  "mann_whitney_u_chain_wins_gt_both_right": {
+    "U": 466384.0,
+    "p_value": 0.7050285760939246,
+    "rank_biserial": -0.02064609336939538,
+    "alternative": "greater"
+  },
+  "skipped_no_answer_match": 0
+}

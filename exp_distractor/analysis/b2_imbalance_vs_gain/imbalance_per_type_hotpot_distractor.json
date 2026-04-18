@@ -1,0 +1,68 @@
+{
+  "CHAIN_WINS": {
+    "bridge": {
+      "name": "bridge",
+      "n": 34,
+      "mean": 0.5562,
+      "std": 0.3411,
+      "median": 0.698,
+      "q25": 0.1494,
+      "q75": 0.8146,
+      "max": 0.9714
+    },
+    "comparison": {
+      "name": "comparison",
+      "n": 8,
+      "mean": 0.7993,
+      "std": 0.2968,
+      "median": 0.9017,
+      "q25": 0.8466,
+      "q75": 0.9603,
+      "max": 0.9923
+    }
+  },
+  "BOTH_RIGHT": {
+    "comparison": {
+      "name": "comparison",
+      "n": 587,
+      "mean": 0.5315,
+      "std": 0.4116,
+      "median": 0.7347,
+      "q25": 0.0647,
+      "q75": 0.9367,
+      "max": 0.9903
+    },
+    "bridge": {
+      "name": "bridge",
+      "n": 2100,
+      "mean": 0.5052,
+      "std": 0.3563,
+      "median": 0.5668,
+      "q25": 0.1198,
+      "q75": 0.8617,
+      "max": 0.9854
+    }
+  },
+  "CHAIN_HURTS": {
+    "bridge": {
+      "name": "bridge",
+      "n": 22,
+      "mean": 0.5329,
+      "std": 0.3535,
+      "median": 0.6219,
+      "q25": 0.1767,
+      "q75": 0.8566,
+      "max": 0.9657
+    },
+    "comparison": {
+      "name": "comparison",
+      "n": 7,
+      "mean": 0.4465,
+      "std": 0.4051,
+      "median": 0.4213,
+      "q25": 0.0293,
+      "q75": 0.8411,
+      "max": 0.963
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "label": "wiki2",
+  "n_chain_wins": 241,
+  "n_chain_hurts": 135,
+  "n_skip_same_pick": 11915,
+  "n_skip_no_match": 0,
+  "delta_features_chain_wins": {
+    "nli_flat": {
+      "name": "nli_flat",
+      "n": 241,
+      "mean": 0.0222,
+      "median": 0.0011,
+      "std": 0.2288,
+      "frac_positive": 0.5685,
+      "wilcoxon_W": 12371.5,
+      "p_two_sided": 0.041452668295455956,
+      "p_greater_than_zero": 0.020726334147727978,
+      "p_less_than_zero": 0.979273665852272
+    },
+    "nli_hop1": {
+      "name": "nli_hop1",
+      "n": 241,
+      "mean": -0.2781,
+      "median": -0.0751,
+      "std": 0.555,
+      "frac_positive": 0.3071,
+      "wilcoxon_W": 7021.0,
+      "p_two_sided": 3.001671614967632e-12,
+      "p_greater_than_zero": 0.9999999999984992,
+      "p_less_than_zero": 1.500835807483816e-12
+    },
+    "nli_hop2": {
+      "name": "nli_hop2",
+      "n": 241,
+      "mean": 0.2757,
+      "median": 0.0479,
+      "std": 0.5832,
+      "frac_positive": 0.6805,
+      "wilcoxon_W": 7546.0,
+      "p_two_sided": 8.411196793732217e-11,
+      "p_greater_than_zero": 4.205598396866108e-11,
+      "p_less_than_zero": 0.999999999957944
+    },
+    "min_hop": {
+      "name": "min_hop",
+      "n": 241,
+      "mean": -0.025,
+      "median": -0.0,
+      "std": 0.1401,
+      "frac_positive": 0.4979,
+      "wilcoxon_W": 14513.0,
+      "p_two_sided": 0.9503203131656809,
+      "p_greater_than_zero": 0.5248398434171595,
+      "p_less_than_zero": 0.47516015658284044
+    },
+    "mean_hop": {
+      "name": "mean_hop",
+      "n": 241,
+      "mean": -0.0012,
+      "median": -0.0006,
+      "std": 0.2581,
+      "frac_positive": 0.4938,
+      "wilcoxon_W": 14370.0,
+      "p_two_sided": 0.8459426842721369,
+      "p_greater_than_zero": 0.5770286578639315,
+      "p_less_than_zero": 0.42297134213606846
+    },
+    "imbalance": {
+      "name": "imbalance",
+      "n": 241,
+      "mean": 0.0475,
+      "median": 0.0066,
+      "std": 0.4618,
+      "frac_positive": 0.5311,
+      "wilcoxon_W": 13264.0,
+      "p_two_sided": 0.22430160615037698,
+      "p_greater_than_zero": 0.11215080307518849,
+      "p_less_than_zero": 0.8878491969248115
+    }
+  },
+  "delta_features_chain_hurts": {
+    "nli_flat": {
+      "name": "nli_flat",
+      "n": 135,
+      "mean": 0.001,
+      "median": -0.0002,
+      "std": 0.2189,
+      "frac_positive": 0.4815,
+      "wilcoxon_W": 4155.0,
+      "p_two_sided": 0.3393880681956901,
+      "p_greater_than_zero": 0.830305965902155,
+      "p_less_than_zero": 0.16969403409784506
+    },
+    "nli_hop1": {
+      "name": "nli_hop1",
+      "n": 135,
+      "mean": 0.1447,
+      "median": 0.0082,
+      "std": 0.5797,
+      "frac_positive": 0.6667,
+      "wilcoxon_W": 2999.0,
+      "p_two_sided": 0.0004753835440424674,
+      "p_greater_than_zero": 0.0002376917720212337,
+      "p_less_than_zero": 0.9997623082279787
+    },
+    "nli_hop2": {
+      "name": "nli_hop2",
+      "n": 135,
+      "mean": -0.1986,
+      "median": -0.0361,
+      "std": 0.631,
+      "frac_positive": 0.4074,
+      "wilcoxon_W": 3013.0,
+      "p_two_sided": 0.0005331786031521494,
+      "p_greater_than_zero": 0.9997334106984239,
+      "p_less_than_zero": 0.0002665893015760747
+    },
+    "min_hop": {
+      "name": "min_hop",
+      "n": 135,
+      "mean": -0.0019,
+      "median": 0.0002,
+      "std": 0.046,
+      "frac_positive": 0.5778,
+      "wilcoxon_W": 3724.0,
+      "p_two_sided": 0.05717572571678295,
+      "p_greater_than_zero": 0.028587862858391475,
+      "p_less_than_zero": 0.9714121371416086
+    },
+    "mean_hop": {
+      "name": "mean_hop",
+      "n": 135,
+      "mean": -0.027,
+      "median": -0.0038,
+      "std": 0.2371,
+      "frac_positive": 0.4593,
+      "wilcoxon_W": 4027.0,
+      "p_two_sided": 0.2162739173753211,
+      "p_greater_than_zero": 0.8918630413123394,
+      "p_less_than_zero": 0.10813695868766054
+    },
+    "imbalance": {
+      "name": "imbalance",
+      "n": 135,
+      "mean": -0.0502,
+      "median": -0.0074,
+      "std": 0.4694,
+      "frac_positive": 0.4444,
+      "wilcoxon_W": 4029.0,
+      "p_two_sided": 0.2179100988717162,
+      "p_greater_than_zero": 0.8910449505641419,
+      "p_less_than_zero": 0.1089550494358581
+    }
+  }
+}

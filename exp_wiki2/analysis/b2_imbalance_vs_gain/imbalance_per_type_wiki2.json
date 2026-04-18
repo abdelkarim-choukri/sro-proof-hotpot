@@ -1,0 +1,128 @@
+{
+  "CHAIN_WINS": {
+    "compositional": {
+      "name": "compositional",
+      "n": 61,
+      "mean": 0.3799,
+      "std": 0.3642,
+      "median": 0.1841,
+      "q25": 0.0219,
+      "q75": 0.7772,
+      "max": 0.9739
+    },
+    "bridge_comparison": {
+      "name": "bridge_comparison",
+      "n": 89,
+      "mean": 0.6549,
+      "std": 0.3684,
+      "median": 0.8764,
+      "q25": 0.2524,
+      "q75": 0.9187,
+      "max": 0.9608
+    },
+    "comparison": {
+      "name": "comparison",
+      "n": 73,
+      "mean": 0.6733,
+      "std": 0.3747,
+      "median": 0.9023,
+      "q25": 0.4096,
+      "q75": 0.9483,
+      "max": 0.9885
+    },
+    "inference": {
+      "name": "inference",
+      "n": 18,
+      "mean": 0.3284,
+      "std": 0.307,
+      "median": 0.2621,
+      "q25": 0.05,
+      "q75": 0.5985,
+      "max": 0.8719
+    }
+  },
+  "BOTH_RIGHT": {
+    "comparison": {
+      "name": "comparison",
+      "n": 1513,
+      "mean": 0.5985,
+      "std": 0.4008,
+      "median": 0.86,
+      "q25": 0.0829,
+      "q75": 0.9374,
+      "max": 0.9904
+    },
+    "compositional": {
+      "name": "compositional",
+      "n": 1089,
+      "mean": 0.4894,
+      "std": 0.3719,
+      "median": 0.5571,
+      "q25": 0.0743,
+      "q75": 0.8691,
+      "max": 0.9846
+    },
+    "bridge_comparison": {
+      "name": "bridge_comparison",
+      "n": 1198,
+      "mean": 0.6708,
+      "std": 0.3537,
+      "median": 0.8709,
+      "q25": 0.4124,
+      "q75": 0.9273,
+      "max": 0.9843
+    },
+    "inference": {
+      "name": "inference",
+      "n": 152,
+      "mean": 0.2119,
+      "std": 0.2496,
+      "median": 0.0941,
+      "q25": 0.0248,
+      "q75": 0.3434,
+      "max": 0.8924
+    }
+  },
+  "CHAIN_HURTS": {
+    "bridge_comparison": {
+      "name": "bridge_comparison",
+      "n": 60,
+      "mean": 0.6891,
+      "std": 0.343,
+      "median": 0.8741,
+      "q25": 0.5002,
+      "q75": 0.9348,
+      "max": 0.9878
+    },
+    "comparison": {
+      "name": "comparison",
+      "n": 49,
+      "mean": 0.766,
+      "std": 0.3181,
+      "median": 0.9253,
+      "q25": 0.8299,
+      "q75": 0.9441,
+      "max": 0.9764
+    },
+    "inference": {
+      "name": "inference",
+      "n": 5,
+      "mean": 0.1856,
+      "std": 0.1373,
+      "median": 0.2233,
+      "q25": 0.0351,
+      "q75": 0.3278,
+      "max": 0.3281
+    },
+    "compositional": {
+      "name": "compositional",
+      "n": 21,
+      "mean": 0.3221,
+      "std": 0.2889,
+      "median": 0.2359,
+      "q25": 0.0407,
+      "q75": 0.5636,
+      "max": 0.7994
+    }
+  }
+}

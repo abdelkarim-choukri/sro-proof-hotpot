@@ -1,0 +1,155 @@
+{
+  "label": "hotpot_distractor",
+  "n_chain_wins": 25,
+  "n_chain_hurts": 12,
+  "n_skip_same_pick": 7023,
+  "n_skip_no_match": 154,
+  "delta_features_chain_wins": {
+    "nli_flat": {
+      "name": "nli_flat",
+      "n": 25,
+      "mean": -0.0081,
+      "median": 0.0004,
+      "std": 0.0864,
+      "frac_positive": 0.52,
+      "wilcoxon_W": 146.0,
+      "p_two_sided": 0.6720751523971558,
+      "p_greater_than_zero": 0.3360375761985779,
+      "p_less_than_zero": 0.6735794544219971
+    },
+    "nli_hop1": {
+      "name": "nli_hop1",
+      "n": 25,
+      "mean": -0.0339,
+      "median": -0.0002,
+      "std": 0.2775,
+      "frac_positive": 0.4,
+      "wilcoxon_W": 143.0,
+      "p_two_sided": 0.615043044090271,
+      "p_greater_than_zero": 0.7017500698566437,
+      "p_less_than_zero": 0.3075215220451355
+    },
+    "nli_hop2": {
+      "name": "nli_hop2",
+      "n": 25,
+      "mean": 0.0845,
+      "median": 0.0243,
+      "std": 0.3299,
+      "frac_positive": 0.72,
+      "wilcoxon_W": 87.0,
+      "p_two_sided": 0.04215019941329956,
+      "p_greater_than_zero": 0.02107509970664978,
+      "p_less_than_zero": 0.9803306460380554
+    },
+    "min_hop": {
+      "name": "min_hop",
+      "n": 25,
+      "mean": 0.0139,
+      "median": -0.0001,
+      "std": 0.0863,
+      "frac_positive": 0.44,
+      "wilcoxon_W": 160.0,
+      "p_two_sided": 0.9578450322151184,
+      "p_greater_than_zero": 0.4789225161075592,
+      "p_less_than_zero": 0.5315985679626465
+    },
+    "mean_hop": {
+      "name": "mean_hop",
+      "n": 25,
+      "mean": 0.0253,
+      "median": 0.0292,
+      "std": 0.1395,
+      "frac_positive": 0.68,
+      "wilcoxon_W": 107.0,
+      "p_two_sided": 0.14091521501541138,
+      "p_greater_than_zero": 0.07045760750770569,
+      "p_less_than_zero": 0.9331799745559692
+    },
+    "imbalance": {
+      "name": "imbalance",
+      "n": 25,
+      "mean": 0.0227,
+      "median": 0.0112,
+      "std": 0.2472,
+      "frac_positive": 0.64,
+      "wilcoxon_W": 120.0,
+      "p_two_sided": 0.2634761333465576,
+      "p_greater_than_zero": 0.1317380666732788,
+      "p_less_than_zero": 0.8739480376243591
+    }
+  },
+  "delta_features_chain_hurts": {
+    "nli_flat": {
+      "name": "nli_flat",
+      "n": 12,
+      "mean": -0.0082,
+      "median": 0.0037,
+      "std": 0.1034,
+      "frac_positive": 0.5833,
+      "wilcoxon_W": 33.0,
+      "p_two_sided": 0.67724609375,
+      "p_greater_than_zero": 0.338623046875,
+      "p_less_than_zero": 0.68896484375
+    },
+    "nli_hop1": {
+      "name": "nli_hop1",
+      "n": 12,
+      "mean": 0.0146,
+      "median": -0.0016,
+      "std": 0.3223,
+      "frac_positive": 0.3333,
+      "wilcoxon_W": 28.0,
+      "p_two_sided": 0.423828125,
+      "p_greater_than_zero": 0.809814453125,
+      "p_less_than_zero": 0.2119140625
+    },
+    "nli_hop2": {
+      "name": "nli_hop2",
+      "n": 12,
+      "mean": -0.0331,
+      "median": -0.0034,
+      "std": 0.1622,
+      "frac_positive": 0.4167,
+      "wilcoxon_W": 36.0,
+      "p_two_sided": 0.85009765625,
+      "p_greater_than_zero": 0.6044921875,
+      "p_less_than_zero": 0.425048828125
+    },
+    "min_hop": {
+      "name": "min_hop",
+      "n": 12,
+      "mean": 0.0324,
+      "median": -0.0013,
+      "std": 0.2963,
+      "frac_positive": 0.4167,
+      "wilcoxon_W": 36.0,
+      "p_two_sided": 0.85009765625,
+      "p_greater_than_zero": 0.6044921875,
+      "p_less_than_zero": 0.425048828125
+    },
+    "mean_hop": {
+      "name": "mean_hop",
+      "n": 12,
+      "mean": -0.0093,
+      "median": -0.0092,
+      "std": 0.2031,
+      "frac_positive": 0.4167,
+      "wilcoxon_W": 35.0,
+      "p_two_sided": 0.791015625,
+      "p_greater_than_zero": 0.63330078125,
+      "p_less_than_zero": 0.3955078125
+    },
+    "imbalance": {
+      "name": "imbalance",
+      "n": 12,
+      "mean": -0.0834,
+      "median": -0.0189,
+      "std": 0.2529,
+      "frac_positive": 0.5,
+      "wilcoxon_W": 30.0,
+      "p_two_sided": 0.5185546875,
+      "p_greater_than_zero": 0.76513671875,
+      "p_less_than_zero": 0.25927734375
+    }
+  }
+}

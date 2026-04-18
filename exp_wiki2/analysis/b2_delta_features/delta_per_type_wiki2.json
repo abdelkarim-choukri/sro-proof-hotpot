@@ -1,0 +1,622 @@
+{
+  "CHAIN_WINS": {
+    "compositional": {
+      "n": 61,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 61,
+          "mean": 0.0549,
+          "median": 0.0043,
+          "std": 0.2319,
+          "frac_positive": 0.623,
+          "wilcoxon_W": 673.0,
+          "p_two_sided": 0.0503114590377925,
+          "p_greater_than_zero": 0.02515572951889625,
+          "p_less_than_zero": 0.9748442704811038
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 61,
+          "mean": -0.1201,
+          "median": -0.0004,
+          "std": 0.2887,
+          "frac_positive": 0.459,
+          "wilcoxon_W": 765.0,
+          "p_two_sided": 0.19480637587037375,
+          "p_greater_than_zero": 0.9025968120648131,
+          "p_less_than_zero": 0.09740318793518687
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 61,
+          "mean": 0.1624,
+          "median": 0.0031,
+          "std": 0.4019,
+          "frac_positive": 0.5574,
+          "wilcoxon_W": 669.0,
+          "p_two_sided": 0.04702560807996231,
+          "p_greater_than_zero": 0.023512804039981156,
+          "p_less_than_zero": 0.9764871959600189
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 61,
+          "mean": -0.0224,
+          "median": 0.0005,
+          "std": 0.1807,
+          "frac_positive": 0.5574,
+          "wilcoxon_W": 795.0,
+          "p_two_sided": 0.279693671463618,
+          "p_greater_than_zero": 0.139846835731809,
+          "p_less_than_zero": 0.860153164268191
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 61,
+          "mean": 0.0211,
+          "median": -0.0061,
+          "std": 0.2311,
+          "frac_positive": 0.459,
+          "wilcoxon_W": 941.0,
+          "p_two_sided": 0.9742148737378238,
+          "p_greater_than_zero": 0.4871074368689119,
+          "p_less_than_zero": 0.5128925631310881
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 61,
+          "mean": 0.0871,
+          "median": -0.0025,
+          "std": 0.4149,
+          "frac_positive": 0.4918,
+          "wilcoxon_W": 811.0,
+          "p_two_sided": 0.3340024865153688,
+          "p_greater_than_zero": 0.1670012432576844,
+          "p_less_than_zero": 0.8329987567423156
+        }
+      }
+    },
+    "bridge_comparison": {
+      "n": 89,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 89,
+          "mean": -0.0333,
+          "median": -0.0002,
+          "std": 0.2442,
+          "frac_positive": 0.4831,
+          "wilcoxon_W": 1774.5,
+          "p_two_sided": 0.35091258062461883,
+          "p_greater_than_zero": 0.8245437096876906,
+          "p_less_than_zero": 0.17545629031230942
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 89,
+          "mean": -0.1996,
+          "median": -0.1152,
+          "std": 0.6766,
+          "frac_positive": 0.3708,
+          "wilcoxon_W": 1416.0,
+          "p_two_sided": 0.016414975237710183,
+          "p_greater_than_zero": 0.9917925123811449,
+          "p_less_than_zero": 0.008207487618855092
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 89,
+          "mean": 0.2775,
+          "median": 0.0268,
+          "std": 0.6261,
+          "frac_positive": 0.6854,
+          "wilcoxon_W": 1075.0,
+          "p_two_sided": 0.00014782563240483298,
+          "p_greater_than_zero": 7.391281620241649e-05,
+          "p_less_than_zero": 0.9999260871837976
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 89,
+          "mean": 0.0002,
+          "median": 0.0003,
+          "std": 0.0145,
+          "frac_positive": 0.5955,
+          "wilcoxon_W": 1636.0,
+          "p_two_sided": 0.13375219381706302,
+          "p_greater_than_zero": 0.06687609690853151,
+          "p_less_than_zero": 0.9331239030914685
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 89,
+          "mean": 0.039,
+          "median": 0.0087,
+          "std": 0.237,
+          "frac_positive": 0.5843,
+          "wilcoxon_W": 1591.0,
+          "p_two_sided": 0.09226366959803117,
+          "p_greater_than_zero": 0.046131834799015586,
+          "p_less_than_zero": 0.9538681652009844
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 89,
+          "mean": 0.0775,
+          "median": 0.0156,
+          "std": 0.4715,
+          "frac_positive": 0.5955,
+          "wilcoxon_W": 1625.0,
+          "p_two_sided": 0.12247423253535113,
+          "p_greater_than_zero": 0.06123711626767556,
+          "p_less_than_zero": 0.9387628837323244
+        }
+      }
+    },
+    "comparison": {
+      "n": 73,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 73,
+          "mean": 0.0633,
+          "median": 0.0021,
+          "std": 0.1574,
+          "frac_positive": 0.6164,
+          "wilcoxon_W": 841.0,
+          "p_two_sided": 0.005094376246061311,
+          "p_greater_than_zero": 0.0025471881230306557,
+          "p_less_than_zero": 0.9974528118769693
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 73,
+          "mean": -0.5096,
+          "median": -0.8742,
+          "std": 0.533,
+          "frac_positive": 0.1507,
+          "wilcoxon_W": 282.0,
+          "p_two_sided": 4.2504763210692394e-09,
+          "p_greater_than_zero": 0.9999999978747618,
+          "p_less_than_zero": 2.1252381605346197e-09
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 73,
+          "mean": 0.4947,
+          "median": 0.8331,
+          "std": 0.5883,
+          "frac_positive": 0.8356,
+          "wilcoxon_W": 394.0,
+          "p_two_sided": 1.4530442562655625e-07,
+          "p_greater_than_zero": 7.265221281327812e-08,
+          "p_less_than_zero": 0.9999999273477872
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 73,
+          "mean": -0.0187,
+          "median": -0.0002,
+          "std": 0.0855,
+          "frac_positive": 0.3973,
+          "wilcoxon_W": 1106.0,
+          "p_two_sided": 0.17889909521634983,
+          "p_greater_than_zero": 0.9105504523918251,
+          "p_less_than_zero": 0.08944954760817492
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 73,
+          "mean": -0.0075,
+          "median": -0.0004,
+          "std": 0.2627,
+          "frac_positive": 0.4932,
+          "wilcoxon_W": 1348.0,
+          "p_two_sided": 0.9890343075501461,
+          "p_greater_than_zero": 0.49451715377507305,
+          "p_less_than_zero": 0.505482846224927
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 73,
+          "mean": 0.0225,
+          "median": 0.0233,
+          "std": 0.4904,
+          "frac_positive": 0.5342,
+          "wilcoxon_W": 1220.0,
+          "p_two_sided": 0.4731081599160828,
+          "p_greater_than_zero": 0.2365540799580414,
+          "p_less_than_zero": 0.7634459200419585
+        }
+      }
+    },
+    "inference": {
+      "n": 18,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 18,
+          "mean": 0.0193,
+          "median": 0.0026,
+          "std": 0.3127,
+          "frac_positive": 0.6111,
+          "wilcoxon_W": 69.0,
+          "p_two_sided": 0.49507904052734375,
+          "p_greater_than_zero": 0.24753952026367188,
+          "p_less_than_zero": 0.7658538818359375
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 18,
+          "mean": -0.263,
+          "median": -0.1025,
+          "std": 0.3055,
+          "frac_positive": 0.1111,
+          "wilcoxon_W": 7.0,
+          "p_two_sided": 0.00014495849609375,
+          "p_greater_than_zero": 0.9999465942382812,
+          "p_less_than_zero": 7.2479248046875e-05
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 18,
+          "mean": -0.2378,
+          "median": -0.0082,
+          "std": 0.4048,
+          "frac_positive": 0.4444,
+          "wilcoxon_W": 51.0,
+          "p_two_sided": 0.14151763916015625,
+          "p_greater_than_zero": 0.9351310729980469,
+          "p_less_than_zero": 0.07075881958007812
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 18,
+          "mean": -0.1839,
+          "median": -0.0248,
+          "std": 0.305,
+          "frac_positive": 0.2222,
+          "wilcoxon_W": 17.0,
+          "p_two_sided": 0.00157928466796875,
+          "p_greater_than_zero": 0.9993553161621094,
+          "p_less_than_zero": 0.000789642333984375
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 18,
+          "mean": -0.2504,
+          "median": -0.2014,
+          "std": 0.2856,
+          "frac_positive": 0.1667,
+          "wilcoxon_W": 12.0,
+          "p_two_sided": 0.0005340576171875,
+          "p_greater_than_zero": 0.9997901916503906,
+          "p_less_than_zero": 0.00026702880859375
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 18,
+          "mean": -0.133,
+          "median": -0.095,
+          "std": 0.391,
+          "frac_positive": 0.3333,
+          "wilcoxon_W": 47.0,
+          "p_two_sided": 0.0987396240234375,
+          "p_greater_than_zero": 0.9551162719726562,
+          "p_less_than_zero": 0.04936981201171875
+        }
+      }
+    }
+  },
+  "CHAIN_HURTS": {
+    "bridge_comparison": {
+      "n": 60,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 60,
+          "mean": -0.0626,
+          "median": -0.0037,
+          "std": 0.1965,
+          "frac_positive": 0.3667,
+          "wilcoxon_W": 471.0,
+          "p_two_sided": 0.0010809941395103183,
+          "p_greater_than_zero": 0.9994595029302449,
+          "p_less_than_zero": 0.0005404970697551591
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 60,
+          "mean": 0.1341,
+          "median": 0.0095,
+          "std": 0.6208,
+          "frac_positive": 0.6333,
+          "wilcoxon_W": 691.0,
+          "p_two_sided": 0.0991478247548067,
+          "p_greater_than_zero": 0.04957391237740335,
+          "p_less_than_zero": 0.9504260876225966
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 60,
+          "mean": -0.2115,
+          "median": -0.1431,
+          "std": 0.658,
+          "frac_positive": 0.3833,
+          "wilcoxon_W": 585.0,
+          "p_two_sided": 0.015126799117971637,
+          "p_greater_than_zero": 0.9924366004410142,
+          "p_less_than_zero": 0.007563399558985819
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 60,
+          "mean": 0.0024,
+          "median": 0.0003,
+          "std": 0.0261,
+          "frac_positive": 0.6,
+          "wilcoxon_W": 736.0,
+          "p_two_sided": 0.18759507374323436,
+          "p_greater_than_zero": 0.09379753687161718,
+          "p_less_than_zero": 0.9062024631283828
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 60,
+          "mean": -0.0387,
+          "median": -0.014,
+          "std": 0.2274,
+          "frac_positive": 0.3833,
+          "wilcoxon_W": 693.0,
+          "p_two_sided": 0.10220093875898684,
+          "p_greater_than_zero": 0.9488995306205066,
+          "p_less_than_zero": 0.05110046937949342
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 60,
+          "mean": -0.0821,
+          "median": -0.0297,
+          "std": 0.4533,
+          "frac_positive": 0.3833,
+          "wilcoxon_W": 679.0,
+          "p_two_sided": 0.08232747348714646,
+          "p_greater_than_zero": 0.9588362632564268,
+          "p_less_than_zero": 0.04116373674357323
+        }
+      }
+    },
+    "comparison": {
+      "n": 49,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 49,
+          "mean": 0.0328,
+          "median": -0.0,
+          "std": 0.2415,
+          "frac_positive": 0.4898,
+          "wilcoxon_W": 606.0,
+          "p_two_sided": 0.9528409629107735,
+          "p_greater_than_zero": 0.5275037562155198,
+          "p_less_than_zero": 0.47642048145538674
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 49,
+          "mean": 0.2365,
+          "median": 0.0894,
+          "std": 0.6539,
+          "frac_positive": 0.7551,
+          "wilcoxon_W": 318.0,
+          "p_two_sided": 0.002889376864825266,
+          "p_greater_than_zero": 0.001444688432412633,
+          "p_less_than_zero": 0.9986052148406035
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 49,
+          "mean": -0.3743,
+          "median": -0.8246,
+          "std": 0.6519,
+          "frac_positive": 0.2653,
+          "wilcoxon_W": 269.0,
+          "p_two_sided": 0.0004385102176271971,
+          "p_greater_than_zero": 0.9997897925066983,
+          "p_less_than_zero": 0.00021925510881359855
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 49,
+          "mean": -0.0007,
+          "median": 0.0001,
+          "std": 0.0124,
+          "frac_positive": 0.551,
+          "wilcoxon_W": 540.0,
+          "p_two_sided": 0.47723747237424874,
+          "p_greater_than_zero": 0.23861873618712437,
+          "p_less_than_zero": 0.7644391816189113
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 49,
+          "mean": -0.0689,
+          "median": -0.0041,
+          "std": 0.2666,
+          "frac_positive": 0.4082,
+          "wilcoxon_W": 447.0,
+          "p_two_sided": 0.10106466069455422,
+          "p_greater_than_zero": 0.9505101824497526,
+          "p_less_than_zero": 0.05053233034727711
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 49,
+          "mean": -0.1363,
+          "median": -0.0143,
+          "std": 0.5249,
+          "frac_positive": 0.3878,
+          "wilcoxon_W": 438.0,
+          "p_two_sided": 0.08348906325065641,
+          "p_greater_than_zero": 0.9591518286093699,
+          "p_less_than_zero": 0.04174453162532821
+        }
+      }
+    },
+    "inference": {
+      "n": 5,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 5,
+          "mean": 0.0793,
+          "median": 0.0029,
+          "std": 0.0978,
+          "frac_positive": 0.8,
+          "wilcoxon_W": 1.0,
+          "p_two_sided": 0.125,
+          "p_greater_than_zero": 0.0625,
+          "p_less_than_zero": 0.96875
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 5,
+          "mean": -0.02,
+          "median": -0.0142,
+          "std": 0.2352,
+          "frac_positive": 0.4,
+          "wilcoxon_W": 7.0,
+          "p_two_sided": 1.0,
+          "p_greater_than_zero": 0.59375,
+          "p_less_than_zero": 0.5
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 5,
+          "mean": 0.3013,
+          "median": 0.1651,
+          "std": 0.3213,
+          "frac_positive": 1.0,
+          "wilcoxon_W": 0.0,
+          "p_two_sided": 0.0625,
+          "p_greater_than_zero": 0.03125,
+          "p_less_than_zero": 1.0
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 5,
+          "mean": -0.0666,
+          "median": -0.0007,
+          "std": 0.1966,
+          "frac_positive": 0.4,
+          "wilcoxon_W": 6.0,
+          "p_two_sided": 0.8125,
+          "p_greater_than_zero": 0.6875,
+          "p_less_than_zero": 0.40625
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 5,
+          "mean": 0.1407,
+          "median": 0.1274,
+          "std": 0.2127,
+          "frac_positive": 0.6,
+          "wilcoxon_W": 4.0,
+          "p_two_sided": 0.4375,
+          "p_greater_than_zero": 0.21875,
+          "p_less_than_zero": 0.84375
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 5,
+          "mean": 0.4146,
+          "median": 0.5487,
+          "std": 0.2599,
+          "frac_positive": 0.8,
+          "wilcoxon_W": 1.0,
+          "p_two_sided": 0.125,
+          "p_greater_than_zero": 0.0625,
+          "p_less_than_zero": 0.96875
+        }
+      }
+    },
+    "compositional": {
+      "n": 21,
+      "delta_features": {
+        "nli_flat": {
+          "name": "nli_flat",
+          "n": 21,
+          "mean": 0.0897,
+          "median": 0.0042,
+          "std": 0.1901,
+          "frac_positive": 0.7143,
+          "wilcoxon_W": 54.0,
+          "p_two_sided": 0.03191947937011719,
+          "p_greater_than_zero": 0.015959739685058594,
+          "p_less_than_zero": 0.9854927062988281
+        },
+        "nli_hop1": {
+          "name": "nli_hop1",
+          "n": 21,
+          "mean": 0.0,
+          "median": 0.0008,
+          "std": 0.0332,
+          "frac_positive": 0.619,
+          "wilcoxon_W": 72.0,
+          "p_two_sided": 0.1372833251953125,
+          "p_greater_than_zero": 0.06864166259765625,
+          "p_less_than_zero": 0.9359607696533203
+        },
+        "nli_hop2": {
+          "name": "nli_hop2",
+          "n": 21,
+          "mean": 0.129,
+          "median": 0.0583,
+          "std": 0.2584,
+          "frac_positive": 0.6667,
+          "wilcoxon_W": 61.0,
+          "p_two_sided": 0.05950736999511719,
+          "p_greater_than_zero": 0.029753684997558594,
+          "p_less_than_zero": 0.9726533889770508
+        },
+        "min_hop": {
+          "name": "min_hop",
+          "n": 21,
+          "mean": -0.0012,
+          "median": 0.0008,
+          "std": 0.0325,
+          "frac_positive": 0.619,
+          "wilcoxon_W": 73.0,
+          "p_two_sided": 0.14696407318115234,
+          "p_greater_than_zero": 0.07348203659057617,
+          "p_less_than_zero": 0.9313583374023438
+        },
+        "mean_hop": {
+          "name": "mean_hop",
+          "n": 21,
+          "mean": 0.0645,
+          "median": 0.0317,
+          "std": 0.1318,
+          "frac_positive": 0.7619,
+          "wilcoxon_W": 52.0,
+          "p_two_sided": 0.026330947875976562,
+          "p_greater_than_zero": 0.013165473937988281,
+          "p_less_than_zero": 0.9880728721618652
+        },
+        "imbalance": {
+          "name": "imbalance",
+          "n": 21,
+          "mean": 0.1313,
+          "median": 0.0544,
+          "std": 0.256,
+          "frac_positive": 0.6667,
+          "wilcoxon_W": 54.0,
+          "p_two_sided": 0.03191947937011719,
+          "p_greater_than_zero": 0.015959739685058594,
+          "p_less_than_zero": 0.9854927062988281
+        }
+      }
+    }
+  }
+}
