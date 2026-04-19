@@ -1,0 +1,53 @@
+{
+  "setting": "hotpotqa_1p5b",
+  "label": "HotpotQA MDR (1.5B)",
+  "z2nov_em": 0.3724510465901418,
+  "z3_em": 0.39108710330857527,
+  "z2nov_features": [
+    "nli_score",
+    "nli_rank",
+    "nli_score_gap",
+    "answer_len_chars",
+    "answer_len_words",
+    "cand_idx"
+  ],
+  "z3_features": [
+    "cand_idx",
+    "nli_hop1",
+    "nli_hop2",
+    "nli_hop_balance",
+    "qa_hop1",
+    "qa_hop2",
+    "qa_hop_balance",
+    "lex_hop1",
+    "lex_hop2",
+    "lex_hop_balance"
+  ],
+  "z2nov_importances": {
+    "answer_len_words": 0.3172,
+    "answer_len_chars": 0.1771,
+    "cand_idx": 0.1611,
+    "nli_score_gap": 0.1403,
+    "nli_rank": 0.1039,
+    "nli_score": 0.1004
+  },
+  "z3_importances": {
+    "qa_hop2": 0.1916,
+    "qa_hop_balance": 0.1857,
+    "nli_hop_balance": 0.1018,
+    "lex_hop2": 0.1002,
+    "nli_hop2": 0.0907,
+    "lex_hop1": 0.0904,
+    "nli_hop1": 0.0776,
+    "lex_hop_balance": 0.0759,
+    "qa_hop1": 0.0722,
+    "cand_idx": 0.0139
+  },
+  "z3_vs_z2nov": {
+    "delta_pp": 1.86,
+    "ci_lo": 1.3,
+    "ci_hi": 2.43,
+    "p": 0.0,
+    "sig": "***"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "system_cis": {
+    "Z1_majority": {
+      "em": 0.362593,
+      "ci_95_lower": 0.351519,
+      "ci_95_upper": 0.373535,
+      "boot_std": 0.005697
+    },
+    "Z2_surface": {
+      "em": 0.379878,
+      "ci_95_lower": 0.369075,
+      "ci_95_upper": 0.390952,
+      "boot_std": 0.005655
+    },
+    "Z3_chain": {
+      "em": 0.367995,
+      "ci_95_lower": 0.356921,
+      "ci_95_upper": 0.378798,
+      "boot_std": 0.005599
+    },
+    "Z_full": {
+      "em": 0.386631,
+      "ci_95_lower": 0.375689,
+      "ci_95_upper": 0.397434,
+      "boot_std": 0.005631
+    },
+    "Monolithic": {
+      "em": 0.466577,
+      "ci_95_lower": 0.455095,
+      "ci_95_upper": 0.47819,
+      "boot_std": 0.00587
+    }
+  },
+  "pairwise_tests": {
+    "Z_full_vs_Z2_surface": {
+      "observed_delta": 0.006752194463200523,
+      "observed_delta_pp": 0.68,
+      "ci_95_lower": 0.002701,
+      "ci_95_upper": 0.010668,
+      "ci_95_lower_pp": 0.27,
+      "ci_95_upper_pp": 1.07,
+      "p_value": 0.0006,
+      "boot_std": 0.002037,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain marginal (Z_full - Z2)",
+      "system_a": "Z_full",
+      "system_b": "Z2_surface"
+    },
+    "Z_full_vs_Z1_majority": {
+      "observed_delta": 0.02403781228899393,
+      "observed_delta_pp": 2.4,
+      "ci_95_lower": 0.018906,
+      "ci_95_upper": 0.029169,
+      "ci_95_lower_pp": 1.89,
+      "ci_95_upper_pp": 2.92,
+      "p_value": 0.0,
+      "boot_std": 0.00263,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Full model vs majority vote",
+      "system_a": "Z_full",
+      "system_b": "Z1_majority"
+    },
+    "Z_full_vs_Z3_chain": {
+      "observed_delta": 0.01863605671843349,
+      "observed_delta_pp": 1.86,
+      "ci_95_lower": 0.013369,
+      "ci_95_upper": 0.023903,
+      "ci_95_lower_pp": 1.34,
+      "ci_95_upper_pp": 2.39,
+      "p_value": 0.0,
+      "boot_std": 0.002671,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Surface marginal (Z_full - Z3)",
+      "system_a": "Z_full",
+      "system_b": "Z3_chain"
+    },
+    "Z1_majority_vs_Z2_surface": {
+      "observed_delta": -0.01728561782579341,
+      "observed_delta_pp": -1.73,
+      "ci_95_lower": -0.022282,
+      "ci_95_upper": -0.012421,
+      "ci_95_lower_pp": -2.23,
+      "ci_95_upper_pp": -1.24,
+      "p_value": 0.0,
+      "boot_std": 0.002512,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Majority vote vs surface XGB",
+      "system_a": "Z1_majority",
+      "system_b": "Z2_surface"
+    },
+    "Z3_chain_vs_Monolithic": {
+      "observed_delta": -0.0985820391627279,
+      "observed_delta_pp": -9.86,
+      "ci_95_lower": -0.108845,
+      "ci_95_upper": -0.088319,
+      "ci_95_lower_pp": -10.88,
+      "ci_95_upper_pp": -8.83,
+      "p_value": 0.0,
+      "boot_std": 0.005214,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs monolithic",
+      "system_a": "Z3_chain",
+      "system_b": "Monolithic"
+    },
+    "Z_full_vs_Monolithic": {
+      "observed_delta": -0.0799459824442944,
+      "observed_delta_pp": -7.99,
+      "ci_95_lower": -0.089939,
+      "ci_95_upper": -0.070088,
+      "ci_95_lower_pp": -8.99,
+      "ci_95_upper_pp": -7.01,
+      "p_value": 0.0,
+      "boot_std": 0.005094,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Two-stage vs monolithic",
+      "system_a": "Z_full",
+      "system_b": "Monolithic"
+    },
+    "Z3_chain_vs_Z1_majority": {
+      "observed_delta": 0.00540175557056044,
+      "observed_delta_pp": 0.54,
+      "ci_95_lower": -0.000945,
+      "ci_95_upper": 0.011614,
+      "ci_95_lower_pp": -0.09,
+      "ci_95_upper_pp": 1.16,
+      "p_value": 0.0489,
+      "boot_std": 0.003198,
+      "significant_at_05": true,
+      "significant_at_01": false,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs majority vote",
+      "system_a": "Z3_chain",
+      "system_b": "Z1_majority"
+    },
+    "Z3_chain_vs_Z2_surface": {
+      "observed_delta": -0.011883862255232969,
+      "observed_delta_pp": -1.19,
+      "ci_95_lower": -0.018096,
+      "ci_95_upper": -0.005807,
+      "ci_95_lower_pp": -1.81,
+      "ci_95_upper_pp": -0.58,
+      "p_value": 0.0001,
+      "boot_std": 0.003109,
+      "significant_at_05": true,
+      "significant_at_01": true,
+      "n_bootstrap": 10000,
+      "label": "Chain-only vs surface-only",
+      "system_a": "Z3_chain",
+      "system_b": "Z2_surface"
+    }
+  },
+  "meta": {
+    "n_questions": 7405,
+    "n_bootstrap": 10000,
+    "seed": 42,
+    "distractor_mode": false,
+    "systems_loaded": [
+      "Z1_majority",
+      "Z2_surface",
+      "Z3_chain",
+      "Z_full",
+      "Monolithic"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "script": "exp_a1_lex_features.py",
+  "evidence": "exp1b/evidence/dev_K100_chains.jsonl",
+  "candidates": "exp1b/candidates/dev_M5_candidates_qwen.jsonl",
+  "out_jsonl": "exp1b/preds/dev_lex_features.jsonl",
+  "n_written": 7405,
+  "n_skip_hops": 0,
+  "n_skip_cands": 0,
+  "elapsed_min": 0.13,
+  "features_output": [
+    "ans_in_hop1",
+    "ans_in_hop2",
+    "ans_in_both",
+    "ans_in_neither",
+    "lex_hop1",
+    "lex_hop2",
+    "lex_flat",
+    "lex_hop_balance",
+    "lex_min_hop",
+    "q_entity_in_hop1",
+    "q_entity_in_hop2"
+  ],
+  "timestamp": "2026-04-19T03:10:19"
+}

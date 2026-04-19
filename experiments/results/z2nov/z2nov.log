@@ -1,0 +1,191 @@
+[08:19:13] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:13]   HotpotQA MDR (7B)
+[08:19:13] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:14]   Loaded: 7,405 questions
+[08:19:14]   All-filtered questions: 1,289
+[08:19:15]   Feature matrices: 6,116 questions
+[08:19:17] Running Z2_NoV: 6 features — ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_len_chars', 'answer_len_words', 'cand_idx']
+[08:19:17]   Matrix: 28581 × 6  positive rate=0.5591
+[08:19:18]   Fold 1/5
+[08:19:18]   Fold 2/5
+[08:19:18]   Fold 3/5
+[08:19:18]   Fold 4/5
+[08:19:19]   Fold 5/5
+[08:19:19]   Z2_NoV: 3407/7405 = 0.4601 EM
+[08:19:19]   Top features:
+[08:19:19]     #1  answer_len_chars          0.2046
+[08:19:19]     #2  cand_idx                  0.1857
+[08:19:19]     #3  nli_score_gap             0.1840
+[08:19:19]     #4  nli_score                 0.1645
+[08:19:19]     #5  answer_len_words          0.1503
+[08:19:19]     #6  nli_rank                  0.1109
+[08:19:19] Running Z3_chain: 10 features — ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[08:19:19]   Matrix: 28581 × 10  positive rate=0.5591
+[08:19:19]   Fold 1/5
+[08:19:19]   Fold 2/5
+[08:19:20]   Fold 3/5
+[08:19:20]   Fold 4/5
+[08:19:20]   Fold 5/5
+[08:19:20]   Z3_chain: 3453/7405 = 0.4663 EM
+[08:19:20]   Top features:
+[08:19:20]     #1  qa_hop2                   0.1650
+[08:19:20]     #2  qa_hop_balance            0.1193
+[08:19:20]     #3  lex_hop1                  0.1076
+[08:19:20]     #4  lex_hop_balance           0.1044
+[08:19:20]     #5  lex_hop2                  0.1006
+[08:19:20]     #6  nli_hop_balance           0.1000
+[08:19:21] 
+  ── RESULT: Z3 vs Z2-NoV ──
+[08:19:21]   Z2-NoV (flat NLI, no voting) : 0.4601 EM
+[08:19:21]   Z3     (chain, no voting)    : 0.4663 EM
+[08:19:21]   Δ Z3 − Z2-NoV = +0.62pp  95%CI [+0.18, +1.08]  p=0.0032  **
+[08:19:21]   Interpretation: Z3 (per-hop) IS stronger than flat NLI alone
+[08:19:21]   Saved → experiments/results/z2nov/hotpotqa_mdr_z2nov_stats.json
+[08:19:21] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:21]   HotpotQA Distractor (7B)
+[08:19:21] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:23]   Loaded: 7,405 questions
+[08:19:23]   All-filtered questions: 962
+[08:19:23]   Feature matrices: 6,443 questions
+[08:19:23] Running Z2_NoV: 6 features — ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_len_chars', 'answer_len_words', 'cand_idx']
+[08:19:24]   Matrix: 30585 × 6  positive rate=0.5338
+[08:19:24]   Fold 1/5
+[08:19:24]   Fold 2/5
+[08:19:24]   Fold 3/5
+[08:19:24]   Fold 4/5
+[08:19:24]   Fold 5/5
+[08:19:24]   Z2_NoV: 3773/7405 = 0.5095 EM
+[08:19:24]   Top features:
+[08:19:24]     #1  nli_score_gap             0.2316
+[08:19:24]     #2  answer_len_chars          0.2087
+[08:19:24]     #3  nli_score                 0.1818
+[08:19:24]     #4  answer_len_words          0.1738
+[08:19:24]     #5  cand_idx                  0.1303
+[08:19:24]     #6  nli_rank                  0.0737
+[08:19:24] Running Z3_chain: 10 features — ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[08:19:25]   Matrix: 30585 × 10  positive rate=0.5338
+[08:19:25]   Fold 1/5
+[08:19:25]   Fold 2/5
+[08:19:25]   Fold 3/5
+[08:19:26]   Fold 4/5
+[08:19:26]   Fold 5/5
+[08:19:26]   Z3_chain: 3809/7405 = 0.5144 EM
+[08:19:26]   Top features:
+[08:19:26]     #1  qa_hop2                   0.1825
+[08:19:26]     #2  qa_hop_balance            0.1286
+[08:19:26]     #3  lex_hop1                  0.0992
+[08:19:26]     #4  lex_hop2                  0.0969
+[08:19:26]     #5  nli_hop_balance           0.0957
+[08:19:26]     #6  nli_hop2                  0.0936
+[08:19:27] 
+  ── RESULT: Z3 vs Z2-NoV ──
+[08:19:27]   Z2-NoV (flat NLI, no voting) : 0.5095 EM
+[08:19:27]   Z3     (chain, no voting)    : 0.5144 EM
+[08:19:27]   Δ Z3 − Z2-NoV = +0.49pp  95%CI [+0.12, +0.86]  p=0.0066  **
+[08:19:27]   Interpretation: Z3 (per-hop) IS stronger than flat NLI alone
+[08:19:27]   Saved → experiments/results/z2nov/hotpotqa_distractor_z2nov_stats.json
+[08:19:27] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:27]   2WikiMultiHopQA (7B)
+[08:19:27] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:31]   Loaded: 12,576 questions
+[08:19:31]   All-filtered questions: 3,399
+[08:19:32]   Feature matrices: 9,177 questions
+[08:19:32] Running Z2_NoV: 6 features — ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_len_chars', 'answer_len_words', 'cand_idx']
+[08:19:32]   Matrix: 42573 × 6  positive rate=0.4478
+[08:19:32]   Fold 1/5
+[08:19:33]   Fold 2/5
+[08:19:33]   Fold 3/5
+[08:19:33]   Fold 4/5
+[08:19:33]   Fold 5/5
+[08:19:33]   Z2_NoV: 4061/12576 = 0.3229 EM
+[08:19:33]   Top features:
+[08:19:33]     #1  answer_len_chars          0.2357
+[08:19:33]     #2  answer_len_words          0.2215
+[08:19:33]     #3  nli_score                 0.1880
+[08:19:33]     #4  cand_idx                  0.1398
+[08:19:33]     #5  nli_score_gap             0.1348
+[08:19:33]     #6  nli_rank                  0.0802
+[08:19:33] Running Z3_chain: 10 features — ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[08:19:34]   Matrix: 42573 × 10  positive rate=0.4478
+[08:19:34]   Fold 1/5
+[08:19:34]   Fold 2/5
+[08:19:35]   Fold 3/5
+[08:19:35]   Fold 4/5
+[08:19:35]   Fold 5/5
+[08:19:35]   Z3_chain: 4162/12576 = 0.3309 EM
+[08:19:35]   Top features:
+[08:19:35]     #1  qa_hop1                   0.1739
+[08:19:35]     #2  lex_hop_balance           0.1590
+[08:19:35]     #3  lex_hop1                  0.1109
+[08:19:35]     #4  nli_hop1                  0.0982
+[08:19:35]     #5  qa_hop_balance            0.0966
+[08:19:35]     #6  qa_hop2                   0.0935
+[08:19:36] 
+  ── RESULT: Z3 vs Z2-NoV ──
+[08:19:36]   Z2-NoV (flat NLI, no voting) : 0.3229 EM
+[08:19:36]   Z3     (chain, no voting)    : 0.3309 EM
+[08:19:36]   Δ Z3 − Z2-NoV = +0.80pp  95%CI [+0.47, +1.16]  p=0.0000  ***
+[08:19:36]   Interpretation: Z3 (per-hop) IS stronger than flat NLI alone
+[08:19:37]   Saved → experiments/results/z2nov/wiki2_z2nov_stats.json
+[08:19:37] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:37]   HotpotQA MDR (1.5B)
+[08:19:37] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:38]   Loaded: 7,405 questions
+[08:19:38]   All-filtered questions: 943
+[08:19:38]   Feature matrices: 6,462 questions
+[08:19:38] Running Z2_NoV: 6 features — ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_len_chars', 'answer_len_words', 'cand_idx']
+[08:19:39]   Matrix: 27857 × 6  positive rate=0.3732
+[08:19:39]   Fold 1/5
+[08:19:39]   Fold 2/5
+[08:19:39]   Fold 3/5
+[08:19:39]   Fold 4/5
+[08:19:40]   Fold 5/5
+[08:19:40]   Z2_NoV: 2758/7405 = 0.3725 EM
+[08:19:40]   Top features:
+[08:19:40]     #1  answer_len_words          0.3172
+[08:19:40]     #2  answer_len_chars          0.1771
+[08:19:40]     #3  cand_idx                  0.1611
+[08:19:40]     #4  nli_score_gap             0.1403
+[08:19:40]     #5  nli_rank                  0.1039
+[08:19:40]     #6  nli_score                 0.1004
+[08:19:40] Running Z3_chain: 10 features — ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[08:19:40]   Matrix: 27857 × 10  positive rate=0.3732
+[08:19:40]   Fold 1/5
+[08:19:40]   Fold 2/5
+[08:19:41]   Fold 3/5
+[08:19:41]   Fold 4/5
+[08:19:41]   Fold 5/5
+[08:19:41]   Z3_chain: 2896/7405 = 0.3911 EM
+[08:19:41]   Top features:
+[08:19:41]     #1  qa_hop2                   0.1916
+[08:19:41]     #2  qa_hop_balance            0.1857
+[08:19:41]     #3  nli_hop_balance           0.1018
+[08:19:41]     #4  lex_hop2                  0.1002
+[08:19:41]     #5  nli_hop2                  0.0907
+[08:19:41]     #6  lex_hop1                  0.0904
+[08:19:42] 
+  ── RESULT: Z3 vs Z2-NoV ──
+[08:19:42]   Z2-NoV (flat NLI, no voting) : 0.3725 EM
+[08:19:42]   Z3     (chain, no voting)    : 0.3911 EM
+[08:19:42]   Δ Z3 − Z2-NoV = +1.86pp  95%CI [+1.30, +2.43]  p=0.0000  ***
+[08:19:42]   Interpretation: Z3 (per-hop) IS stronger than flat NLI alone
+[08:19:42]   Saved → experiments/results/z2nov/hotpotqa_1p5b_z2nov_stats.json
+[08:19:42] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:42]   CROSS-SETTING SUMMARY — Z3 vs Z2-NoV (symmetric, no voting either side)
+[08:19:42] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:42]   Setting                       Z2-NoV        Z3     Δ(pp)              95% CI  Sig
+[08:19:42]   ────────────────────────────────────────────────────────────────────────
+[08:19:42]   HotpotQA MDR (7B)             0.4601    0.4663    +0.62pp  [+0.18,+1.08]  **
+[08:19:42]   HotpotQA Distractor (7B)      0.5095    0.5144    +0.49pp  [+0.12,+0.86]  **
+[08:19:42]   2WikiMultiHopQA (7B)          0.3229    0.3309    +0.80pp  [+0.47,+1.16]  ***
+[08:19:42]   HotpotQA MDR (1.5B)           0.3725    0.3911    +1.86pp  [+1.30,+2.43]  ***
+[08:19:42] 
+  Z2-NoV features (6): ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_len_chars', 'answer_len_words', 'cand_idx']
+[08:19:42]   Z3     features (10): ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[08:19:42] 
+  All outputs → experiments/results/z2nov/

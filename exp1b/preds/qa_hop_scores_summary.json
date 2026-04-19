@@ -1,0 +1,20 @@
+{
+  "script": "exp_a1_qa_hop_score.py",
+  "model": "/var/tmp/u24sf51014/sro/models/deberta-v3-base-squad2",
+  "evidence": "exp1b/evidence/dev_K100_chains.jsonl",
+  "candidates": "exp1b/candidates/dev_M5_candidates_qwen.jsonl",
+  "out_jsonl": "exp1b/preds/dev_qa_hop_scores.jsonl",
+  "n_written": 7405,
+  "n_skip_hops": 0,
+  "n_skip_cands": 0,
+  "elapsed_min": 33.61,
+  "device": "cuda",
+  "features_output": [
+    "qa_hop1",
+    "qa_hop2",
+    "qa_flat",
+    "qa_hop_balance",
+    "qa_min_hop"
+  ],
+  "timestamp": "2026-04-19T03:47:42"
+}

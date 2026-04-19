@@ -1,0 +1,53 @@
+{
+  "setting": "wiki2",
+  "label": "2WikiMultiHopQA (7B)",
+  "z2nov_em": 0.3229166666666667,
+  "z3_em": 0.3309478371501272,
+  "z2nov_features": [
+    "nli_score",
+    "nli_rank",
+    "nli_score_gap",
+    "answer_len_chars",
+    "answer_len_words",
+    "cand_idx"
+  ],
+  "z3_features": [
+    "cand_idx",
+    "nli_hop1",
+    "nli_hop2",
+    "nli_hop_balance",
+    "qa_hop1",
+    "qa_hop2",
+    "qa_hop_balance",
+    "lex_hop1",
+    "lex_hop2",
+    "lex_hop_balance"
+  ],
+  "z2nov_importances": {
+    "answer_len_chars": 0.2357,
+    "answer_len_words": 0.2215,
+    "nli_score": 0.188,
+    "cand_idx": 0.1398,
+    "nli_score_gap": 0.1348,
+    "nli_rank": 0.0802
+  },
+  "z3_importances": {
+    "qa_hop1": 0.1739,
+    "lex_hop_balance": 0.159,
+    "lex_hop1": 0.1109,
+    "nli_hop1": 0.0982,
+    "qa_hop_balance": 0.0966,
+    "qa_hop2": 0.0935,
+    "nli_hop2": 0.0932,
+    "lex_hop2": 0.0839,
+    "nli_hop_balance": 0.0761,
+    "cand_idx": 0.0149
+  },
+  "z3_vs_z2nov": {
+    "delta_pp": 0.8,
+    "ci_lo": 0.47,
+    "ci_hi": 1.16,
+    "p": 0.0,
+    "sig": "***"
+  }
+}

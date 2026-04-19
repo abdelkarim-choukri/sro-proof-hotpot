@@ -1,0 +1,45 @@
+==============================================================================
+  BOOTSTRAP SIGNIFICANCE TESTS — Phase 0 Ablations
+  B = 10000 bootstrap samples, seed = 42
+  N = 7405 questions
+==============================================================================
+
+  SYSTEM CONFIDENCE INTERVALS
+  --------------------------------------------------------------------------
+  System                          EM                 95% CI        ±
+  --------------------------------------------------------------------------
+  Z1_majority                 0.3626 [0.3515, 0.3735] ±0.0110
+  Z2_surface                  0.3799 [0.3691, 0.3910] ±0.0109
+  Z3_chain                    0.3680 [0.3569, 0.3788] ±0.0109
+  Z_full                      0.3866 [0.3757, 0.3974] ±0.0109
+  Monolithic                  0.4666 [0.4551, 0.4782] ±0.0115
+
+  PAIRWISE SIGNIFICANCE TESTS
+  --------------------------------------------------------------------------
+  Comparison                                   Δ (pp)             95% CI        p   Sig
+  --------------------------------------------------------------------------
+  Chain marginal (Z_full - Z2)                  +0.68 [+0.27,+1.07]   0.0006   ***
+  Full model vs majority vote                   +2.40 [+1.89,+2.92]   0.0000   ***
+  Surface marginal (Z_full - Z3)                +1.86 [+1.34,+2.39]   0.0000   ***
+  Majority vote vs surface XGB                  -1.73 [-2.23,-1.24]   0.0000   ***
+  Chain-only vs monolithic                      -9.86 [-10.88,-8.83]   0.0000   ***
+  Two-stage vs monolithic                       -7.99 [-8.99,-7.01]   0.0000   ***
+  Chain-only vs majority vote                   +0.54 [-0.09,+1.16]   0.0489    **
+  Chain-only vs surface-only                    -1.19 [-1.81,-0.58]   0.0001   ***
+
+  --------------------------------------------------------------------------
+  INTERPRETATION FOR THE PAPER
+  --------------------------------------------------------------------------
+  ✓ Chain marginal (+0.68pp) is SIGNIFICANT (p=0.0006)
+    → The chain-aware claim holds under bootstrap testing
+  Note: Z1 vs Z2 is significant (p=0.0000)
+
+  PAPER-READY FORMATTING:
+  Report CIs as: 'EM = 0.XXXX (95% CI: [0.XXXX, 0.XXXX])'
+  Report deltas as: '+X.XXpp (p < 0.05, bootstrap B=10000)'
+
+  FUTURE: When you run the distractor-setting experiment,
+  re-run this script with --m1_preds and --distractor to get
+  the decomposed significance tests for the paper table.
+
+==============================================================================
