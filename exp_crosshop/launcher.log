@@ -1,0 +1,18 @@
+[launcher] 2Wiki files confirmed present — fold=0 runs will include zero-shot eval.
+
+══════════════════════════════════════════════════════════════════
+  Cross-Hop Attention Experiment — Full 3-Arm Run
+  Architectures : A (baseline)  B (lightweight)  C (standard)
+  Seeds         : 42  123  456
+  Folds         : 5   Epochs : 8   Batch : 16
+  Total runs    : 45   Done : 0   Pending : 45
+══════════════════════════════════════════════════════════════════
+
+[launcher] Starting  arch=A  seed=42  fold=0  GPU=0
+[launcher]   log : exp_crosshop/logs/A_s42_f0.log
+[launcher]   2Wiki: YES (fold=0)
+[launcher] Starting  arch=A  seed=42  fold=1  GPU=1
+[launcher]   log : exp_crosshop/logs/A_s42_f1.log
+[launcher]   2Wiki: skipped
+[launcher] PID 12080 — FAILED (check log above for details)
+[launcher]   Re-running this script will retry the failed run.

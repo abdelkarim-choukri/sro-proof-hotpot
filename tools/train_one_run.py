@@ -501,7 +501,7 @@ def parse_args():
     ap.add_argument("--chains",      required=True)
     ap.add_argument("--out_dir",     required=True)
     # 2Wiki (optional)
-    ap.add_argument("--wiki2_gold",       default="data/wiki2/raw/dev.json")
+    ap.add_argument("--wiki2_gold", default="data/wiki2/raw/dev_normalized.json")
     ap.add_argument("--wiki2_candidates", default="exp_wiki2/candidates/dev_M5_sampling.jsonl")
     ap.add_argument("--wiki2_chains",     default="exp_wiki2/evidence/dev_wiki2_chains.jsonl")
     ap.add_argument("--skip_wiki2",  action="store_true")
