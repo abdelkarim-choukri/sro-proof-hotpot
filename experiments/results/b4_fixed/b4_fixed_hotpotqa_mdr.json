@@ -1,0 +1,295 @@
+{
+  "dataset": "HotpotQA MDR",
+  "selection_metric": "combined_hop2_delta = Δnli_hop2 + Δqa_hop2 + Δlex_hop2",
+  "n_chain_wins": 124,
+  "examples": [
+    {
+      "qid": "5a88c68d55429938390d3fba",
+      "question": "E! Hollywood Hold'em was hosted by a poker player of what nationality?",
+      "type": "bridge",
+      "gold_answer": "Irish",
+      "wrong_answer": "American",
+      "right_answer": "Irish",
+      "hop1_title": "E! Hollywood Hold'em",
+      "hop1_text": "E! Hollywood Hold'em is a poker television program. It aired in 2005 on the E! television network. The show featured young celebrities (including co-executive producer Laura Prepon and brothers Chris and Danny Masterson) hosting single table Texas ho...",
+      "hop2_title": "Phil Laak",
+      "hop2_text": "Philip \"Phil\" Courtney Laak is an Irish professional poker player and a poker commentator, now residing in Los Angeles, California. Laak holds a World Poker Tour (WPT) title, a World Series of Poker (WSOP) bracelet, and has appeared on numerous natio...",
+      "wrong_nli": {
+        "nli_flat": 0.884,
+        "nli_hop1": 0.07,
+        "nli_hop2": 0.004
+      },
+      "right_nli": {
+        "nli_flat": 0.432,
+        "nli_hop1": 0.006,
+        "nli_hop2": 0.883
+      },
+      "wrong_qa": {
+        "qa_flat": 0.0,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.008,
+        "qa_hop_balance": 0.008
+      },
+      "right_qa": {
+        "qa_flat": 1.0,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.992,
+        "qa_hop_balance": 0.991
+      },
+      "wrong_lex": {
+        "lex_flat": 0.0,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.012,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.028
+      },
+      "delta_nli_hop2": 0.879,
+      "delta_qa_hop2": 0.984,
+      "delta_lex_hop2": 0.028,
+      "combined_hop2_delta": 1.891
+    },
+    {
+      "qid": "5a7d70d45542990b8f50398a",
+      "question": "Which movie came out first Muppet Treasure Island or Million Dollar Arm ?",
+      "type": "comparison",
+      "gold_answer": "Muppet Treasure Island",
+      "wrong_answer": "Million Dollar Arm",
+      "right_answer": "Muppet Treasure Island",
+      "hop1_title": "Million Dollar Arm",
+      "hop1_text": "Million Dollar Arm is a 2014 American biographical sports drama film directed by Craig Gillespie and produced by Walt Disney Pictures from a screenplay written by Thomas McCarthy. The film is based on the true story of baseball pitchers Rinku Singh a...",
+      "hop2_title": "Muppet Treasure Island",
+      "hop2_text": "Muppet Treasure Island is a 1996 American musical adventure comedy film based on Robert Louis Stevenson's \"Treasure Island\". It is the fifth feature film to star The Muppets, and was directed by Brian Henson.",
+      "wrong_nli": {
+        "nli_flat": 0.032,
+        "nli_hop1": 0.945,
+        "nli_hop2": 0.003
+      },
+      "right_nli": {
+        "nli_flat": 0.023,
+        "nli_hop1": 0.0,
+        "nli_hop2": 0.949
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.0
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.243,
+        "qa_hop_balance": 0.143
+      },
+      "wrong_lex": {
+        "lex_flat": 0.043,
+        "lex_hop1": 0.061,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.043,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.1
+      },
+      "delta_nli_hop2": 0.946,
+      "delta_qa_hop2": 0.143,
+      "delta_lex_hop2": 0.1,
+      "combined_hop2_delta": 1.189
+    },
+    {
+      "qid": "5abdf8c45542993f32c2a072",
+      "question": "The Death of Cook depicts the death of James Cook at a bay on what coast?",
+      "type": "bridge",
+      "gold_answer": "Kona coast",
+      "wrong_answer": "Kona",
+      "right_answer": "Kona coast",
+      "hop1_title": "Death of Cook",
+      "hop1_text": "Death of Cook is the name of several paintings depicting the 1779 death of British and discoverer of the Hawaiian Islands, Captain James Cook at Kealakekua Bay.",
+      "hop2_title": "Kealakekua Bay",
+      "hop2_text": "Kealakekua Bay is located on the Kona coast of the island of Hawaiʻ i about 12 mi south of Kailua-Kona.",
+      "wrong_nli": {
+        "nli_flat": 0.022,
+        "nli_hop1": 0.038,
+        "nli_hop2": 0.07
+      },
+      "right_nli": {
+        "nli_flat": 0.193,
+        "nli_hop1": 0.046,
+        "nli_hop2": 0.891
+      },
+      "wrong_qa": {
+        "qa_flat": 0.853,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.0
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.823,
+        "qa_hop_balance": 0.723
+      },
+      "wrong_lex": {
+        "lex_flat": 0.031,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.059
+      },
+      "right_lex": {
+        "lex_flat": 0.062,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.118
+      },
+      "delta_nli_hop2": 0.821,
+      "delta_qa_hop2": 0.723,
+      "delta_lex_hop2": 0.059,
+      "combined_hop2_delta": 1.603
+    },
+    {
+      "qid": "5ab2a186554299295394677b",
+      "question": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+      "type": "bridge",
+      "gold_answer": "2009",
+      "wrong_answer": "1884",
+      "right_answer": "2009",
+      "hop1_title": "Maiwand Lion",
+      "hop1_text": "The Maiwand Lion is a sculpture and war memorial in the Forbury Gardens, a public park in the town of Reading, in the English county of Berkshire. The statue was named after the Battle of Maiwand and was erected in 1884 to commemorate the deaths of 3...",
+      "hop2_title": "Reading Post",
+      "hop2_text": "The Reading Post (until 2009, the Reading Evening Post), was an English local newspaper covering Reading, Berkshire and surrounding areas. The title page of the paper featured the Maiwand Lion, a famous local landmark at Forbury Gardens. The paper wa...",
+      "wrong_nli": {
+        "nli_flat": 0.23,
+        "nli_hop1": 0.927,
+        "nli_hop2": 0.017
+      },
+      "right_nli": {
+        "nli_flat": 0.763,
+        "nli_hop1": 0.007,
+        "nli_hop2": 0.367
+      },
+      "wrong_qa": {
+        "qa_flat": 0.051,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.005,
+        "qa_hop_balance": 0.005
+      },
+      "right_qa": {
+        "qa_flat": 0.949,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.995,
+        "qa_hop_balance": 0.995
+      },
+      "wrong_lex": {
+        "lex_flat": 0.013,
+        "lex_hop1": 0.02,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.013,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.025
+      },
+      "delta_nli_hop2": 0.35,
+      "delta_qa_hop2": 0.99,
+      "delta_lex_hop2": 0.025,
+      "combined_hop2_delta": 1.365
+    },
+    {
+      "qid": "5ae3b30f5542994393b9e74f",
+      "question": "Droga5 has done advertising for an American fashion designer who is the founder of what besides Ecko Unlimited?",
+      "type": "bridge",
+      "gold_answer": "\"Complex\" magazine",
+      "wrong_answer": "Complex",
+      "right_answer": "Complex magazine",
+      "hop1_title": "Droga5",
+      "hop1_text": "Droga5 is a New York City-based global advertising agency with an additional office in London. The agency works across all platforms including, broadcast, print, digital and social, experiential and out-of-home. Some of Droga5’s most recognizable wor...",
+      "hop2_title": "Marc Ecko",
+      "hop2_text": "Marc Louis \"Eckō\" Milecofsky (born August 29, 1972) is an American fashion designer, entrepreneur, and artist. He is the founder and Chief Creative Officer of Ecko Unlimited, a billion-dollar global fashion company. He also founded \"Complex\" magazine...",
+      "wrong_nli": {
+        "nli_flat": 0.032,
+        "nli_hop1": 0.034,
+        "nli_hop2": 0.303
+      },
+      "right_nli": {
+        "nli_flat": 0.034,
+        "nli_hop1": 0.002,
+        "nli_hop2": 0.857
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.1
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.841,
+        "qa_hop_balance": 0.841
+      },
+      "wrong_lex": {
+        "lex_flat": 0.014,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.028
+      },
+      "right_lex": {
+        "lex_flat": 0.027,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.056
+      },
+      "delta_nli_hop2": 0.554,
+      "delta_qa_hop2": 0.741,
+      "delta_lex_hop2": 0.028,
+      "combined_hop2_delta": 1.323
+    },
+    {
+      "qid": "5ae346365542991a06ce9985",
+      "question": "The vynil collectible Vinylmation are all shaped with the body of a cartoon character created by who ?",
+      "type": "bridge",
+      "gold_answer": "Walt Disney and Ub Iwerks",
+      "wrong_answer": "Walt Disney",
+      "right_answer": "Walt Disney and Ub Iwerks",
+      "hop1_title": "Vinylmation",
+      "hop1_text": "Vinylmation is a brand of 1.5\", 3\", and 9\" vinyl collectibles sold at Disney theme parks, select Disney Stores, and the online Disney Store. The name \"Vinylmation\" is a combination of the word \"Animation\" and \"Vinyl\". Most figures are all shaped with...",
+      "hop2_title": "Mickey Mouse",
+      "hop2_text": "Mickey Mouse is a funny animal cartoon character and the official mascot of The Walt Disney Company. He was created by Walt Disney and Ub Iwerks at the Walt Disney Studios in 1928. An anthropomorphic mouse who typically wears red shorts, large yellow...",
+      "wrong_nli": {
+        "nli_flat": 0.05,
+        "nli_hop1": 0.013,
+        "nli_hop2": 0.671
+      },
+      "right_nli": {
+        "nli_flat": 0.071,
+        "nli_hop1": 0.003,
+        "nli_hop2": 0.889
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.019,
+        "qa_hop_balance": 0.081
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.981,
+        "qa_hop_balance": 0.881
+      },
+      "wrong_lex": {
+        "lex_flat": 0.018,
+        "lex_hop1": 0.012,
+        "lex_hop2": 0.043
+      },
+      "right_lex": {
+        "lex_flat": 0.044,
+        "lex_hop1": 0.023,
+        "lex_hop2": 0.109
+      },
+      "delta_nli_hop2": 0.218,
+      "delta_qa_hop2": 0.962,
+      "delta_lex_hop2": 0.066,
+      "combined_hop2_delta": 1.246
+    }
+  ]
+}

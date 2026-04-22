@@ -1,0 +1,199 @@
+{
+  "dataset": "HotpotQA Distractor",
+  "selection_metric": "combined_hop2_delta = Δnli_hop2 + Δqa_hop2 + Δlex_hop2",
+  "n_chain_wins": 131,
+  "examples": [
+    {
+      "qid": "5adcde255542992c1e3a243f",
+      "question": "Which WWE wrestler who performs on the Smackdown brand has his initials as part of the team \"Rated-RKO",
+      "type": "bridge",
+      "gold_answer": "Randy Orton",
+      "wrong_answer": "Edge",
+      "right_answer": "Randy Orton",
+      "hop1_title": "Rated-RKO",
+      "hop1_text": "Rated-RKO was a professional wrestling tag team on World Wrestling Entertainment (WWE) based on the Raw brand.  The team consisted of Edge, Randy Orton, and Lita, their valet.  The name \"Rated-RKO\" contains part of Edge's nickname, \"The Rated R Super...",
+      "hop2_title": "Randy Orton",
+      "hop2_text": "Randal Keith Orton (born April 1, 1980) is an American professional wrestler and actor.  He is currently signed to WWE, where he performs on the SmackDown brand.",
+      "wrong_nli": {
+        "nli_flat": 0.261,
+        "nli_hop1": 0.607,
+        "nli_hop2": 0.002
+      },
+      "right_nli": {
+        "nli_flat": 0.948,
+        "nli_hop1": 0.319,
+        "nli_hop2": 0.963
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.003,
+        "qa_hop_balance": 0.097
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.997,
+        "qa_hop_balance": 0.897
+      },
+      "wrong_lex": {
+        "lex_flat": 0.019,
+        "lex_hop1": 0.029,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.038,
+        "lex_hop1": 0.057,
+        "lex_hop2": 0.077
+      },
+      "delta_nli_hop2": 0.961,
+      "delta_qa_hop2": 0.994,
+      "delta_lex_hop2": 0.077,
+      "combined_hop2_delta": 2.032
+    },
+    {
+      "qid": "5a85f4425542994775f606c4",
+      "question": "What movie genre does both \"The Trials of Life\" and \"Human\" belong to?",
+      "type": "comparison",
+      "gold_answer": "documentary",
+      "wrong_answer": "nature documentaries",
+      "right_answer": "documentary",
+      "hop1_title": "The Trials of Life",
+      "hop1_text": "The Trials of Life: A Natural History of Behaviour is a BBC nature documentary series written and presented by David Attenborough, first transmitted in the United Kingdom from 3 October 1990.",
+      "hop2_title": "Human (2015 film)",
+      "hop2_text": "Human is a 2015 documentary by French environmentalist Yann Arthus-Bertrand.  The film is almost entirely composed of exclusive aerial footage and first-person stories told into the camera.  It was the first movie to premiere in the General Assembly ...",
+      "wrong_nli": {
+        "nli_flat": 0.003,
+        "nli_hop1": 0.92,
+        "nli_hop2": 0.002
+      },
+      "right_nli": {
+        "nli_flat": 0.002,
+        "nli_hop1": 0.962,
+        "nli_hop2": 0.944
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.1
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.0,
+        "qa_hop2": 0.709,
+        "qa_hop_balance": 0.709
+      },
+      "wrong_lex": {
+        "lex_flat": 0.015,
+        "lex_hop1": 0.034,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.015,
+        "lex_hop1": 0.036,
+        "lex_hop2": 0.02
+      },
+      "delta_nli_hop2": 0.942,
+      "delta_qa_hop2": 0.609,
+      "delta_lex_hop2": 0.02,
+      "combined_hop2_delta": 1.571
+    },
+    {
+      "qid": "5ade15ae5542990dbb2f7f4c",
+      "question": "What month was the album released whose lead single was \"Domino Dancing\"?",
+      "type": "bridge",
+      "gold_answer": "October",
+      "wrong_answer": "July",
+      "right_answer": "October",
+      "hop1_title": "Domino Dancing",
+      "hop1_text": "\"Domino Dancing\" is a song recorded by the British synthpop duo Pet Shop Boys, released as the lead single from their 1988 album, \"Introspective\".  It reached number 7 on the UK Singles Chart.",
+      "hop2_title": "Introspective",
+      "hop2_text": "Introspective is the third studio album by English synthpop duo Pet Shop Boys.  It was first released on 11 October 1988 and is the Pet Shop Boys' second-best-selling album, selling over 4.5 million copies worldwide.  (Their fifth studio album, \"Very...",
+      "wrong_nli": {
+        "nli_flat": 0.002,
+        "nli_hop1": 0.015,
+        "nli_hop2": 0.004
+      },
+      "right_nli": {
+        "nli_flat": 0.055,
+        "nli_hop1": 0.016,
+        "nli_hop2": 0.705
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.012,
+        "qa_hop_balance": 0.088
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.988,
+        "qa_hop_balance": 0.888
+      },
+      "wrong_lex": {
+        "lex_flat": 0.0,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.019,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.027
+      },
+      "delta_nli_hop2": 0.701,
+      "delta_qa_hop2": 0.976,
+      "delta_lex_hop2": 0.027,
+      "combined_hop2_delta": 1.704
+    },
+    {
+      "qid": "5a75d8a3554299109176e5a6",
+      "question": "What league, which is also known as the Barclays Premier League, had its start date pushed back?",
+      "type": "bridge",
+      "gold_answer": "The 2013–14 Premier League",
+      "wrong_answer": "International Round",
+      "right_answer": "the 2013–14 Premier League",
+      "hop1_title": "Game 39",
+      "hop1_text": "\"Game 39\" or the international round was a proposed extra round of matches in the Premier League to be played at neutral venues outside England.  The top football league in England, the Premier League is currently played on a double round robin basis...",
+      "hop2_title": "2013–14 Premier League",
+      "hop2_text": "The 2013–14 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 22nd season of the Premier League, the top-flight English professional league for men's football clubs.  The fixtures were announced on 19 June 2013.  T...",
+      "wrong_nli": {
+        "nli_flat": 0.386,
+        "nli_hop1": 0.705,
+        "nli_hop2": 0.002
+      },
+      "right_nli": {
+        "nli_flat": 0.932,
+        "nli_hop1": 0.696,
+        "nli_hop2": 0.985
+      },
+      "wrong_qa": {
+        "qa_flat": 0.048,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.0
+      },
+      "right_qa": {
+        "qa_flat": 0.952,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.617,
+        "qa_hop_balance": 0.517
+      },
+      "wrong_lex": {
+        "lex_flat": 0.02,
+        "lex_hop1": 0.026,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.039,
+        "lex_hop1": 0.052,
+        "lex_hop2": 0.103
+      },
+      "delta_nli_hop2": 0.983,
+      "delta_qa_hop2": 0.517,
+      "delta_lex_hop2": 0.103,
+      "combined_hop2_delta": 1.603
+    }
+  ]
+}

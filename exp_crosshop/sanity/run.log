@@ -1,0 +1,155 @@
+/var/tmp/u24sf51014/sro/conda-envs/llm/lib/python3.10/site-packages/transformers/convert_slow_tokenizer.py:566: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+[sanity] device=cuda:0
+[sanity] arch=A  seed=42  epochs=3  val_fold=0/5
+[sanity] Loading gold ...
+          7,405 questions
+[sanity] Loading candidates ...
+          7,405 candidate records
+[sanity] Loading hop texts from chains ...
+          7,405 evidence records
+          non-empty hop pairs : 7,405
+          empty hop pairs     : 0
+          avg hop1 text chars : 419
+          avg hop2 text chars : 432
+[sanity] Building instances + applying Stage 1 filter ...
+  Common qids across sources  : 7,405
+  Total candidates            : 37,025
+  Surviving Stage 1           : 28,683
+  All-filtered questions      : 1,268
+  Questions missing hops      : 0
+  Correct answers filtered out: 0  (should be 0)
+  Instances built             : 28,683
+[sanity] train instances: 22,996   val instances: 5,687
+[sanity] Loading tokenizer: microsoft/deberta-v3-base
+[sanity] Building model (arch=A) ...
+          trainable params: 184,618,497
+[sanity] Training ...
+  step 50  ep1  loss=0.6645  elapsed=0.6m
+  step 100  ep1  loss=0.7142  elapsed=0.9m
+  step 150  ep1  loss=0.6922  elapsed=1.3m
+  step 200  ep1  loss=0.6648  elapsed=1.6m
+  step 250  ep1  loss=0.6829  elapsed=2.0m
+  step 300  ep1  loss=0.7239  elapsed=2.3m
+  step 350  ep1  loss=0.7214  elapsed=2.7m
+  step 400  ep1  loss=0.8090  elapsed=3.0m
+  step 450  ep1  loss=0.7372  elapsed=3.4m
+  step 500  ep1  loss=0.6914  elapsed=3.7m
+  step 550  ep1  loss=0.5733  elapsed=4.1m
+  step 600  ep1  loss=0.6609  elapsed=4.4m
+  step 650  ep1  loss=0.6304  elapsed=4.7m
+  step 700  ep1  loss=0.5798  elapsed=5.1m
+  step 750  ep1  loss=0.8584  elapsed=5.4m
+  step 800  ep1  loss=0.7212  elapsed=5.8m
+  step 850  ep1  loss=0.7191  elapsed=6.1m
+  step 900  ep1  loss=0.6399  elapsed=6.5m
+  step 950  ep1  loss=0.4739  elapsed=6.8m
+  step 1000  ep1  loss=0.7009  elapsed=7.1m
+  step 1050  ep1  loss=0.4679  elapsed=7.5m
+  step 1100  ep1  loss=0.6512  elapsed=7.8m
+  step 1150  ep1  loss=0.5528  elapsed=8.2m
+  step 1200  ep1  loss=0.4838  elapsed=8.5m
+  step 1250  ep1  loss=0.4979  elapsed=8.9m
+  step 1300  ep1  loss=0.4107  elapsed=9.2m
+  step 1350  ep1  loss=0.3420  elapsed=9.6m
+  step 1400  ep1  loss=0.4387  elapsed=9.9m
+  Epoch 1/3  avg_loss=0.6096
+  step 1450  ep2  loss=0.3149  elapsed=10.2m
+  step 1500  ep2  loss=0.6353  elapsed=10.6m
+  step 1550  ep2  loss=0.3555  elapsed=10.9m
+  step 1600  ep2  loss=0.1584  elapsed=11.3m
+  step 1650  ep2  loss=0.3196  elapsed=11.6m
+  step 1700  ep2  loss=0.5475  elapsed=11.9m
+  step 1750  ep2  loss=0.4963  elapsed=12.3m
+  step 1800  ep2  loss=0.8272  elapsed=12.6m
+  step 1850  ep2  loss=0.3872  elapsed=13.0m
+  step 1900  ep2  loss=0.3221  elapsed=13.3m
+  step 1950  ep2  loss=0.1712  elapsed=13.7m
+  step 2000  ep2  loss=0.4543  elapsed=14.0m
+  step 2050  ep2  loss=0.3312  elapsed=14.4m
+  step 2100  ep2  loss=0.5879  elapsed=14.7m
+  step 2150  ep2  loss=0.1365  elapsed=15.1m
+  step 2200  ep2  loss=0.2487  elapsed=15.4m
+  step 2250  ep2  loss=0.1314  elapsed=15.7m
+  step 2300  ep2  loss=0.1297  elapsed=16.1m
+  step 2350  ep2  loss=0.3672  elapsed=16.4m
+  step 2400  ep2  loss=0.3553  elapsed=16.8m
+  step 2450  ep2  loss=0.3021  elapsed=17.1m
+  step 2500  ep2  loss=0.2547  elapsed=17.4m
+  step 2550  ep2  loss=0.1374  elapsed=17.8m
+  step 2600  ep2  loss=0.3007  elapsed=18.1m
+  step 2650  ep2  loss=0.1257  elapsed=18.4m
+  step 2700  ep2  loss=0.2113  elapsed=18.8m
+  step 2750  ep2  loss=0.1261  elapsed=19.1m
+  step 2800  ep2  loss=0.1760  elapsed=19.5m
+  step 2850  ep2  loss=0.3107  elapsed=19.8m
+  Epoch 2/3  avg_loss=0.2919
+  step 2900  ep3  loss=0.1219  elapsed=20.1m
+  step 2950  ep3  loss=0.2660  elapsed=20.5m
+  step 3000  ep3  loss=0.1198  elapsed=20.9m
+  step 3050  ep3  loss=0.1620  elapsed=21.2m
+  step 3100  ep3  loss=0.1213  elapsed=21.5m
+  step 3150  ep3  loss=0.3431  elapsed=21.9m
+  step 3200  ep3  loss=0.1196  elapsed=22.2m
+  step 3250  ep3  loss=0.1219  elapsed=22.6m
+  step 3300  ep3  loss=0.3903  elapsed=22.9m
+  step 3350  ep3  loss=0.1236  elapsed=23.3m
+  step 3400  ep3  loss=0.1193  elapsed=23.6m
+  step 3450  ep3  loss=0.1284  elapsed=23.9m
+  step 3500  ep3  loss=0.1194  elapsed=24.3m
+  step 3550  ep3  loss=0.1186  elapsed=24.6m
+  step 3600  ep3  loss=0.1175  elapsed=25.0m
+  step 3650  ep3  loss=0.2967  elapsed=25.3m
+  step 3700  ep3  loss=0.3314  elapsed=25.7m
+  step 3750  ep3  loss=0.1176  elapsed=26.0m
+  step 3800  ep3  loss=0.3089  elapsed=26.4m
+  step 3850  ep3  loss=0.2777  elapsed=26.7m
+  step 3900  ep3  loss=0.1183  elapsed=27.0m
+  step 3950  ep3  loss=0.1175  elapsed=27.4m
+  step 4000  ep3  loss=0.1359  elapsed=27.7m
+  step 4050  ep3  loss=0.1201  elapsed=28.1m
+  step 4100  ep3  loss=0.1187  elapsed=28.4m
+  step 4150  ep3  loss=0.1192  elapsed=28.8m
+  step 4200  ep3  loss=0.1188  elapsed=29.1m
+  step 4250  ep3  loss=0.1182  elapsed=29.4m
+  step 4300  ep3  loss=0.3366  elapsed=29.8m
+  Epoch 3/3  avg_loss=0.1816
+[sanity] Training done in 29.9 min  (4314 steps)
+[sanity] Running evaluation + diagnostics on held-out fold ...
+  Scoring main (hop1, hop2) ...
+  Scoring flat (h_concat) ...
+  Scoring mask-h1 (probe hop2 contribution) ...
+  Scoring mask-h2 (probe hop1 contribution) ...
+
+========================================================================
+  SANITY RESULTS  —  arch=A  seed=42  epochs=3  fold=0
+========================================================================
+  Questions scored      : 1,228
+  EM                    : 0.5814
+  ECE                   : 0.2674
+  Pearson(flat, minhop) : 0.6568
+  CKA pre-interaction   : 0.3038
+  CKA post-interaction  : 0.3038
+  Anchor Δ (correct)    : +0.0871
+  Anchor Δ (wrong)      : -0.0162
+  Anchor Δ gap          : +0.1034
+
+  Per-type EM:
+    bridge                0.5610  (n=991)
+    comparison            0.6667  (n=237)
+========================================================================
+
+SANITY GATES:
+  [PASS] EM in [0.48, 0.62]  (got 0.5814)
+  [FAIL] ECE < 0.15         (got 0.2674)
+  [PASS] Pearson finite     (got 0.6568)
+
+  OVERALL: FAIL — investigate before full run
+========================================================================
+
+Results in: exp_crosshop/sanity
+  config.json
+  metrics.json
+  oof_predictions.jsonl
+  per_candidate_scores.jsonl
+  training_log.jsonl

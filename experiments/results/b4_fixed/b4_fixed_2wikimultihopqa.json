@@ -1,0 +1,199 @@
+{
+  "dataset": "2WikiMultiHopQA",
+  "selection_metric": "combined_hop2_delta = Δnli_hop2 + Δqa_hop2 + Δlex_hop2",
+  "n_chain_wins": 241,
+  "examples": [
+    {
+      "qid": "98d401f2086d11ebbd62ac1f6bf848b6",
+      "question": "Which film came out earlier, Blushing Charlie or Los Paquetes De Paquita?",
+      "type": "comparison",
+      "gold_answer": "Los Paquetes De Paquita",
+      "wrong_answer": "Blushing Charlie",
+      "right_answer": "Los Paquetes de Paquita",
+      "hop1_title": "Blushing Charlie",
+      "hop1_text": "Blushing Charlie is a 1970 Swedish drama film directed by Vilgot Sjöman. It was entered into the 21st Berlin International Film Festival.",
+      "hop2_title": "Los Paquetes de Paquita",
+      "hop2_text": "Los Paquetes de Paquita(\" The Packages of Paquita\") is a 1955 Mexican film. It stars Carlos Orellana.",
+      "wrong_nli": {
+        "nli_flat": 0.011,
+        "nli_hop1": 0.898,
+        "nli_hop2": 0.0
+      },
+      "right_nli": {
+        "nli_flat": 0.013,
+        "nli_hop1": 0.001,
+        "nli_hop2": 0.956
+      },
+      "wrong_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.289,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.189
+      },
+      "right_qa": {
+        "qa_flat": 0.1,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.306,
+        "qa_hop_balance": 0.206
+      },
+      "wrong_lex": {
+        "lex_flat": 0.062,
+        "lex_hop1": 0.095,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.125,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.25
+      },
+      "delta_nli_hop2": 0.956,
+      "delta_qa_hop2": 0.206,
+      "delta_lex_hop2": 0.25,
+      "combined_hop2_delta": 1.412
+    },
+    {
+      "qid": "be0f8b4e0bdd11eba7f7acde48001122",
+      "question": "When was Ludwig Gruno Of Hesse-Homburg's father born?",
+      "type": "compositional",
+      "gold_answer": "19 May 1673",
+      "wrong_answer": "1705",
+      "right_answer": "19 May 1673",
+      "hop1_title": "Ludwig Gruno of Hesse-Homburg",
+      "hop1_text": "Ludwig Johann Wilhelm Gruno von Hessen-Homburg (15 January 1705 – 23 October 1745) was hereditary prince of Hesse-Homburg and an Imperial Russian field marshal. He was the eldest surviving son of Frederick III, Landgrave of Hesse-Homburg and his wife...",
+      "hop2_title": "Frederick III, Landgrave of Hesse-Homburg",
+      "hop2_text": "Frederick III James of Hesse-Homburg (born 19 May 1673 in Cölln; died: 8 June 1746 in 's-Hertogenbosch) was a Landgrave of Hesse-Homburg",
+      "wrong_nli": {
+        "nli_flat": 0.002,
+        "nli_hop1": 0.002,
+        "nli_hop2": 0.131
+      },
+      "right_nli": {
+        "nli_flat": 0.002,
+        "nli_hop1": 0.002,
+        "nli_hop2": 0.977
+      },
+      "wrong_qa": {
+        "qa_flat": 0.062,
+        "qa_hop1": 0.004,
+        "qa_hop2": 0.002,
+        "qa_hop_balance": 0.001
+      },
+      "right_qa": {
+        "qa_flat": 0.062,
+        "qa_hop1": 0.004,
+        "qa_hop2": 0.998,
+        "qa_hop_balance": 0.994
+      },
+      "wrong_lex": {
+        "lex_flat": 0.007,
+        "lex_hop1": 0.007,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.02,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.143
+      },
+      "delta_nli_hop2": 0.846,
+      "delta_qa_hop2": 0.996,
+      "delta_lex_hop2": 0.143,
+      "combined_hop2_delta": 1.985
+    },
+    {
+      "qid": "c8c9313a0baf11ebab90acde48001122",
+      "question": "Who is the paternal grandfather of George De Salis?",
+      "type": "inference",
+      "gold_answer": "Jerome, 4th Count de Salis-Soglio",
+      "wrong_answer": "Leopold Fane De Salis",
+      "right_answer": "Jerome, 4th Count de Salis-Soglio",
+      "hop1_title": "George De Salis",
+      "hop1_text": "George Fane De Salis (1851 – 30 December 1931) was an Australian politician. He was born on Darbalara Station near Gundagai to pastoralist Leopold Fane De Salis and Charlotte Macdonald. He received a private education and then farmed at Tharwa and Mi...",
+      "hop2_title": "Leopold Fane De Salis",
+      "hop2_text": "Leopold Fabius Dietegen Fane de Salis, (26 April 1816 – 20 November 1898) was a Tuscan-born Australian pastoralist and politician. Born in Florence to Jerome, 4th Count de Salis-Soglio and Henrietta Foster, he attended Eton College and studied sheep ...",
+      "wrong_nli": {
+        "nli_flat": 0.035,
+        "nli_hop1": 0.336,
+        "nli_hop2": 0.043
+      },
+      "right_nli": {
+        "nli_flat": 0.076,
+        "nli_hop1": 0.01,
+        "nli_hop2": 0.114
+      },
+      "wrong_qa": {
+        "qa_flat": 0.999,
+        "qa_hop1": 0.985,
+        "qa_hop2": 0.008,
+        "qa_hop_balance": 0.977
+      },
+      "right_qa": {
+        "qa_flat": 0.001,
+        "qa_hop1": 0.015,
+        "qa_hop2": 0.992,
+        "qa_hop_balance": 0.977
+      },
+      "wrong_lex": {
+        "lex_flat": 0.025,
+        "lex_hop1": 0.062,
+        "lex_hop2": 0.028
+      },
+      "right_lex": {
+        "lex_flat": 0.037,
+        "lex_hop1": 0.029,
+        "lex_hop2": 0.043
+      },
+      "delta_nli_hop2": 0.071,
+      "delta_qa_hop2": 0.984,
+      "delta_lex_hop2": 0.015,
+      "combined_hop2_delta": 1.07
+    },
+    {
+      "qid": "2cfcf5500bde11eba7f7acde48001122",
+      "question": "What is the place of birth of Duke Louis Of Württemberg's father?",
+      "type": "compositional",
+      "gold_answer": "Stuttgart",
+      "wrong_answer": "Saint Petersburg",
+      "right_answer": "Stuttgart",
+      "hop1_title": "Duke Louis of Württemberg",
+      "hop1_text": "Duke Louis of Württemberg (\"Ludwig Friedrich Alexander\") (Treptow an der Rega, 30 August 1756 – Kirchheim unter Teck, 20 September 1817) was the second son of Frederick II Eugene, Duke of Württemberg (1732–1797) and Margravine Sophia Dorothea of Bran...",
+      "hop2_title": "Frederick II Eugene, Duke of Württemberg",
+      "hop2_text": "Friedrich Eugen, Duke of Württemberg (21 January 1732 – 23 December 1797) was the fourth son of Karl Alexander, Duke of Württemberg, and Princess Maria Augusta of Thurn and Taxis (11 August 1706 – 1 February 1756). He was born in Stuttgart. From 1795...",
+      "wrong_nli": {
+        "nli_flat": 0.019,
+        "nli_hop1": 0.001,
+        "nli_hop2": 0.001
+      },
+      "right_nli": {
+        "nli_flat": 0.479,
+        "nli_hop1": 0.004,
+        "nli_hop2": 0.815
+      },
+      "wrong_qa": {
+        "qa_flat": 0.03,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.1,
+        "qa_hop_balance": 0.0
+      },
+      "right_qa": {
+        "qa_flat": 0.97,
+        "qa_hop1": 0.1,
+        "qa_hop2": 0.687,
+        "qa_hop_balance": 0.587
+      },
+      "wrong_lex": {
+        "lex_flat": 0.0,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.0
+      },
+      "right_lex": {
+        "lex_flat": 0.013,
+        "lex_hop1": 0.0,
+        "lex_hop2": 0.025
+      },
+      "delta_nli_hop2": 0.814,
+      "delta_qa_hop2": 0.587,
+      "delta_lex_hop2": 0.025,
+      "combined_hop2_delta": 1.426
+    }
+  ]
+}

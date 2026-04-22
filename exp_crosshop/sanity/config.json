@@ -1,0 +1,26 @@
+{
+  "arch": "A",
+  "seed": 42,
+  "n_epochs": 3,
+  "n_folds": 5,
+  "val_fold": 0,
+  "batch_candidates": 16,
+  "encoder_lr": 2e-05,
+  "head_lr": 0.0001,
+  "warmup_frac": 0.1,
+  "grad_clip": 1.0,
+  "label_smoothing": 0.05,
+  "max_length": 512,
+  "encoder": "microsoft/deberta-v3-base",
+  "trainable_params": 184618497,
+  "data_stats": {
+    "n_common_qids": 7405,
+    "n_total_candidates": 37025,
+    "n_surviving_candidates": 28683,
+    "n_instances": 28683,
+    "n_all_filtered_qs": 1268,
+    "n_no_hops_qs": 0,
+    "n_correct_filtered_out": 0
+  },
+  "train_time_min": 29.9
+}

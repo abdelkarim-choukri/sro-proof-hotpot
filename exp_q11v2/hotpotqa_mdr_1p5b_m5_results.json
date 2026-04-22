@@ -1,0 +1,100 @@
+{
+  "setting": "hotpotqa_mdr_1p5b_m5",
+  "n_questions_total": 7405,
+  "n_questions_post_stage1": 6462,
+  "n_all_filtered_questions": 943,
+  "n_total_candidates": 37025,
+  "n_surviving_candidates": 27857,
+  "stage1_survival_rate": 0.7524,
+  "n_correct_filtered_out_by_stage1": 0,
+  "n_c2_questions": 313,
+  "baseline_z3": {
+    "em": 0.4081,
+    "n_scored": 6462,
+    "feature_importances": {
+      "qa_hop2": 0.20550000667572021,
+      "qa_hop_balance": 0.19900000095367432,
+      "nli_hop_balance": 0.10220000147819519,
+      "lex_hop2": 0.10000000149011612,
+      "lex_hop1": 0.0869000032544136,
+      "nli_hop2": 0.08590000122785568,
+      "qa_hop1": 0.07609999924898148,
+      "nli_hop1": 0.07119999825954437,
+      "lex_hop_balance": 0.06639999896287918,
+      "cand_idx": 0.006899999920278788
+    }
+  },
+  "contrastive_z3plus": {
+    "em": 0.4092,
+    "n_scored": 6462,
+    "feature_importances": {
+      "delta_to_best_nli_hop2": 0.1031000018119812,
+      "qa_hop2": 0.09870000183582306,
+      "qa_hop_balance": 0.09650000184774399,
+      "qa_hop2_rank": 0.0763000026345253,
+      "nli_hop2_rank": 0.057100001722574234,
+      "delta_to_best_nli_hop1": 0.05180000141263008,
+      "delta_to_best_qa_hop2": 0.04910000041127205,
+      "nli_hop_balance": 0.041600000113248825,
+      "cand_idx": 0.04019999876618385,
+      "lex_hop2": 0.03700000047683716,
+      "lex_hop1": 0.03610000014305115,
+      "nli_hop1_rank": 0.03579999879002571,
+      "nli_hop2": 0.0333000011742115,
+      "nli_balance_rank": 0.03269999846816063,
+      "qa_hop1_rank": 0.03180000185966492,
+      "lex_hop_balance": 0.031099999323487282,
+      "qa_hop1": 0.030899999663233757,
+      "nli_hop1": 0.027499999850988388,
+      "delta_to_best_lex_hop2": 0.026200000196695328,
+      "delta_to_best_qa_hop1": 0.02199999988079071,
+      "qa_balance_rank": 0.021900000050663948,
+      "lex_hop2_rank": 0.019200000911951065
+    }
+  },
+  "delta": {
+    "overall_em": 0.0011,
+    "c2_em": 0.2748
+  },
+  "per_question_changes": {
+    "wins": 86,
+    "losses": 79,
+    "ties": 6297,
+    "net": 7
+  },
+  "contrastive_in_top8": [
+    "delta_to_best_nli_hop2",
+    "qa_hop2_rank",
+    "nli_hop2_rank",
+    "delta_to_best_nli_hop1",
+    "delta_to_best_qa_hop2"
+  ],
+  "all_contrastive_ranks": {
+    "nli_hop1_rank": 12,
+    "nli_hop2_rank": 5,
+    "nli_balance_rank": 14,
+    "delta_to_best_nli_hop1": 6,
+    "delta_to_best_nli_hop2": 1,
+    "qa_hop1_rank": 15,
+    "qa_hop2_rank": 4,
+    "qa_balance_rank": 21,
+    "delta_to_best_qa_hop1": 20,
+    "delta_to_best_qa_hop2": 7,
+    "lex_hop2_rank": 22,
+    "delta_to_best_lex_hop2": 19
+  },
+  "decision": "MARGINAL: \u0394C2=+27.48pp, \u0394overall=+0.11pp. Design listwise as optional ablation.",
+  "xgb_params": {
+    "n_estimators": 200,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.0,
+    "objective": "binary:logistic",
+    "tree_method": "hist",
+    "verbosity": 0
+  },
+  "n_folds": 5,
+  "seed": 42
+}

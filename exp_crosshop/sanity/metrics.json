@@ -1,0 +1,19 @@
+{
+  "n_scored_questions": 1228,
+  "em": 0.5814,
+  "ece": 0.2674,
+  "pearson_flat_minhop": 0.6568,
+  "cka_pre_interaction": 0.3038,
+  "cka_post_interaction": 0.3038,
+  "anchor_correct_mean": 0.0871,
+  "anchor_wrong_mean": -0.0162,
+  "anchor_delta": 0.1034,
+  "type_em": {
+    "bridge": 0.561,
+    "comparison": 0.6667
+  },
+  "type_counts": {
+    "bridge": 991,
+    "comparison": 237
+  }
+}
