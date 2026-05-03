@@ -1,0 +1,27 @@
+[03:51:05] ======================================================================
+[03:51:05]   PHASE 0: THE DECISIVE ABLATIONS
+[03:51:05] ======================================================================
+[03:51:05] ======================================================================
+[03:51:05]   SCHEMA INSPECTION — verify these match your data
+[03:51:05] ======================================================================
+[03:51:05] 
+  --- candidates: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl ---
+[03:51:05]   Keys: ['qid', 'split', 'candidates', 'stats']
+[03:51:05]   candidates[0] keys: ['answer_id', 'answer_text', 'prompt_id']
+[03:51:05] 
+  --- hop_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl'
+[03:51:05] 
+  --- qa_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl'
+[03:51:05] 
+  --- lex_features: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl'
+[03:51:05] 
+  --- monolithic_preds: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/preds/dev_chain_verifier_mean_preds.jsonl ---
+[03:51:05]   Keys: ['qid', 'pred', 'probs', 'best_idx']
+[03:51:05] 
+======================================================================
+[03:51:05]   ✓ candidates: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl
+[03:51:05] MISSING FILE: hop_scores at /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[03:51:05] Fix the path or use --{name} to override.

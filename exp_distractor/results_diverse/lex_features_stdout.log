@@ -1,0 +1,3 @@
+usage: exp_a1_lex_features.py [-h] --evidence EVIDENCE --candidates CANDIDATES
+                              --out_jsonl OUT_JSONL --out_json OUT_JSON
+exp_a1_lex_features.py: error: the following arguments are required: --out_json

@@ -1,0 +1,20 @@
+[03:50:23] === Q1 Signal Independence Diagnostic ===
+[03:50:23] candidates    : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl
+[03:50:23] nli_preds     : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_nli_preds_diverse.jsonl
+[03:50:23] evidence      : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/evidence/dev_distractor_chains.jsonl
+[03:50:23] model         : /var/tmp/u24sf51014/sro/models/nli-roberta-base
+[03:50:23] out_hop_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[03:50:23] batch_size    : 64
+[03:50:23] Loading NLI model on cuda ...
+[03:50:42] Labels: {0: 'contradiction', 1: 'entailment', 2: 'neutral'}  →  entailment_idx=1
+[03:50:42] Loading gold answers ...
+[03:50:44]   7405 gold answers
+[03:50:44] Loading evidence pack ...
+[03:50:46]   7405 evidence records
+[03:50:46] Loading flat NLI predictions ...
+Traceback (most recent call last):
+  File "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/tools/exp2_q1_signal_independence.py", line 493, in <module>
+    main()
+  File "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/tools/exp2_q1_signal_independence.py", line 213, in main
+    for line in open(args.nli_preds):
+FileNotFoundError: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_nli_preds_diverse.jsonl'

@@ -53,7 +53,7 @@ WIKI2_CHAINS="exp_wiki2/evidence/dev_wiki2_chains.jsonl"
 ENCODER="microsoft/deberta-v3-base"
 OUT_DIR="exp_crosshop/runs"
 
-ARCHS=("A" "B" "C")
+ARCHS=("A" "B")
 SEEDS=(42 123 456)
 N_FOLDS=5
 N_EPOCHS=8
@@ -66,6 +66,7 @@ BATCH=16
 cd "${PROJECT_ROOT}"
 export HF_ENDPOINT=https://hf-mirror.com
 export HF_HUB_OFFLINE=1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True 
 WIKI2_AVAILABLE=true
 for F in "${WIKI2_GOLD}" "${WIKI2_CANDIDATES}" "${WIKI2_CHAINS}"; do
     if [[ ! -f "${F}" ]]; then
@@ -115,7 +116,7 @@ for arch in "${ARCHS[@]}"; do
     done
 done
 
-TOTAL=45
+TOTAL=30
 DONE_COUNT=$((TOTAL - ${#PENDING[@]}))
 
 echo ""
@@ -171,14 +172,8 @@ while [[ $IDX -lt $TOTAL_PENDING ]]; do
         tag="${arch}_s${seed}_f${fold}"
         log="exp_crosshop/logs/${tag}.log"
 
-        # 2Wiki zero-shot: only on fold=0 per (arch, seed).
-        # All folds train on the same HotpotQA data with the same seed,
-        # so their zero-shot 2Wiki score is identical — no need to repeat.
-        if [[ "${WIKI2_AVAILABLE}" == "false" ]] || [[ "${fold}" != "0" ]]; then
-            WIKI2_FLAG="--skip_wiki2"
-        else
-            WIKI2_FLAG=""
-        fi
+        # NEW — skip 2Wiki on ALL folds for now
+        WIKI2_FLAG="--skip_wiki2"
 
         echo "[launcher] Starting  arch=${arch}  seed=${seed}  fold=${fold}  GPU=${gpu}"
         echo "[launcher]   log : ${log}"

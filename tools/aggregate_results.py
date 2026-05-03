@@ -212,7 +212,7 @@ def compare_archs(agg_a: dict, agg_b: dict,
     elif em_positive and not pearson_ban:
         verdict = (f"PARTIAL UPDATE ({label_b} optional ablation): "
                    f"EM_diff={em_diff:+.4f} (positive but < {EM_FULL_UPDATE_PP}), "
-                   f"Pearson_delta={pearson_delta:.3f if pearson_delta else 'N/A'}")
+                   f"Pearson_delta={f'{pearson_delta:.3f}' if pearson_delta is not None else 'N/A'}")
         verdict_code = "partial_update"
 
     else:

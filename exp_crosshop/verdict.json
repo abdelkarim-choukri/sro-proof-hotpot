@@ -1,0 +1,116 @@
+{
+  "runs_dir": "exp_crosshop/runs",
+  "per_arch": {
+    "A": {
+      "oof_em_per_seed": {
+        "123": 0.57112,
+        "42": 0.57046,
+        "456": 0.5721
+      },
+      "oof_em_per_fold": [
+        0.5831,
+        0.5717,
+        0.5786,
+        0.546,
+        0.5762,
+        0.5879,
+        0.5782,
+        0.5721,
+        0.5542,
+        0.5599,
+        0.544,
+        0.57,
+        0.5754,
+        0.5835,
+        0.5876
+      ],
+      "em_mean": 0.5712,
+      "em_ci": [
+        0.5705,
+        0.5721
+      ],
+      "pearson_mean": 0.7316,
+      "cka_pre_mean": 0.9976,
+      "cka_post_mean": 0.9976,
+      "anchor_delta_mean": 0.0438,
+      "wiki2_em_mean": null,
+      "wiki2_em_n": 0,
+      "type_em": {
+        "comparison": 0.6351,
+        "bridge": 0.5553
+      },
+      "n_runs": 15
+    },
+    "B": {
+      "oof_em_per_seed": {
+        "123": 0.57046,
+        "42": 0.5727599999999999,
+        "456": 0.5718
+      },
+      "oof_em_per_fold": [
+        0.5822,
+        0.5733,
+        0.5827,
+        0.5436,
+        0.5705,
+        0.5912,
+        0.5847,
+        0.5648,
+        0.5632,
+        0.5599,
+        0.5432,
+        0.5676,
+        0.5754,
+        0.5876,
+        0.5852
+      ],
+      "em_mean": 0.5717,
+      "em_ci": [
+        0.5705,
+        0.5728
+      ],
+      "pearson_mean": 0.726,
+      "cka_pre_mean": 0.9964,
+      "cka_post_mean": 0.996,
+      "anchor_delta_mean": 0.0452,
+      "wiki2_em_mean": null,
+      "wiki2_em_n": 0,
+      "type_em": {
+        "comparison": 0.6378,
+        "bridge": 0.5552
+      },
+      "n_runs": 15
+    }
+  },
+  "comparisons": [
+    {
+      "comparison": "B_vs_A",
+      "em_diff": 0.0004,
+      "em_diff_ci": [
+        -0.0016,
+        0.0028
+      ],
+      "pearson_delta": -0.0056,
+      "pearson_a": 0.7316,
+      "pearson_b": 0.726,
+      "anchor_ratio": 1.032,
+      "wiki2_diff": null,
+      "gate_em_ban_boot": false,
+      "gate_pearson_ban": false,
+      "gate_anchor_ban": false,
+      "verdict_code": "partial_update",
+      "verdict": "PARTIAL UPDATE (B optional ablation): EM_diff=+0.0004 (positive but < 0.003), Pearson_delta=-0.006"
+    }
+  ],
+  "recommendation": "A (partial updates only \u2014 keep per-hop as default)",
+  "n_runs_per_arch": {
+    "A": 15,
+    "B": 15,
+    "C": 0
+  },
+  "preregistered_thresholds": {
+    "em_full_update_pp": 0.003,
+    "pearson_ban_delta": 0.15,
+    "anchor_drop_thresh": 0.3
+  }
+}

@@ -1,0 +1,106 @@
+================================================================
+  Z3 on Diverse Candidates
+  Sun May  3 03:49:11 AM UTC 2026
+================================================================
+
+  Input candidates : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl
+  N lines: 7405
+  Output directory : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse
+
+  Preflight: all input files found ✓
+
+━━━ Step 1: NLI Hop Scoring (~15 min) ━━━
+[03:50:23] === Q1 Signal Independence Diagnostic ===
+[03:50:23] candidates    : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl
+[03:50:23] nli_preds     : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_nli_preds_diverse.jsonl
+[03:50:23] evidence      : /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/evidence/dev_distractor_chains.jsonl
+[03:50:23] model         : /var/tmp/u24sf51014/sro/models/nli-roberta-base
+[03:50:23] out_hop_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[03:50:23] batch_size    : 64
+[03:50:23] Loading NLI model on cuda ...
+[03:50:42] Labels: {0: 'contradiction', 1: 'entailment', 2: 'neutral'}  →  entailment_idx=1
+[03:50:42] Loading gold answers ...
+[03:50:44]   7405 gold answers
+[03:50:44] Loading evidence pack ...
+[03:50:46]   7405 evidence records
+[03:50:46] Loading flat NLI predictions ...
+Traceback (most recent call last):
+  File "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/tools/exp2_q1_signal_independence.py", line 493, in <module>
+    main()
+  File "/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/tools/exp2_q1_signal_independence.py", line 213, in main
+    for line in open(args.nli_preds):
+FileNotFoundError: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_nli_preds_diverse.jsonl'
+  ✓ NLI scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+
+━━━ Step 2: QA Cross-Encoder Scoring (~35 min) ━━━
+usage: exp_a1_qa_hop_score.py [-h] --evidence EVIDENCE --candidates CANDIDATES
+                              --model MODEL --out_jsonl OUT_JSONL --out_json
+                              OUT_JSON [--batch_size BATCH_SIZE]
+                              [--device DEVICE]
+exp_a1_qa_hop_score.py: error: the following arguments are required: --out_json
+  ✓ QA scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl
+
+━━━ Step 3: Lexical Features (~10 min, CPU) ━━━
+usage: exp_a1_lex_features.py [-h] --evidence EVIDENCE --candidates CANDIDATES
+                              --out_jsonl OUT_JSONL --out_json OUT_JSON
+exp_a1_lex_features.py: error: the following arguments are required: --out_json
+  ✓ Lex features: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl
+
+━━━ Step 4: Z3 XGBoost Ablations (~20 min, CPU) ━━━
+[03:51:05] ======================================================================
+[03:51:05]   PHASE 0: THE DECISIVE ABLATIONS
+[03:51:05] ======================================================================
+[03:51:05] ======================================================================
+[03:51:05]   SCHEMA INSPECTION — verify these match your data
+[03:51:05] ======================================================================
+[03:51:05] 
+  --- candidates: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl ---
+[03:51:05]   Keys: ['qid', 'split', 'candidates', 'stats']
+[03:51:05]   candidates[0] keys: ['answer_id', 'answer_text', 'prompt_id']
+[03:51:05] 
+  --- hop_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl'
+[03:51:05] 
+  --- qa_scores: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl'
+[03:51:05] 
+  --- lex_features: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl ---
+[03:51:05]   ERROR reading /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl: [Errno 2] No such file or directory: '/var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl'
+[03:51:05] 
+  --- monolithic_preds: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/preds/dev_chain_verifier_mean_preds.jsonl ---
+[03:51:05]   Keys: ['qid', 'pred', 'probs', 'best_idx']
+[03:51:05] 
+======================================================================
+[03:51:05]   ✓ candidates: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/candidates/dev_M5_diverse.jsonl
+[03:51:05] MISSING FILE: hop_scores at /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[03:51:05] Fix the path or use --{name} to override.
+
+━━━ Step 5: Bootstrap Significance Tests (~5 min, CPU) ━━━
+Loading gold answers ...
+  7405 questions
+Loading predictions ...
+  ✗ Z1_majority: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z1_majority_preds.jsonl NOT FOUND — skipping
+  ✗ Z2_surface: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z2_surface_preds.jsonl NOT FOUND — skipping
+  ✗ Z3_chain: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z3_chain_preds.jsonl NOT FOUND — skipping
+  ✗ Z_full: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z_full_preds.jsonl NOT FOUND — skipping
+  ✓ Monolithic: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/preds/dev_chain_verifier_mean_preds.jsonl (EM=0.4666)
+ERROR: Need at least 2 systems to compare. Check paths.
+
+================================================================
+  RESULTS COMPARISON
+================================================================
+
+  System                                        EM    ΔEM vs Z3_old
+  ─────────────────────────────────────────────────────────────────
+  M1 greedy (old pool)                      0.4440                —
+  Z1 majority vote [old candidates]         0.4654                 
+  Z2 surface [old candidates]               0.4656                 
+  Z3 chain (XGBoost) [old candidates]       0.4749         baseline
+  Z_full [old candidates]                   0.4752                 
+  ─────────────────────────────────────────────────────────────────
+  SFAV [diverse candidates]                 0.6119         +0.1370
+
+
+  Full results: exp_distractor/results_diverse/
+  Sun May  3 03:51:06 AM UTC 2026
+================================================================

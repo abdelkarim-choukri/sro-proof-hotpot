@@ -1,0 +1,60 @@
+[04:56:05] === Q1 Signal Independence Diagnostic ===
+[04:56:05] candidates    : exp_distractor/candidates/dev_M5_diverse.jsonl
+[04:56:05] nli_preds     : exp_distractor/results_diverse/preds/dev_nli_preds_diverse.jsonl
+[04:56:05] evidence      : exp_distractor/evidence/dev_distractor_chains.jsonl
+[04:56:05] model         : /var/tmp/u24sf51014/sro/models/nli-roberta-base
+[04:56:05] out_hop_scores: exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[04:56:05] batch_size    : 64
+[04:56:05] Loading NLI model on cuda ...
+[04:56:06] Labels: {0: 'contradiction', 1: 'entailment', 2: 'neutral'}  →  entailment_idx=1
+[04:56:06] Loading gold answers ...
+[04:56:07]   7405 gold answers
+[04:56:07] Loading evidence pack ...
+[04:56:07]   7405 evidence records
+[04:56:07] Loading flat NLI predictions ...
+[04:56:07]   7405 NLI pred records
+[04:56:07] Loading candidates ...
+[04:56:07]   7405 candidate records
+[04:56:07] Questions in all four sources: 7405
+[04:56:07] Questions queued    : 7405
+[04:56:07] Skipped (no hops)   : 0
+[04:56:07] Bad cands (scored 0): 752
+[04:56:07] Total NLI pairs     : 72546
+[04:56:07] Running NLI inference in batches of 64 ...
+[04:56:26]   6400/72546 pairs  |  ETA 3.2 min
+[04:56:45]   12800/72546 pairs  |  ETA 2.9 min
+[04:57:03]   19200/72546 pairs  |  ETA 2.6 min
+[04:57:21]   25600/72546 pairs  |  ETA 2.3 min
+[04:57:40]   32000/72546 pairs  |  ETA 2.0 min
+[04:58:01]   38400/72546 pairs  |  ETA 1.7 min
+[04:58:20]   44800/72546 pairs  |  ETA 1.4 min
+[04:58:39]   51200/72546 pairs  |  ETA 1.1 min
+[04:58:59]   57600/72546 pairs  |  ETA 0.7 min
+[04:59:18]   64000/72546 pairs  |  ETA 0.4 min
+[04:59:37]   70400/72546 pairs  |  ETA 0.1 min
+[04:59:44] Inference done in 3.6 min  (335 pairs/sec)
+[04:59:44] Computing derived signals and EM ...
+[04:59:44] Computing correlations ...
+[04:59:44] Saving hop scores to exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl ...
+[04:59:45]   7405 records written
+[04:59:45] Summary saved to exp_distractor/results_diverse/nli_signal.json
+[04:59:45] Per-question JSONL saved to exp_distractor/results_diverse/nli_signal_perqid.jsonl
+[04:59:45] ================================================================
+[04:59:45]   Q1 RESULTS
+[04:59:45] ================================================================
+[04:59:45]   Questions / candidate pairs : 7405 / 37025
+[04:59:45]   Pearson  (min_hop  vs flat) : 0.2177
+[04:59:45]   Pearson  (mean_hop vs flat) : 0.4166
+[04:59:45]   Spearman (min_hop  vs flat) : 0.1624
+[04:59:45]   Spearman (mean_hop vs flat) : 0.3949
+[04:59:45] ----------------------------------------------------------------
+[04:59:45]   EM comparison (picking best candidate by each signal):
+[04:59:45]     flat NLI selector  : 0.1745
+[04:59:45]     min_hop selector   : 0.2213
+[04:59:45]     mean_hop selector  : 0.3427
+[04:59:45]     oracle@5           : 0.6199
+[04:59:45] ----------------------------------------------------------------
+[04:59:45]   DECISION: DIFFERENT SIGNAL: per-hop features carry new information — proceed to Q2-Q4
+[04:59:45] ================================================================
+[04:59:45]   Hop scores saved to: exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[04:59:45]   (This file is the input for Q2, Q3, Q4 — no re-inference needed)

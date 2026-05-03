@@ -1,0 +1,5 @@
+usage: exp_a1_qa_hop_score.py [-h] --evidence EVIDENCE --candidates CANDIDATES
+                              --model MODEL --out_jsonl OUT_JSONL --out_json
+                              OUT_JSON [--batch_size BATCH_SIZE]
+                              [--device DEVICE]
+exp_a1_qa_hop_score.py: error: the following arguments are required: --out_json

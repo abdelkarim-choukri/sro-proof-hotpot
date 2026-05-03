@@ -1,0 +1,9 @@
+Loading gold answers ...
+  7405 questions
+Loading predictions ...
+  ✗ Z1_majority: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z1_majority_preds.jsonl NOT FOUND — skipping
+  ✗ Z2_surface: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z2_surface_preds.jsonl NOT FOUND — skipping
+  ✗ Z3_chain: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z3_chain_preds.jsonl NOT FOUND — skipping
+  ✗ Z_full: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp_distractor/results_diverse/z_full_preds.jsonl NOT FOUND — skipping
+  ✓ Monolithic: /var/tmp/u24sf51014/sro/work/sro-proof-hotpot/exp0c/preds/dev_chain_verifier_mean_preds.jsonl (EM=0.4666)
+ERROR: Need at least 2 systems to compare. Check paths.

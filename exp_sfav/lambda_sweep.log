@@ -1,0 +1,35 @@
+================================================================
+  SFAV λ Sweep
+  seed=42  fold=2
+  λ values: 1.0 3.0
+  Sat May  2 01:12:02 PM UTC 2026
+================================================================
+
+  Baseline (λ=0.30, s42_f2):
+    EM=0.6144  Pearson=0.5209  CKA=0.9992  anchor_delta=0.097
+    l_sup trajectory: 0.1442 0.0726 0.0489 0.0275 0.0127 0.0063 0.0034 0.0025 
+
+[13:12:02] LAUNCH  SFAV_lam1.00_s42_f2  GPU=0
+[13:12:12] LAUNCH  SFAV_lam3.00_s42_f2  GPU=1
+
+[13:12:22] Waiting for both λ runs to complete ...
+
+================================================================
+  LAMBDA SWEEP RESULTS
+================================================================
+
+       λ       EM    Pearson       CKA    anchor_Δ    l_sup_e1    l_sup_e8
+  ───────────────────────────────────────────────────────────────────────────
+    0.30   0.6144     0.5209    0.9992      0.0970      0.1442      0.0025
+    1.00  MISSING
+    3.00  MISSING
+
+  Interpretation guide:
+  - Pearson < 0.80 → structural differentiation (good for SFAV claim)
+  - l_sup_e8 > 0.02 → aux head still active at end of training
+  - EM > 0.60 → structural gain doesn't hurt task performance
+  - anchor_delta > 0.05 → hop-2 contribution is meaningful
+
+================================================================
+  Done: Sat May  2 01:12:35 PM UTC 2026
+================================================================

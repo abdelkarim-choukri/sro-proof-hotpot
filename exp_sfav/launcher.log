@@ -1,0 +1,124 @@
+================================================================
+  SFAV Experiment Launcher
+  Tue Apr 28 12:32:13 PM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 0/30
+  To run      : 30
+
+[12:32:13] LAUNCH  A_s42_f0  GPU=0
+[12:32:23] LAUNCH  A_s42_f1  GPU=1
+[13:53:04] LAUNCH  A_s42_f2  GPU=0
+[13:54:44] LAUNCH  A_s42_f3  GPU=1
+[18:39:25] LAUNCH  A_s42_f4  GPU=0
+[18:46:35] LAUNCH  A_s123_f0  GPU=1
+================================================================
+  SFAV Experiment Launcher
+  Tue Apr 28 10:09:38 PM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 4/30
+  To run      : 26
+
+[22:09:38] LAUNCH  A_s42_f4  GPU=0
+[22:09:48] LAUNCH  A_s123_f0  GPU=1
+[00:04:59] LAUNCH  A_s123_f1  GPU=0
+[00:07:09] LAUNCH  A_s123_f2  GPU=1
+[04:51:20] LAUNCH  A_s123_f3  GPU=0
+[04:59:30] LAUNCH  A_s123_f4  GPU=1
+[09:37:42] LAUNCH  A_s456_f0  GPU=0
+[09:51:52] LAUNCH  A_s456_f1  GPU=1
+================================================================
+  SFAV Experiment Launcher
+  Wed Apr 29 12:51:56 PM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 10/30
+  To run      : 20
+
+[12:51:56] LAUNCH  A_s456_f0  GPU=0
+[12:52:06] LAUNCH  A_s456_f1  GPU=1
+[14:47:17] LAUNCH  A_s456_f2  GPU=0
+[14:49:27] LAUNCH  A_s456_f3  GPU=1
+[19:33:39] LAUNCH  A_s456_f4  GPU=0
+[19:41:49] LAUNCH  SFAV_lam0.3_s42_f0  GPU=1
+[00:19:30] LAUNCH  SFAV_lam0.3_s42_f1  GPU=0
+[02:06:11] LAUNCH  SFAV_lam0.3_s42_f2  GPU=1
+[06:39:52] LAUNCH  SFAV_lam0.3_s42_f3  GPU=0
+[08:32:03] LAUNCH  SFAV_lam0.3_s42_f4  GPU=1
+[12:59:14] LAUNCH  SFAV_lam0.3_s123_f0  GPU=0
+[14:57:55] LAUNCH  SFAV_lam0.3_s123_f1  GPU=1
+[19:20:06] LAUNCH  SFAV_lam0.3_s123_f2  GPU=0
+[21:25:47] LAUNCH  SFAV_lam0.3_s123_f3  GPU=1
+[01:40:58] LAUNCH  SFAV_lam0.3_s123_f4  GPU=0
+[03:51:39] LAUNCH  SFAV_lam0.3_s456_f0  GPU=1
+================================================================
+  SFAV Experiment Launcher
+  Fri May  1 10:31:38 AM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 15/30
+  To run      : 15
+
+[10:31:38] LAUNCH  SFAV_lam0.3_s42_f0  GPU=0
+[10:31:48] LAUNCH  SFAV_lam0.3_s42_f1  GPU=1
+================================================================
+  SFAV Experiment Launcher
+  Fri May  1 10:36:35 AM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 24/30
+  To run      : 6
+
+[10:36:35] LAUNCH  SFAV_lam0.30_s123_f4  GPU=0
+================================================================
+  SFAV Experiment Launcher
+  Fri May  1 10:37:37 AM UTC 2026
+================================================================
+  Candidates : exp_distractor/candidates/dev_M5_diverse.jsonl  (7405 lines ✓)
+  Chains     : exp_distractor/evidence/dev_distractor_chains.jsonl ✓
+  Gold       : data/hotpotqa/raw/hotpot_dev_distractor_v1.json ✓
+  Total jobs : 30 (2 arch × 3 seeds × 5 folds)
+
+  Already done: 24/30
+  To run      : 6
+
+[10:37:37] LAUNCH  SFAV_lam0.30_s123_f4  GPU=0
+[10:37:47] LAUNCH  SFAV_lam0.30_s456_f0  GPU=1
+[13:07:58] LAUNCH  SFAV_lam0.30_s456_f1  GPU=0
+[15:32:09] LAUNCH  SFAV_lam0.30_s456_f2  GPU=1
+[19:25:20] LAUNCH  SFAV_lam0.30_s456_f3  GPU=0
+[21:58:31] LAUNCH  SFAV_lam0.30_s456_f4  GPU=1
+
+[21:58:41] Waiting for final jobs to complete ...
+
+================================================================
+  LAUNCHER DONE  Sat May  2 04:25:14 AM UTC 2026
+  Launched : 6
+  Skipped  : 24
+  Elapsed  : 1067 min
+================================================================
+  Completed runs: 30/30
+
+  Next step: run sfav_aggregate.py to collect all metrics.
+================================================================

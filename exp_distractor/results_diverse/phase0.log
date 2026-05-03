@@ -1,0 +1,148 @@
+[05:59:24] ======================================================================
+[05:59:24]   PHASE 0: THE DECISIVE ABLATIONS
+[05:59:24] ======================================================================
+[05:59:24] ======================================================================
+[05:59:24]   SCHEMA INSPECTION — verify these match your data
+[05:59:24] ======================================================================
+[05:59:24] 
+  --- candidates: exp_distractor/candidates/dev_M5_diverse.jsonl ---
+[05:59:24]   Keys: ['qid', 'split', 'candidates', 'stats']
+[05:59:24]   candidates[0] keys: ['answer_id', 'answer_text', 'prompt_id']
+[05:59:24] 
+  --- hop_scores: exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl ---
+[05:59:24]   Keys: ['qid', 'gold', 'flat_em', 'min_em', 'mean_em', 'oracle_em', 'candidates']
+[05:59:24]   candidates[0] keys: ['cand_idx', 'answer', 'nli_flat', 'nli_hop1', 'nli_hop2', 'min_hop', 'mean_hop', 'imbalance']
+[05:59:24] 
+  --- qa_scores: exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl ---
+[05:59:24]   Keys: ['qid', 'question', 'gold', 'hop1_len', 'hop2_len', 'candidates']
+[05:59:24]   candidates[0] keys: ['answer_id', 'answer_text', 'qa_hop1', 'qa_hop2', 'qa_flat', 'qa_hop_balance', 'qa_min_hop']
+[05:59:24] 
+  --- lex_features: exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl ---
+[05:59:24]   Keys: ['qid', 'question', 'gold', 'q_entities', 'hop1_len', 'hop2_len', 'candidates']
+[05:59:24]   candidates[0] keys: ['answer_id', 'answer_text', 'ans_in_hop1', 'ans_in_hop2', 'ans_in_both', 'ans_in_neither', 'lex_hop1', 'lex_hop2', 'lex_flat', 'lex_hop_balance', 'lex_min_hop', 'q_entity_in_hop1', 'q_entity_in_hop2']
+[05:59:24] 
+  --- monolithic_preds: exp0c/preds/dev_chain_verifier_mean_preds.jsonl ---
+[05:59:24]   Keys: ['qid', 'pred', 'probs', 'best_idx']
+[05:59:24] 
+======================================================================
+[05:59:24]   ✓ candidates: exp_distractor/candidates/dev_M5_diverse.jsonl
+[05:59:24]   ✓ hop_scores: exp_distractor/results_diverse/preds/dev_hop_scores_diverse.jsonl
+[05:59:24]   ✓ qa_scores: exp_distractor/results_diverse/preds/dev_qa_hop_scores_diverse.jsonl
+[05:59:24]   ✓ lex_features: exp_distractor/results_diverse/preds/dev_lex_features_diverse.jsonl
+[05:59:24]   ✓ mono_preds: exp0c/preds/dev_chain_verifier_mean_preds.jsonl
+[05:59:24]   ✓ gold: data/hotpotqa/raw/hotpot_dev_distractor_v1.json
+[05:59:24] 
+Loading data ...
+[05:59:24]   Gold: 7405 questions
+[05:59:24]   Candidates: 7405 questions
+[05:59:24]   Hop scores: 7405 questions
+[05:59:24]   QA scores: 7405 questions
+[05:59:25]   Lex features: 7405 questions
+[05:59:25]   Monolithic preds: 7405 questions
+[05:59:25]   Fallback source: MONOLITHIC (legacy, 7405 questions)
+[05:59:25]   Loaded in 1.0s
+[05:59:25] 
+Applying Stage 1 garbage filter ...
+[05:59:25]   Before: 37025 candidates
+[05:59:25]   After:  36273 candidates
+[05:59:25]   Filter rate: 2.0%
+[05:59:25]   All-filtered questions: 0
+[05:59:25]   Oracle EM before filter: 4590/7405 = 0.6199
+[05:59:25]   Oracle EM after filter:  4590/7405 = 0.6199
+[05:59:25]   Oracle EM (system):      4590/7405 = 0.6199
+[05:59:25]   False negatives (correct answers filtered): 0
+[05:59:25]   Fallback correct among 0 all-filtered: 0
+[05:59:25] 
+Building feature matrices ...
+[05:59:26]   Feature matrices built for 7405 questions
+[05:59:26] Running Z1: majority vote on filtered pool ...
+[05:59:27]   Z1 result: 4530/7405 = 0.6117 EM
+[05:59:27] 
+[05:59:28] Running Z2_surface_only: 10 features ...
+[05:59:28]   Features: ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_freq', 'is_majority', 'answer_len_chars', 'answer_len_words', 'cand_idx', 'unique_count', 'answer_freq_filtered']
+[05:59:29]   Matrix: 36273 candidates × 10 features
+[05:59:29]   Positive rate: 0.3469 (12583/36273)
+[05:59:29]   Fold 1/5: train=29002cands(5924q) val=7271cands(1481q)
+[05:59:30]   Fold 2/5: train=29011cands(5924q) val=7262cands(1481q)
+[05:59:30]   Fold 3/5: train=29034cands(5924q) val=7239cands(1481q)
+[05:59:30]   Fold 4/5: train=29033cands(5924q) val=7240cands(1481q)
+[05:59:30]   Fold 5/5: train=29012cands(5924q) val=7261cands(1481q)
+[05:59:30]   Z2_surface_only result: 4536/7405 = 0.6126 EM
+[05:59:30]   Feature importances (top-10):
+[05:59:30]     # 1  is_majority               0.7715
+[05:59:30]     # 2  answer_freq               0.1830
+[05:59:30]     # 3  cand_idx                  0.0076
+[05:59:30]     # 4  answer_len_chars          0.0074
+[05:59:30]     # 5  answer_len_words          0.0059
+[05:59:30]     # 6  answer_freq_filtered      0.0058
+[05:59:30]     # 7  nli_score_gap             0.0058
+[05:59:30]     # 8  nli_score                 0.0057
+[05:59:30]     # 9  unique_count              0.0050
+[05:59:30]     #10  nli_rank                  0.0023
+[05:59:30] 
+[05:59:30] Running Z3_chain_only: 10 features ...
+[05:59:30]   Features: ['cand_idx', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[05:59:31]   Matrix: 36273 candidates × 10 features
+[05:59:31]   Positive rate: 0.3469 (12583/36273)
+[05:59:31]   Fold 1/5: train=29002cands(5924q) val=7271cands(1481q)
+[05:59:31]   Fold 2/5: train=29011cands(5924q) val=7262cands(1481q)
+[05:59:32]   Fold 3/5: train=29034cands(5924q) val=7239cands(1481q)
+[05:59:32]   Fold 4/5: train=29033cands(5924q) val=7240cands(1481q)
+[05:59:32]   Fold 5/5: train=29012cands(5924q) val=7261cands(1481q)
+[05:59:32]   Z3_chain_only result: 4496/7405 = 0.6072 EM
+[05:59:32]   Feature importances (top-10):
+[05:59:32]     # 1  cand_idx                  0.4280
+[05:59:32]     # 2  qa_hop_balance            0.1565
+[05:59:32]     # 3  lex_hop1                  0.1489
+[05:59:32]     # 4  lex_hop2                  0.0553
+[05:59:32]     # 5  qa_hop2                   0.0419
+[05:59:32]     # 6  nli_hop2                  0.0416
+[05:59:32]     # 7  nli_hop_balance           0.0374
+[05:59:32]     # 8  nli_hop1                  0.0315
+[05:59:32]     # 9  qa_hop1                   0.0304
+[05:59:32]     #10  lex_hop_balance           0.0284
+[05:59:32] 
+[05:59:32] Running Z_full_all_features: 19 features ...
+[05:59:32]   Features: ['nli_score', 'nli_rank', 'nli_score_gap', 'answer_freq', 'is_majority', 'answer_len_chars', 'answer_len_words', 'cand_idx', 'unique_count', 'answer_freq_filtered', 'nli_hop1', 'nli_hop2', 'nli_hop_balance', 'qa_hop1', 'qa_hop2', 'qa_hop_balance', 'lex_hop1', 'lex_hop2', 'lex_hop_balance']
+[05:59:33]   Matrix: 36273 candidates × 19 features
+[05:59:33]   Positive rate: 0.3469 (12583/36273)
+[05:59:33]   Fold 1/5: train=29002cands(5924q) val=7271cands(1481q)
+[05:59:34]   Fold 2/5: train=29011cands(5924q) val=7262cands(1481q)
+[05:59:34]   Fold 3/5: train=29034cands(5924q) val=7239cands(1481q)
+[05:59:34]   Fold 4/5: train=29033cands(5924q) val=7240cands(1481q)
+[05:59:34]   Fold 5/5: train=29012cands(5924q) val=7261cands(1481q)
+[05:59:35]   Z_full_all_features result: 4538/7405 = 0.6128 EM
+[05:59:35]   Feature importances (top-10):
+[05:59:35]     # 1  is_majority               0.7393
+[05:59:35]     # 2  answer_freq               0.1096
+[05:59:35]     # 3  answer_freq_filtered      0.0535
+[05:59:35]     # 4  qa_hop2                   0.0092
+[05:59:35]     # 5  answer_len_chars          0.0090
+[05:59:35]     # 6  answer_len_words          0.0082
+[05:59:35]     # 7  qa_hop_balance            0.0073
+[05:59:35]     # 8  lex_hop_balance           0.0062
+[05:59:35]     # 9  nli_hop_balance           0.0060
+[05:59:35]     #10  lex_hop2                  0.0058
+[05:59:35] 
+[05:59:35] ======================================================================
+[05:59:35]   PHASE 0 RESULTS — THE DECISIVE TABLE
+[05:59:35] ======================================================================
+[05:59:35]   System                                         EM  Δ vs mono    Δ vs Z1
+[05:59:35]   --------------------------------------------------------------------
+[05:59:35]   Monolithic XGBoost (reference)             0.4666    +0.0000    -0.1451
+[05:59:35]   Z1: Stage1 + majority vote                 0.6117    +0.1451    +0.0000
+[05:59:35]   Z2: Stage1 + XGB surface only              0.6126    +0.1460    +0.0008
+[05:59:35]   Z3: Stage1 + XGB chain only                0.6072    +0.1406    -0.0046
+[05:59:35]   Z_full: Stage1 + XGB all 19                0.6128    +0.1462    +0.0011
+[05:59:35]   --------------------------------------------------------------------
+[05:59:35] 
+[05:59:35]   INTERPRETATION:
+[05:59:35]   Chain feature marginal contribution: +0.0003 (+0.03pp)
+[05:59:35]   Surface feature marginal contribution: +0.0057 (+0.57pp)
+[05:59:35]   Full model vs majority vote: +0.0011 (+0.11pp)
+[05:59:35]   ⚠ CHAIN FEATURES APPEAR ORNAMENTAL (<0.1pp gain)
+[05:59:35]     → Reframe paper around diagnostic contribution
+[05:59:35] 
+[05:59:35] ======================================================================
+[05:59:35]   Results saved to exp_distractor/results_diverse/phase0_results.json
+[05:59:35]   Predictions saved to exp_distractor/results_diverse/z*_preds.jsonl
