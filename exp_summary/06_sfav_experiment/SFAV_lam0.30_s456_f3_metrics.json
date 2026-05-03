@@ -1,0 +1,82 @@
+{
+  "n_questions": 1481,
+  "em": 0.6219,
+  "ece_verifier": 0.1148,
+  "pearson_flat_minhop": 0.9788,
+  "cka_pre": 0.9998,
+  "cka_post": 0.9998,
+  "anchor_correct": 0.0332,
+  "anchor_wrong": 0.0236,
+  "anchor_delta": 0.0097,
+  "type_em": {
+    "bridge": 0.6002,
+    "comparison": 0.7045
+  },
+  "type_counts": {
+    "bridge": 1173,
+    "comparison": 308
+  },
+  "arch": "SFAV",
+  "lam": 0.3,
+  "seed": 456,
+  "fold": 3,
+  "best_epoch_em": 0.6219,
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "avg_main_loss": 0.46442,
+      "avg_sup_loss": 0.14955,
+      "val_em": 0.6219,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 2,
+      "avg_main_loss": 0.31454,
+      "avg_sup_loss": 0.07733,
+      "val_em": 0.6158,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 3,
+      "avg_main_loss": 0.20193,
+      "avg_sup_loss": 0.05176,
+      "val_em": 0.5888,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 4,
+      "avg_main_loss": 0.14933,
+      "avg_sup_loss": 0.02789,
+      "val_em": 0.5706,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 5,
+      "avg_main_loss": 0.13424,
+      "avg_sup_loss": 0.01277,
+      "val_em": 0.5834,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 6,
+      "avg_main_loss": 0.12568,
+      "avg_sup_loss": 0.0062,
+      "val_em": 0.5571,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 7,
+      "avg_main_loss": 0.12297,
+      "avg_sup_loss": 0.00337,
+      "val_em": 0.5652,
+      "time_min": 45.7
+    },
+    {
+      "epoch": 8,
+      "avg_main_loss": 0.12144,
+      "avg_sup_loss": 0.00227,
+      "val_em": 0.5598,
+      "time_min": 45.7
+    }
+  ]
+}

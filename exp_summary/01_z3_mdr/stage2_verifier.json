@@ -1,0 +1,75 @@
+{
+  "baseline_em": 0.4666,
+  "stage2_em": 0.57,
+  "delta_pp": 10.34,
+  "metrics": {
+    "tag": "stage2",
+    "overall": {
+      "n": 6116,
+      "em": 0.57,
+      "f1": 0.7112
+    },
+    "feasible": {
+      "n": 5763,
+      "em": 0.5865,
+      "f1": 0.7308
+    },
+    "bridge": {
+      "n": 4893,
+      "em": 0.5541,
+      "f1": 0.7065
+    },
+    "comparison": {
+      "n": 1223,
+      "em": 0.6337,
+      "f1": 0.7302
+    },
+    "ece": 0.055
+  },
+  "feature_importances": {
+    "answer_freq_filtered": 0.3248,
+    "qa_hop2": 0.0651,
+    "answer_freq": 0.0549,
+    "answer_len_chars": 0.0501,
+    "lex_hop1": 0.0425,
+    "qa_hop_balance": 0.0422,
+    "lex_hop_balance": 0.0414,
+    "answer_len_words": 0.0399,
+    "nli_hop_balance": 0.0397,
+    "lex_hop2": 0.0394,
+    "nli_hop1": 0.0393,
+    "nli_hop2": 0.0389,
+    "qa_hop1": 0.0369,
+    "unique_count": 0.0362,
+    "nli_score": 0.0361,
+    "nli_score_gap": 0.0293,
+    "is_majority": 0.0212,
+    "cand_idx": 0.0134,
+    "nli_rank": 0.0085
+  },
+  "chain_feature_ranks": {
+    "nli_hop1": 11,
+    "nli_hop2": 12,
+    "nli_hop_balance": 9,
+    "qa_hop1": 13,
+    "qa_hop2": 2,
+    "qa_hop_balance": 6,
+    "lex_hop1": 5,
+    "lex_hop2": 10,
+    "lex_hop_balance": 7
+  },
+  "n_questions_trained": 6116,
+  "n_skipped_all_filtered": 1289,
+  "xgb_params": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0
+  }
+}

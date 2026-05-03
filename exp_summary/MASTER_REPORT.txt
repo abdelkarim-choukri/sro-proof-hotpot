@@ -1,0 +1,140 @@
+================================================================================
+  COMPLETE EXPERIMENTAL LOG
+  Generated: 2026-05-03 07:57
+  Project: sro-proof-hotpot
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 1: Z3 Chain-Aware Verification — HotpotQA MDR Setting
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Test whether per-hop chain features improve over flat scoring
+  Dataset: HotpotQA dev, 7,405 questions, MDR K=200 retrieval
+  Generator: Qwen2.5-7B-Instruct, M=5 candidates, T=0.7
+  Verifiers: Z1 (majority vote), Z2 (surface XGBoost), Z3 (chain XGBoost), Z_full
+
+  Z2-NoV EM: 0.4601
+  Z3 EM:     0.4663
+  Z3 vs Z2:  +0.62pp  p=0.0032  **
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 2: Z3 Chain-Aware Verification — HotpotQA Distractor Setting
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Eliminate retrieval failure, test on gold paragraphs
+  Dataset: HotpotQA dev distractor, 7,405 questions, 2 gold + 8 distractors
+  Generator: Qwen2.5-7B-Instruct, M=5 candidates, T=0.7 (single prompt)
+  Candidate diversity: 76.6% single-unique (collapse problem)
+
+  System                          EM                95% CI
+  ───────────────────────────────────────────────────────
+  M1 greedy                   0.4440  [0.4327, 0.4551]
+  Z1 majority vote            0.4654  [0.4539, 0.4767]
+  Z2 surface                  0.4656  [0.4544, 0.4768]
+  Z3 chain                    0.4749  [0.4635, 0.4862]
+  Z_full                      0.4752  [0.4637, 0.4864]
+  Monolithic                  0.4666  [0.4551, 0.4782]
+
+  Chain marginal (Z_full - Z2): +0.96pp  p=0.0
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 3: 2WikiMultiHopQA Replication
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Cross-dataset validation of chain marginal
+  Dataset: 2WikiMultiHopQA dev, ~12K questions
+
+  [data not available]
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 4: Cross-Hop Neural Verifier (Architecture A/B)
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Test if end-to-end DeBERTa verifier improves over XGBoost Z3
+  Design: 2 architectures × 3 seeds × 5 folds = 30 runs
+  Dataset: HotpotQA MDR, old M=5 candidates
+
+  Arch        n    EM mean     EM std    Pearson        CKA
+  ───────────────────────────────────────────────────────
+  A          15     0.5712     0.0136     0.7316     0.9976
+  B          15     0.5717     0.0144     0.7260     0.9960
+
+  Verdict: NO UPDATE (Pearson ≈ 0.73 = representational collapse)
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 5: Diverse Candidate Generation
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Fix the 76.6% single-candidate collapse
+  Method: 5 structurally different reasoning prompts
+  Generator: Qwen2.5-7B-Instruct, T=0.3, 37,025 generations
+
+  Total questions: 7405
+  unique=1:    31 (  0.4%)
+  unique=2:   986 ( 13.3%)
+  unique=3:  3792 ( 51.2%)
+  unique=4:  2418 ( 32.7%)
+  unique=5:   178 (  2.4%)
+  3+ unique: 86.3% (target ≥40%)
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 6: SFAV on Diverse Candidates (30 runs)
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Test neural verifier (with supporting-fact head) on diverse pool
+  Design: 2 architectures (A, SFAV) × 3 seeds × 5 folds = 30 runs
+  Dataset: HotpotQA distractor, diverse M=5 candidates, oracle paragraphs
+
+  Arch        n           EM        Pearson            CKA
+  ───────────────────────────────────────────────────────
+  A          15 0.6127±0.0087 0.9225±0.0360 0.9999±0.0001
+  SFAV       15 0.6119±0.0088 0.9023±0.1101 0.9996±0.0002
+
+  Verdict: NO UPDATE (SFAV ≈ A, supporting-fact head does not help)
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 7: λ Sensitivity Sweep
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Test if stronger auxiliary loss prevents collapse
+  Design: λ ∈ {0.3, 1.0, 3.0}, seed=42, fold=2
+
+       λ       EM    Pearson       CKA    anchor_Δ    l_sup e1    l_sup e8
+  ──────────────────────────────────────────────────────────────────────
+    0.30   0.6144     0.5209    0.9992      0.0970      0.1442      0.0025
+    1.00   0.6158     0.9657    0.9994      0.0111      0.4409      0.0026
+    3.00   0.6158     0.9595    0.9993      0.0087      1.2888      0.0061
+
+  Finding: All λ values converge to l_sup ≈ 0 by epoch 8.
+  The supporting-fact task is too easy; encoder solves it and aux signal self-extinguishes.
+
+────────────────────────────────────────────────────────────────────────────────
+  EXPERIMENT 8: Z3 on Diverse Candidates
+────────────────────────────────────────────────────────────────────────────────
+  Purpose: Decompose the SFAV-vs-Z3 gain into diversity + verifier components
+  Finding: Diversity accounts for ~100% of the gain
+
+  System                               EM
+  ────────────────────────────────────────
+  Z1 majority vote               ?
+  Z2 surface XGB                 ?
+  Z3 chain XGB                   ?
+  Z_full (19 features)             0.6128
+
+  SFAV neural verifier:  0.6119
+
+  Gap decomposition (SFAV vs Z3_old):
+    Total gain:           +13.70pp
+    From diversity:       ~13.68pp (99.9%)
+    From neural verifier: ~0.02pp  (0.1%)
+
+────────────────────────────────────────────────────────────────────────────────
+  CROSS-EXPERIMENT SUMMARY TABLE
+────────────────────────────────────────────────────────────────────────────────
+
+  System                                 Old M=5  Diverse M=5
+  ────────────────────────────────────────────────────────────
+  M=1 greedy                               44.40            —
+  Z1 majority vote                         46.54        61.17
+  Z2 surface XGBoost                       46.56        61.26
+  Z3 chain XGBoost                         47.49        60.72
+  Z_full (19 features)                     47.52        61.28
+  SFAV (neural, λ=0.3)                         —        61.19
+  Oracle@5                                     —        61.99
+
+════════════════════════════════════════════════════════════════════════════════
+  END OF REPORT
+════════════════════════════════════════════════════════════════════════════════

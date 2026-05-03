@@ -1,0 +1,263 @@
+{
+  "hotpotqa_mdr": {
+    "label": "HotpotQA MDR",
+    "n_chain_wins": 124,
+    "n_chain_hurts": 67,
+    "n_pairs_used": 124,
+    "delta_stats": {
+      "nli_flat": {
+        "mean_delta": -0.016711685483870965,
+        "median_delta": -0.00017350000000000026,
+        "pct_positive": 48.38709677419355,
+        "p_value": 0.3332709323812696
+      },
+      "nli_hop1": {
+        "mean_delta": -0.192947,
+        "median_delta": -0.0100755,
+        "pct_positive": 35.483870967741936,
+        "p_value": 4.425166087986117e-07
+      },
+      "nli_hop2": {
+        "mean_delta": 0.1836643064516129,
+        "median_delta": 0.0462775,
+        "pct_positive": 61.29032258064516,
+        "p_value": 2.7064420792179706e-05
+      },
+      "nli_hop_balance": {
+        "mean_delta": 0.06250188709677419,
+        "median_delta": 0.01231999999999997,
+        "pct_positive": 58.87096774193549,
+        "p_value": 0.04062781966939667
+      },
+      "qa_flat": {
+        "mean_delta": 0.2509004032258065,
+        "median_delta": 0.0,
+        "pct_positive": 37.096774193548384,
+        "p_value": 2.5428839806493793e-07
+      },
+      "qa_hop1": {
+        "mean_delta": 0.027026870967741937,
+        "median_delta": 0.0,
+        "pct_positive": 8.064516129032258,
+        "p_value": 0.40804420568711997
+      },
+      "qa_hop2": {
+        "mean_delta": 0.29114306451612904,
+        "median_delta": 0.0,
+        "pct_positive": 48.38709677419355,
+        "p_value": 1.6295557943119345e-11
+      },
+      "qa_hop_balance": {
+        "mean_delta": 0.3040971129032258,
+        "median_delta": 0.12677449999999996,
+        "pct_positive": 52.41935483870967,
+        "p_value": 2.0252407572479493e-11
+      },
+      "lex_flat": {
+        "mean_delta": 0.001499572580645161,
+        "median_delta": 0.0,
+        "pct_positive": 40.32258064516129,
+        "p_value": 0.27199851106702433
+      },
+      "lex_hop1": {
+        "mean_delta": -0.010120951612903226,
+        "median_delta": 0.0,
+        "pct_positive": 23.387096774193548,
+        "p_value": 0.0016434941805587935
+      },
+      "lex_hop2": {
+        "mean_delta": 0.011882661290322581,
+        "median_delta": 0.011595499999999998,
+        "pct_positive": 52.41935483870967,
+        "p_value": 0.0007184988326070843
+      },
+      "lex_hop_balance": {
+        "mean_delta": 0.003781612903225807,
+        "median_delta": 0.0018419999999999999,
+        "pct_positive": 51.61290322580645,
+        "p_value": 0.04986022032608252
+      }
+    },
+    "z3_importances_note": {
+      "qa_hop2": "19.1% (top feature in Z3)",
+      "qa_hop_balance": "18.6% (second feature)",
+      "nli_hop_balance": "10.2%",
+      "lex_hop2": "10.0%",
+      "nli_hop2": "9.7%"
+    }
+  },
+  "hotpotqa_distractor": {
+    "label": "HotpotQA Distractor",
+    "n_chain_wins": 131,
+    "n_chain_hurts": 60,
+    "n_pairs_used": 131,
+    "delta_stats": {
+      "nli_flat": {
+        "mean_delta": 0.016790618320610688,
+        "median_delta": -0.0020829999999999998,
+        "pct_positive": 41.98473282442748,
+        "p_value": 0.5023529361524881
+      },
+      "nli_hop1": {
+        "mean_delta": -0.06279421374045802,
+        "median_delta": -0.001471,
+        "pct_positive": 41.98473282442748,
+        "p_value": 0.0539324306599155
+      },
+      "nli_hop2": {
+        "mean_delta": 0.13929334351145037,
+        "median_delta": 0.015985000000000006,
+        "pct_positive": 62.59541984732825,
+        "p_value": 0.000241623129897294
+      },
+      "nli_hop_balance": {
+        "mean_delta": 0.04082975572519084,
+        "median_delta": 0.013051000000000035,
+        "pct_positive": 56.48854961832062,
+        "p_value": 0.08082877670577934
+      },
+      "qa_flat": {
+        "mean_delta": 0.29257470992366413,
+        "median_delta": 0.0,
+        "pct_positive": 40.458015267175576,
+        "p_value": 6.846302899156033e-09
+      },
+      "qa_hop1": {
+        "mean_delta": 0.09188587022900763,
+        "median_delta": 0.0,
+        "pct_positive": 17.557251908396946,
+        "p_value": 0.030519248933390315
+      },
+      "qa_hop2": {
+        "mean_delta": 0.26351735114503816,
+        "median_delta": 0.0,
+        "pct_positive": 37.404580152671755,
+        "p_value": 1.383114626082743e-09
+      },
+      "qa_hop_balance": {
+        "mean_delta": 0.3357609007633588,
+        "median_delta": 0.12810300000000002,
+        "pct_positive": 52.67175572519084,
+        "p_value": 2.8278406087957322e-11
+      },
+      "lex_flat": {
+        "mean_delta": 0.0012236946564885497,
+        "median_delta": 0.0,
+        "pct_positive": 42.74809160305343,
+        "p_value": 0.4628942501728973
+      },
+      "lex_hop1": {
+        "mean_delta": -0.005341251908396945,
+        "median_delta": 0.0,
+        "pct_positive": 27.480916030534353,
+        "p_value": 0.05876835547350597
+      },
+      "lex_hop2": {
+        "mean_delta": 0.009134465648854962,
+        "median_delta": 0.0,
+        "pct_positive": 48.854961832061065,
+        "p_value": 0.013708950865827458
+      },
+      "lex_hop_balance": {
+        "mean_delta": 0.006992557251908397,
+        "median_delta": 0.007297000000000001,
+        "pct_positive": 56.48854961832062,
+        "p_value": 0.029858942539208407
+      }
+    },
+    "z3_importances_note": {
+      "qa_hop2": "19.1% (top feature in Z3)",
+      "qa_hop_balance": "18.6% (second feature)",
+      "nli_hop_balance": "10.2%",
+      "lex_hop2": "10.0%",
+      "nli_hop2": "9.7%"
+    }
+  },
+  "wiki2": {
+    "label": "2WikiMultiHopQA",
+    "n_chain_wins": 241,
+    "n_chain_hurts": 135,
+    "n_pairs_used": 241,
+    "delta_stats": {
+      "nli_flat": {
+        "mean_delta": 0.022226489626556017,
+        "median_delta": 0.001121999999999998,
+        "pct_positive": 56.84647302904564,
+        "p_value": 0.041452668295455956
+      },
+      "nli_hop1": {
+        "mean_delta": -0.27811009543568466,
+        "median_delta": -0.075056,
+        "pct_positive": 30.70539419087137,
+        "p_value": 3.001671614967632e-12
+      },
+      "nli_hop2": {
+        "mean_delta": 0.2756730124481328,
+        "median_delta": 0.04785600000000001,
+        "pct_positive": 68.04979253112033,
+        "p_value": 8.411196793732217e-11
+      },
+      "nli_hop_balance": {
+        "mean_delta": 0.04753817842323652,
+        "median_delta": 0.006551000000000001,
+        "pct_positive": 53.11203319502075,
+        "p_value": 0.22430160615037698
+      },
+      "qa_flat": {
+        "mean_delta": -0.009878800829875517,
+        "median_delta": 0.0,
+        "pct_positive": 9.95850622406639,
+        "p_value": 0.5086218624605001
+      },
+      "qa_hop1": {
+        "mean_delta": -0.04642588796680498,
+        "median_delta": 0.0,
+        "pct_positive": 0.0,
+        "p_value": 0.0014737808438751421
+      },
+      "qa_hop2": {
+        "mean_delta": 0.04164177178423237,
+        "median_delta": 0.0,
+        "pct_positive": 10.37344398340249,
+        "p_value": 0.012884024892111053
+      },
+      "qa_hop_balance": {
+        "mean_delta": 0.010030477178423234,
+        "median_delta": 0.0,
+        "pct_positive": 8.29875518672199,
+        "p_value": 0.421486896265866
+      },
+      "lex_flat": {
+        "mean_delta": 0.0026424315352697094,
+        "median_delta": 0.0,
+        "pct_positive": 42.738589211618255,
+        "p_value": 0.13775849355576442
+      },
+      "lex_hop1": {
+        "mean_delta": -0.02453544398340249,
+        "median_delta": -0.018519,
+        "pct_positive": 18.672199170124482,
+        "p_value": 6.759341530021466e-09
+      },
+      "lex_hop2": {
+        "mean_delta": 0.028672580912863073,
+        "median_delta": 0.020833,
+        "pct_positive": 65.14522821576763,
+        "p_value": 2.0981907467611214e-11
+      },
+      "lex_hop_balance": {
+        "mean_delta": 0.009574506224066389,
+        "median_delta": 0.003333,
+        "pct_positive": 53.11203319502075,
+        "p_value": 0.09485579721235186
+      }
+    },
+    "z3_importances_note": {
+      "qa_hop2": "19.1% (top feature in Z3)",
+      "qa_hop_balance": "18.6% (second feature)",
+      "nli_hop_balance": "10.2%",
+      "lex_hop2": "10.0%",
+      "nli_hop2": "9.7%"
+    }
+  }
+}

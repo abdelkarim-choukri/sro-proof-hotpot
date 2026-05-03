@@ -1,0 +1,25 @@
+
+============================================================
+  DIVERSITY REPORT  —  exp_distractor/candidates/dev_M5_diverse.jsonl
+  7405 questions
+============================================================
+  unique=1:    31  (  0.4%)  
+  unique=2:   988  ( 13.3%)  ██████
+  unique=3:  3793  ( 51.2%)  █████████████████████████
+  unique=4:  2418  ( 32.7%)  ████████████████
+  unique=5:   175  (  2.4%)  █
+────────────────────────────────────────────────────────────
+  2+ unique : 99.6%
+  3+ unique : 86.2%  (target ≥40%)
+  Status    : [PASS]
+  Bad answers (prefallback): 12731 (34.4% of all slots)
+  Fallback used            : 12723
+
+  Per-prompt bad-answer rate:
+    direct      :    3/7405 bad  (0.0%)
+    decomposed  :    0/7405 bad  (0.0%)
+    entity      :    1/7405 bad  (0.0%)
+    quote       :    1/7405 bad  (0.0%)
+    skeptical   :    3/7405 bad  (0.0%)
+============================================================
+

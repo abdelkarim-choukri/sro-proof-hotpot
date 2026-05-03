@@ -1,0 +1,21 @@
+PROMPTS: dict[str, str] = {
+
+    # Prompt 1 — Direct extraction.
+    # Baseline prompt. Targets bridge questions where the answer is a single
+    # entity that can be directly extracted from one hop.
+    "direct": (
+        "Read the passages carefully and answer the question.\n"
+        "Give the shortest accurate answer (a name, number, or short phrase).\n"
+        "Do not explain.\n\n"
+        "Question: {q}\n"
+        "Passage 1: {hop1}\n"
+        "Passage 2: {hop2}\n\n"
+        "Answer:"
+    ),
+
+    # Prompt 2 — Decomposed reasoning.
+    # Targets compositional and bridge questions where the answer requires
+    # chaining facts. Forces the model to commit to an intermediate entity,
+    # making errors at intermediate steps surface as different final answers.
+    "decomposed": (
+        "Break the question into intermediate steps. "
