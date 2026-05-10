@@ -56,3 +56,24 @@ abde.1998.pub
 !exp1/metrics/
 !exp1/metrics/*.json
 !exp1/metrics/*.sha256
+
+# ── SRO subsystem artifacts ─────────────────────────────────────────
+# Heavy generated data: never commit
+data/silver/silver_dataset*.jsonl
+data/silver/audit_qwen_v*.jsonl
+data/silver/audit_llama_v*.jsonl
+data/silver/malformed_outputs.jsonl
+data/silver/honeypot_results.jsonl
+data/silver/audit_sample_384.jsonl
+checkpoints/sro/
+logs/sro/
+.nltk_data/
+
+# But DO commit small reproducibility artifacts
+!data/splits/
+!data/splits/*.json
+!data/silver/manifest.json
+!data/silver/data_quality_report.md
+!data/silver/audit_log.jsonl
+!checkpoints/sro/.gitkeep
+!logs/sro/.gitkeep
